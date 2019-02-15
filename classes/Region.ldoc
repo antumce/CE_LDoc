@@ -1,11 +1,9 @@
 ---
 -- @classmod Region
 
----
--- Region 🡄 GraphicsObject 🡄 Object
+--- Region 🡄 [GraphicsObject](GraphicsObject.html) 🡄 [Object](Object.html)
 --
 -- @subclass GraphicsObject
--- @see GraphicsObject
 
 
 --- Related Functions

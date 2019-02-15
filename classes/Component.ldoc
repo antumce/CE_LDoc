@@ -2,10 +2,9 @@
 --
 -- @classmod Component
 
----
+--- Component 🡄 [Object](Object.html)
 --
 -- @subclass Object
--- @see Object
 
 ---
 -- Number of child components. Readonly.

@@ -1,10 +1,9 @@
 ---
 -- @classmod WinControl
 
---- WinControl 🡄 Control 🡄 Component 🡄 Object
+--- WinControl 🡄 [Control](Control.html) 🡄 [Component](Component.html) 🡄 [Object](Object.html)
 --
 -- @subclass Control
--- @see Control
 
 
 --- The internal windows handle.
