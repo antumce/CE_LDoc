@@ -54,12 +54,16 @@
 
 --- Array to access each child menuitem.
 --
--- @prop Item[]
+-- @prop Item
 -- @ptype array
 
----
+--- Unknown property?
 --
--- @prop [] : Item[]
+-- Item []
+--
+-- See: [source](https://github.com/cheat-engine/cheat-engine/blob/ec8d500/Cheat%20Engine/bin/celua.txt#L822).
+--
+-- @prop ...
 -- @ptype array
 
 --- Function to call when the menu item is activated.
