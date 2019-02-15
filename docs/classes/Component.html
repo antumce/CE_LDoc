@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><strong>Component</strong></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Component</code></h1>
+<p>
+
+</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Component.Object">Object</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Component.Component">Component[ <i>int</i> ]</a></td>
+	<td class="summary">Array containing the child components.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component.ComponentByName">ComponentByName[ <i>string</i> ]</a></td>
+	<td class="summary">Returns a component based on the name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component.ComponentCount">ComponentCount</a></td>
+	<td class="summary">Number of child components.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component.Name">Name</a></td>
+	<td class="summary">The name of the component.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component.Owner">Owner</a></td>
+	<td class="summary">Returns the owner of this object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component.Tag">Tag</a></td>
+	<td class="summary">Free to use storage space (Useful for id's).</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Component:findComponentByName">findComponentByName</a></td>
+	<td class="summary">Returns the component with this name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component:getComponent">getComponent</a></td>
+	<td class="summary">Returns the specific component.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component:getComponentCount">getComponentCount</a></td>
+	<td class="summary">Returns the number of components attached to his component.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component:getName">getName</a></td>
+	<td class="summary">Return the name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component:getOwner">getOwner</a></td>
+	<td class="summary">Returns the owner of this component.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component:getTag">getTag</a></td>
+	<td class="summary">Sets an integer value.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component:setName">setName</a></td>
+	<td class="summary">Changes the name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Component:setTag">setTag</a></td>
+	<td class="summary">Get the tag value.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Component.Object"></a>
+    <strong>Object</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../classes/Object.html#">Object</a>
+    </ul>
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Component.Component"></a>
+    <strong>Component[ <i>int</i> ]</strong>
+    </dt>
+    <dd>
+    Array containing the child components.  Starts at 0. Readonly.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">Component</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component.ComponentByName"></a>
+    <strong>ComponentByName[ <i>string</i> ]</strong>
+    </dt>
+    <dd>
+    Returns a component based on the name.  Readonly.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">Component</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component.ComponentCount"></a>
+    <strong>ComponentCount</strong>
+    </dt>
+    <dd>
+    Number of child components.  Readonly.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">`integer`</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component.Name"></a>
+    <strong>Name</strong>
+    </dt>
+    <dd>
+    The name of the component.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">`string`</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component.Owner"></a>
+    <strong>Owner</strong>
+    </dt>
+    <dd>
+    Returns the owner of this object.  Nil if it has none.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">Component</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component.Tag"></a>
+    <strong>Tag</strong>
+    </dt>
+    <dd>
+    Free to use storage space (Useful for id's).
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">`integer`</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Component:findComponentByName"></a>
+    <strong>findComponentByName</strong>
+    </dt>
+    <dd>
+    Returns the component with this name.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component:getComponent"></a>
+    <strong>getComponent</strong>
+    </dt>
+    <dd>
+    Returns the specific component.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component:getComponentCount"></a>
+    <strong>getComponentCount</strong>
+    </dt>
+    <dd>
+    Returns the number of components attached to his component.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component:getName"></a>
+    <strong>getName</strong>
+    </dt>
+    <dd>
+    Return the name.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component:getOwner"></a>
+    <strong>getOwner</strong>
+    </dt>
+    <dd>
+    Returns the owner of this component.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component:getTag"></a>
+    <strong>getTag</strong>
+    </dt>
+    <dd>
+    Sets an integer value.  You can use this for ID's.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component:setName"></a>
+    <strong>setName</strong>
+    </dt>
+    <dd>
+    Changes the name.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newname</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Component:setTag"></a>
+    <strong>setTag</strong>
+    </dt>
+    <dd>
+    Get the tag value.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">tagvalue</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-15 02:23:19 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
