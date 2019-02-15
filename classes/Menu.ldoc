@@ -1,0 +1,18 @@
+---
+--
+-- @classmod Menu
+
+--- Menu 🡄 [Component](Component.html) 🡄 [Object](Object.html)
+--
+-- @subclass Component
+
+
+--- The base MenuItem class of this menu (readonly).
+--
+-- @prop Items
+-- @ptype MenuItem
+
+
+--- Returns the main MenuItem of this Menu.
+--
+-- @function getItems

@@ -1,0 +1,18 @@
+--- The mainmenu is the menu at the top of a window.
+--
+-- @classmod MainMenu
+
+--- MainMenu 🡄 [Menu](Menu.html) 🡄 [Component](Component.html) 🡄 [Object](Object.html)
+--
+-- @subclass Menu
+
+--- Related Functions
+--
+-- @section relfunc
+
+--- Create a new MainMenu.
+--
+-- @function createMainMenu
+-- @tparam Form form
+
+--- @section end
