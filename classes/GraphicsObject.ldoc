@@ -1,0 +1,6 @@
+---
+-- @classmod GraphicsObject
+
+---
+-- @subclass Object
+-- @see Object
