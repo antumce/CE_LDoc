@@ -1,0 +1,90 @@
+---
+--
+-- @classmod Component
+
+---
+--
+-- @subclass Object
+-- @see Object
+
+---
+-- Number of child components. Readonly.
+--
+-- @prop ComponentCount
+-- @ptype `integer`
+
+---
+-- Array containing the child components. Starts at 0. Readonly.
+--
+-- @prop Component
+-- @idx int
+-- @ptype Component
+
+---
+-- Returns a component based on the name. Readonly.
+--
+-- @prop ComponentByName
+-- @idx string
+-- @ptype Component
+
+---
+-- The name of the component.
+--
+-- @prop Name
+-- @ptype `string`
+
+---
+-- Free to use storage space (Useful for id's).
+--
+-- @prop Tag
+-- @ptype `integer`
+
+---
+-- Returns the owner of this object. Nil if it has none.
+--
+-- @prop Owner
+-- @ptype Component
+
+
+---
+-- Returns the number of components attached to his component.
+--
+-- @function getComponentCount
+
+---
+-- Returns the specific component.
+--
+-- @function getComponent
+-- @tparam integer index
+
+---
+-- Returns the component with this name.
+--
+-- @function findComponentByName
+-- @param name
+
+---
+-- Return the name.
+--
+-- @function getName
+
+---
+-- Changes the name.
+--
+-- @function setName
+-- @tparam string newname
+
+---
+-- Sets an integer value. You can use this for ID's.
+-- @function getTag
+
+---
+-- Get the tag value.
+--
+-- @function setTag
+-- @param tagvalue
+
+---
+-- Returns the owner of this component.
+--
+-- @function getOwner
