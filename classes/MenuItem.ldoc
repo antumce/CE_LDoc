@@ -1,0 +1,126 @@
+--- A clickable part of a menu.
+--
+-- Holds the menu items of a [Menu](Menu.html), [PopupMenu](PopupMenu.html),
+-- or even another MenuItem.
+--
+-- @classmod MenuItem
+
+--- MenuItem 🡄 [Component](Component.html) 🡄 [Object](Object.html)
+--
+-- @subclass Component
+
+
+--- Related Functions
+--
+-- @section relfunct
+
+--- Creates a menu item that gets added to the owner menu.
+--
+-- @function createMenuItem
+-- @tparam Menu ownermenu
+
+--- @section end
+
+
+--- Text of the menu item.
+--
+-- @prop Caption
+-- @ptype string
+
+--- Shortcut in textform to trigger the menuitem.
+--
+-- @prop Shortcut
+-- @ptype string
+
+--- Number of children attached to this menuitem.
+--
+-- @prop Count
+-- @ptype int
+
+--- The menu this item resides in.
+--
+-- @prop Menu
+-- @ptype Menu
+
+--- The menuitem this item hangs under.
+--
+-- @prop Parent
+-- @ptype MenuItem
+
+--- The position this menu item is in it's parent.
+--
+-- @prop MenuIndex
+-- @ptype int
+
+--- Array to access each child menuitem.
+--
+-- @prop Item[]
+-- @ptype array
+
+---
+--
+-- @prop [] : Item[]
+-- @ptype array
+
+--- Function to call when the menu item is activated.
+--
+-- @prop OnClick
+-- @ptype func
+
+
+--- Gets the caption of the menu item.
+--
+-- @function getCaption
+
+--- Sets the caption of the menu item.
+--
+-- @function setCaption
+-- @tparam string caption
+
+--- Returns the shortcut for this menu item.
+--
+-- @function getShortcut
+
+--- Sets the shortcut for this menuitem.
+-- A shortcut is a string in the form of ("ctrl+x").
+--
+-- @function setShortcut
+-- @param shortcut
+
+---
+--
+-- @function getCount
+
+--- Returns the menuitem object at the given index.
+--
+-- @function getItem
+-- @tparam int index
+
+--- Adds a menuItem as a submenu item.
+--
+-- @function add
+-- @param menuitem
+
+--- Adds a menuItem as a submenu item at the given index.
+--
+-- @function insert
+-- @tparam int index
+-- @param menuitem
+
+---
+--
+-- @function delete
+-- @tparam int index
+
+--- Sets an onClick event.
+--
+-- @function setOnClick
+-- @tparam func function
+
+---
+--
+-- @function getOnClick
+
+--- Executes the onClick method if one is assigned.
+--
+-- @function doClick
