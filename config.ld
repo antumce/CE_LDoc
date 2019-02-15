@@ -101,19 +101,24 @@ local function name_cropping_handler(item, default_handler, delim)
 	end
 
 	if basename ~= nil then
-		if item.type == 'prop' and item.tags.idx then
+		if item.type == 'prop' and (item.tags.idx or (item.tags.ptype and item.tags.ptype[1] == 'array')) then
 			local sb = createStringBuilder()
-			sb.append(basename .. '[ ')
-			local count = 0
-			for _, T in pairs(item.tags.idx) do
-				count = count + 1
-				if count == #item.tags.idx then
-					sb.append('<i>' .. T .. '</i>')
-				else
-					sb.append('<i>' .. T .. '</i>, ')
+			sb.append(basename)
+			if not item.tags.idx then
+				sb.append(' []')
+			else
+				sb.append(' [ ')
+				local count = 0
+				for _, T in pairs(item.tags.idx) do
+					count = count + 1
+					if count == #item.tags.idx then
+						sb.append('<i>' .. T .. '</i>')
+					else
+						sb.append('<i>' .. T .. '</i>, ')
+					end
 				end
+				sb.append(' ]')
 			end
-			sb.append(' ]')
 			basename = sb.tostring()
 		end
 
