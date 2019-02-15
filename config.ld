@@ -45,7 +45,9 @@ local function indent(text)
 end
 
 -- custom types
+new_type('subclass', 'Inheritance')
 new_type('prop', 'Properties')
+alias('inherits', 'subclass')
 
 -- custom tags
 custom_tags = {
