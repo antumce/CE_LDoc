@@ -1,0 +1,250 @@
+---
+-- @classmod Control
+
+---
+-- @subclass Component
+-- @see Component
+
+
+--- The text of a control.
+--
+-- @prop Caption
+-- @ptype string
+
+--- The x position.
+--
+-- @prop Top
+-- @ptype integer
+
+--- The y position.
+--
+-- @prop Left
+-- @ptype integer
+
+--- The width of the control.
+--
+-- @prop Width
+-- @ptype integer
+
+--- The height of the control
+--
+-- @prop Height
+-- @ptype integer
+
+--- The usable width inside the control (minus the borders).
+--
+-- @prop ClientWidth
+-- @ptype integer
+
+--- The usable height the control (minus the borders).
+--
+-- @prop ClientHeight
+-- @ptype integer
+
+--- Alignment of the control.
+--
+-- @prop Align
+-- @ptype AlignmentOption
+
+--- Determines if the object is usable or greyed out.
+--
+-- @prop Enabled
+-- @ptype boolean
+
+--- Determines if the object is visible or not.
+--
+-- @prop Visible
+-- @ptype boolean
+
+--- The color of the object. Does not affect the caption.
+--
+-- @prop Color
+-- @ptype ColorDefinition/RGBInteger
+
+--- The owner of this control.
+--
+-- @prop Parent
+-- @ptype WinControl
+
+--- The popup menu that shows when rightclicking the control.
+--
+-- @prop PopupMenu
+-- @ptype PopupMenu
+
+--- The font class associated with the control.
+--
+-- @prop Font
+-- @ptype Font
+
+--- The function to call when a button is pressed.
+--
+-- @prop OnClick
+-- @ptype function
+
+
+---
+--
+-- @function getLeft
+
+---
+--
+-- @function setLeft
+-- @tparam int left
+
+---
+--
+-- @function getTop
+
+---
+--
+-- @function setTop
+-- @tparam int top
+
+---
+--
+-- @function getWidth
+
+---
+--
+-- @function setWidth
+-- @tparam int width
+
+---
+--
+-- @function getHeight
+
+---
+--
+-- @function setHeight
+
+--- Sets the text on a control.
+-- All the GUI objects fall in this category.
+--
+-- @function setCaption
+-- @tparam string caption
+
+--- Returns the text of the control.
+--
+-- @function getCaption
+-- @treturn string
+
+--- Sets the x and y position of the object base don the top left position (relative to the client array of the owner object).
+--
+-- @function setPosition
+-- @tparam int x
+-- @tparam int y
+
+--- Returns the x and y position of the object (relative to the client array of the owner object).
+--
+-- @function getPosition
+
+--- Sets the width and height of the control.
+--
+-- @function setSize
+-- @tparam int width
+-- @tparam int height
+
+--- Gets the size of the control.
+--
+-- @function getSize
+
+--- Sets the alignment of the control.
+--
+-- @function setAlign
+-- @param alignmentoption
+
+--- Gets the alignment of the control.
+--
+-- @function getAlign
+-- @param alignmentoption
+
+--- Gets the enabled state of the control.
+--
+-- @function getEnabled
+
+--- Sets the enabled state of the control.
+--
+-- @function setEnabled
+-- @tparam boolean enabled
+
+--- Gets the visible state of the control.
+--
+-- @function getVisible
+
+--- Sets the visible state of the control.
+--
+-- @function setVisible
+-- @tparam boolean visible
+
+--- Gets the color.
+--
+-- @function getColor
+
+--- Sets the color.
+--
+-- @function setColor
+-- @param rgb
+
+--- Returns nil or an object that inherits from the Wincontrol class.
+--
+-- @function getParent
+
+--- Sets the parent for this control.
+--
+-- @function setParent
+-- @param wincontrol
+
+---
+--
+-- @function getPopupMenu
+
+---
+--
+-- @function setPopupMenu
+
+--- Returns the Font object of this object.
+--
+-- @function getFont
+-- @treturn Font font
+
+--- Assigns a new font object.
+-- (Not recommended to use. Change the font object that's already there if you wish to change fonts).
+--
+-- @function setFont
+
+--- Invalidates the graphical area of the control and forces and update.
+--
+-- @function repaint
+
+--- Only updates the invalidated areas.
+--
+-- @function update
+
+--- Sets the onclick routine.
+--
+-- @function setOnClick
+-- @param functionnameorstring
+
+--- Gets the onclick function.
+--
+-- @function getOnClick
+
+---  Executes the current function under onClick.
+--
+-- @function doClick
+
+--- Changes the z-order of the control so it'd at the top.
+--
+-- @function bringToFront
+
+--- Changes the z-order of the control so it'd at the back.
+--
+-- @function sendToBack
+
+--- Converts screen x,y coordinates to x,y coordinates on the control.
+--
+-- @function screenToClient
+
+--- Converts control x,y coordinates to screen coordinates.
+--
+-- @function clientToScreen
