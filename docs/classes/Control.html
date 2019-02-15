@@ -1,0 +1,1395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Component.html">Component</a></li>
+  <li><strong>Control</strong></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/MenuItem.html">MenuItem</a></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><a href="../classes/WinControl.html">WinControl</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Control</code></h1>
+<p>
+
+</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Control.Component">Component</a></td>
+	<td class="summary">Control 🡄 <a href="Component.html">Component</a> 🡄 <a href="Object.html">Object</a></td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Control.Align">Align</a></td>
+	<td class="summary">Alignment of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Caption">Caption</a></td>
+	<td class="summary">The text of a control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.ClientHeight">ClientHeight</a></td>
+	<td class="summary">The usable height the control (minus the borders).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.ClientWidth">ClientWidth</a></td>
+	<td class="summary">The usable width inside the control (minus the borders).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Color">Color</a></td>
+	<td class="summary">The color of the object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Enabled">Enabled</a></td>
+	<td class="summary">Determines if the object is usable or greyed out.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Font">Font</a></td>
+	<td class="summary">The font class associated with the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Height">Height</a></td>
+	<td class="summary">The height of the control</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Left">Left</a></td>
+	<td class="summary">The y position.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.OnClick">OnClick</a></td>
+	<td class="summary">The function to call when a button is pressed.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Parent">Parent</a></td>
+	<td class="summary">The owner of this control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.PopupMenu">PopupMenu</a></td>
+	<td class="summary">The popup menu that shows when rightclicking the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Top">Top</a></td>
+	<td class="summary">The x position.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Visible">Visible</a></td>
+	<td class="summary">Determines if the object is visible or not.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control.Width">Width</a></td>
+	<td class="summary">The width of the control.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Control:bringToFront">bringToFront ()</a></td>
+	<td class="summary">Changes the z-order of the control so it'd at the top.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:clientToScreen">clientToScreen ()</a></td>
+	<td class="summary">Converts control x,y coordinates to screen coordinates.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:doClick">doClick ()</a></td>
+	<td class="summary">Executes the current function under onClick.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getAlign">getAlign ( <i>alignmentoption</i> )</a></td>
+	<td class="summary">Gets the alignment of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getCaption">getCaption ()</a></td>
+	<td class="summary">Returns the text of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getColor">getColor ()</a></td>
+	<td class="summary">Gets the color.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getEnabled">getEnabled ()</a></td>
+	<td class="summary">Gets the enabled state of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getFont">getFont ()</a></td>
+	<td class="summary">Returns the Font object of this object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getHeight">getHeight ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getLeft">getLeft ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getOnClick">getOnClick ()</a></td>
+	<td class="summary">Gets the onclick function.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getParent">getParent ()</a></td>
+	<td class="summary">Returns nil or an object that inherits from the Wincontrol class.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getPopupMenu">getPopupMenu ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getPosition">getPosition ()</a></td>
+	<td class="summary">Returns the x and y position of the object (relative to the client array of the owner object).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getSize">getSize ()</a></td>
+	<td class="summary">Gets the size of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getTop">getTop ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getVisible">getVisible ()</a></td>
+	<td class="summary">Gets the visible state of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:getWidth">getWidth ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:repaint">repaint ()</a></td>
+	<td class="summary">Invalidates the graphical area of the control and forces and update.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:screenToClient">screenToClient ()</a></td>
+	<td class="summary">Converts screen x,y coordinates to x,y coordinates on the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:sendToBack">sendToBack ()</a></td>
+	<td class="summary">Changes the z-order of the control so it'd at the back.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setAlign">setAlign ( <i>alignmentoption</i> )</a></td>
+	<td class="summary">Sets the alignment of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setCaption">setCaption ( <i>caption</i> )</a></td>
+	<td class="summary">Sets the text on a control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setColor">setColor ( <i>rgb</i> )</a></td>
+	<td class="summary">Sets the color.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setEnabled">setEnabled ( <i>enabled</i> )</a></td>
+	<td class="summary">Sets the enabled state of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setFont">setFont ()</a></td>
+	<td class="summary">Assigns a new font object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setHeight">setHeight ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setLeft">setLeft ( <i>left</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setOnClick">setOnClick ( <i>functionnameorstring</i> )</a></td>
+	<td class="summary">Sets the onclick routine.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setParent">setParent ( <i>wincontrol</i> )</a></td>
+	<td class="summary">Sets the parent for this control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setPopupMenu">setPopupMenu ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setPosition">setPosition ( <i>x</i>, <i>y</i> )</a></td>
+	<td class="summary">Sets the x and y position of the object base don the top left position (relative to the client array of the owner object).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setSize">setSize ( <i>width</i>, <i>height</i> )</a></td>
+	<td class="summary">Sets the width and height of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setTop">setTop ( <i>top</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setVisible">setVisible ( <i>visible</i> )</a></td>
+	<td class="summary">Sets the visible state of the control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:setWidth">setWidth ( <i>width</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Control:update">update ()</a></td>
+	<td class="summary">Only updates the invalidated areas.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Control.Component"></a>
+    <strong>Component</strong>
+    </dt>
+    <dd>
+    Control 🡄 <a href="Component.html">Component</a> 🡄 <a href="Object.html">Object</a>
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Control.Align"></a>
+    <strong>Align</strong>
+    </dt>
+    <dd>
+    Alignment of the control.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">AlignmentOption</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Caption"></a>
+    <strong>Caption</strong>
+    </dt>
+    <dd>
+    The text of a control.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.ClientHeight"></a>
+    <strong>ClientHeight</strong>
+    </dt>
+    <dd>
+    The usable height the control (minus the borders).
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.ClientWidth"></a>
+    <strong>ClientWidth</strong>
+    </dt>
+    <dd>
+    The usable width inside the control (minus the borders).
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Color"></a>
+    <strong>Color</strong>
+    </dt>
+    <dd>
+    The color of the object.  Does not affect the caption.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">ColorDefinition/RGBInteger</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Enabled"></a>
+    <strong>Enabled</strong>
+    </dt>
+    <dd>
+    Determines if the object is usable or greyed out.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">boolean</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Font"></a>
+    <strong>Font</strong>
+    </dt>
+    <dd>
+    The font class associated with the control.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">Font</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Height"></a>
+    <strong>Height</strong>
+    </dt>
+    <dd>
+    The height of the control
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Left"></a>
+    <strong>Left</strong>
+    </dt>
+    <dd>
+    The y position.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.OnClick"></a>
+    <strong>OnClick</strong>
+    </dt>
+    <dd>
+    The function to call when a button is pressed.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">function</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Parent"></a>
+    <strong>Parent</strong>
+    </dt>
+    <dd>
+    The owner of this control.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">WinControl</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.PopupMenu"></a>
+    <strong>PopupMenu</strong>
+    </dt>
+    <dd>
+    The popup menu that shows when rightclicking the control.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">PopupMenu</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Top"></a>
+    <strong>Top</strong>
+    </dt>
+    <dd>
+    The x position.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Visible"></a>
+    <strong>Visible</strong>
+    </dt>
+    <dd>
+    Determines if the object is visible or not.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">boolean</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control.Width"></a>
+    <strong>Width</strong>
+    </dt>
+    <dd>
+    The width of the control.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Control:bringToFront"></a>
+    <strong>bringToFront ()</strong>
+    </dt>
+    <dd>
+    Changes the z-order of the control so it'd at the top.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:clientToScreen"></a>
+    <strong>clientToScreen ()</strong>
+    </dt>
+    <dd>
+    Converts control x,y coordinates to screen coordinates.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:doClick"></a>
+    <strong>doClick ()</strong>
+    </dt>
+    <dd>
+    Executes the current function under onClick.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getAlign"></a>
+    <strong>getAlign ( <i>alignmentoption</i> )</strong>
+    </dt>
+    <dd>
+    Gets the alignment of the control.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">alignmentoption</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getCaption"></a>
+    <strong>getCaption ()</strong>
+    </dt>
+    <dd>
+    Returns the text of the control.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getColor"></a>
+    <strong>getColor ()</strong>
+    </dt>
+    <dd>
+    Gets the color.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getEnabled"></a>
+    <strong>getEnabled ()</strong>
+    </dt>
+    <dd>
+    Gets the enabled state of the control.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getFont"></a>
+    <strong>getFont ()</strong>
+    </dt>
+    <dd>
+    Returns the Font object of this object.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/Control.html#Control.Font">Font</a></span>
+        font
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getHeight"></a>
+    <strong>getHeight ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getLeft"></a>
+    <strong>getLeft ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getOnClick"></a>
+    <strong>getOnClick ()</strong>
+    </dt>
+    <dd>
+    Gets the onclick function.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getParent"></a>
+    <strong>getParent ()</strong>
+    </dt>
+    <dd>
+    Returns nil or an object that inherits from the Wincontrol class.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getPopupMenu"></a>
+    <strong>getPopupMenu ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getPosition"></a>
+    <strong>getPosition ()</strong>
+    </dt>
+    <dd>
+    Returns the x and y position of the object (relative to the client array of the owner object).
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getSize"></a>
+    <strong>getSize ()</strong>
+    </dt>
+    <dd>
+    Gets the size of the control.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getTop"></a>
+    <strong>getTop ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getVisible"></a>
+    <strong>getVisible ()</strong>
+    </dt>
+    <dd>
+    Gets the visible state of the control.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:getWidth"></a>
+    <strong>getWidth ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:repaint"></a>
+    <strong>repaint ()</strong>
+    </dt>
+    <dd>
+    Invalidates the graphical area of the control and forces and update.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:screenToClient"></a>
+    <strong>screenToClient ()</strong>
+    </dt>
+    <dd>
+    Converts screen x,y coordinates to x,y coordinates on the control.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:sendToBack"></a>
+    <strong>sendToBack ()</strong>
+    </dt>
+    <dd>
+    Changes the z-order of the control so it'd at the back.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setAlign"></a>
+    <strong>setAlign ( <i>alignmentoption</i> )</strong>
+    </dt>
+    <dd>
+    Sets the alignment of the control.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">alignmentoption</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setCaption"></a>
+    <strong>setCaption ( <i>caption</i> )</strong>
+    </dt>
+    <dd>
+    Sets the text on a control.
+ All the GUI objects fall in this category.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">caption</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setColor"></a>
+    <strong>setColor ( <i>rgb</i> )</strong>
+    </dt>
+    <dd>
+    Sets the color.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rgb</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setEnabled"></a>
+    <strong>setEnabled ( <i>enabled</i> )</strong>
+    </dt>
+    <dd>
+    Sets the enabled state of the control.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">enabled</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setFont"></a>
+    <strong>setFont ()</strong>
+    </dt>
+    <dd>
+    Assigns a new font object.
+ (Not recommended to use. Change the font object that's already there if you wish to change fonts).
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setHeight"></a>
+    <strong>setHeight ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setLeft"></a>
+    <strong>setLeft ( <i>left</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">left</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setOnClick"></a>
+    <strong>setOnClick ( <i>functionnameorstring</i> )</strong>
+    </dt>
+    <dd>
+    Sets the onclick routine.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">functionnameorstring</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setParent"></a>
+    <strong>setParent ( <i>wincontrol</i> )</strong>
+    </dt>
+    <dd>
+    Sets the parent for this control.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">wincontrol</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setPopupMenu"></a>
+    <strong>setPopupMenu ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setPosition"></a>
+    <strong>setPosition ( <i>x</i>, <i>y</i> )</strong>
+    </dt>
+    <dd>
+    Sets the x and y position of the object base don the top left position (relative to the client array of the owner object).
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setSize"></a>
+    <strong>setSize ( <i>width</i>, <i>height</i> )</strong>
+    </dt>
+    <dd>
+    Sets the width and height of the control.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">width</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">height</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setTop"></a>
+    <strong>setTop ( <i>top</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">top</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setVisible"></a>
+    <strong>setVisible ( <i>visible</i> )</strong>
+    </dt>
+    <dd>
+    Sets the visible state of the control.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">visible</span>
+            <span class="types"><span class="type">boolean</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:setWidth"></a>
+    <strong>setWidth ( <i>width</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">width</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Control:update"></a>
+    <strong>update ()</strong>
+    </dt>
+    <dd>
+    Only updates the invalidated areas.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-15 06:40:03 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

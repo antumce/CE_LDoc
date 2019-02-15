@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Component.html">Component</a></li>
+  <li><a href="../classes/Control.html">Control</a></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/MenuItem.html">MenuItem</a></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><strong>WinControl</strong></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>WinControl</code></h1>
+<p>
+
+</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#WinControl.Control">Control</a></td>
+	<td class="summary">WinControl 🡄 <a href="Control.html">Control</a> 🡄 <a href="Component.html">Component</a> 🡄 <a href="Object.html">Object</a></td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#WinControl.Control">Control [ <i>index</i> ]</a></td>
+	<td class="summary">Array to access a child control.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl.ControlCount">ControlCount</a></td>
+	<td class="summary">The number of child controls of this wincontrol.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl.Handle">Handle</a></td>
+	<td class="summary">The internal windows handle.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl.OnEnter">OnEnter</a></td>
+	<td class="summary">Function to be called when the WinControl gains focus.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl.OnExit">OnExit</a></td>
+	<td class="summary">Function to be called when the WinControl loses focus.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:canFocus">canFocus ()</a></td>
+	<td class="summary">Returns <code>true</code> if the object can be focused.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:focused">focused ()</a></td>
+	<td class="summary">Returns <code>true</code> when focused.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:getControl">getControl ( <i>index</i> )</a></td>
+	<td class="summary">Returns a WinControl class object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:getControlAtPos">getControlAtPos ( <i>x</i>, <i>y</i> )</a></td>
+	<td class="summary">Gets the control at the given x,y position relative to the wincontrol's position.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:getControlCount">getControlCount ()</a></td>
+	<td class="summary">Returns the number of Controls attached to this class.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:getOnEnter">getOnEnter ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:getOnExit">getOnExit ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:setFocus">setFocus ()</a></td>
+	<td class="summary">Tries to set keyboard focus the object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:setLayeredAttributes">setLayeredAttributes ( <i>Key</i>, <i>Alpha</i>, <i>Flags</i> )</a></td>
+	<td class="summary">Sets the layered state for the control if possible.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:setOnEnter">setOnEnter ( <i>function</i> )</a></td>
+	<td class="summary">Sets an onEnter event (Triggered on focus enter).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:setOnExit">setOnExit ( <i>function</i> )</a></td>
+	<td class="summary">Sets an onExit event (Triggered on lost focus).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:setShape">setShape ( <i>bitmap</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#WinControl:setShape">setShape ( <i>region</i> )</a></td>
+	<td class="summary">Sets the region object as the new shape for this wincontrol.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "WinControl.Control"></a>
+    <strong>Control</strong>
+    </dt>
+    <dd>
+    WinControl 🡄 <a href="Control.html">Control</a> 🡄 <a href="Component.html">Component</a> 🡄 <a href="Object.html">Object</a>
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "WinControl.Control"></a>
+    <strong>Control [ <i>index</i> ]</strong>
+    </dt>
+    <dd>
+    Array to access a child control.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">Control</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl.ControlCount"></a>
+    <strong>ControlCount</strong>
+    </dt>
+    <dd>
+    The number of child controls of this wincontrol.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">int</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl.Handle"></a>
+    <strong>Handle</strong>
+    </dt>
+    <dd>
+    The internal windows handle.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">int</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl.OnEnter"></a>
+    <strong>OnEnter</strong>
+    </dt>
+    <dd>
+    Function to be called when the WinControl gains focus.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">func</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl.OnExit"></a>
+    <strong>OnExit</strong>
+    </dt>
+    <dd>
+    Function to be called when the WinControl loses focus.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">func</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "WinControl:canFocus"></a>
+    <strong>canFocus ()</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> if the object can be focused.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:focused"></a>
+    <strong>focused ()</strong>
+    </dt>
+    <dd>
+    Returns <code>true</code> when focused.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">bool</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:getControl"></a>
+    <strong>getControl ( <i>index</i> )</strong>
+    </dt>
+    <dd>
+    Returns a WinControl class object.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/WinControl.html#">WinControl</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:getControlAtPos"></a>
+    <strong>getControlAtPos ( <i>x</i>, <i>y</i> )</strong>
+    </dt>
+    <dd>
+    Gets the control at the given x,y position relative to the wincontrol's position.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:getControlCount"></a>
+    <strong>getControlCount ()</strong>
+    </dt>
+    <dd>
+    Returns the number of Controls attached to this class.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">int</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:getOnEnter"></a>
+    <strong>getOnEnter ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:getOnExit"></a>
+    <strong>getOnExit ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:setFocus"></a>
+    <strong>setFocus ()</strong>
+    </dt>
+    <dd>
+    Tries to set keyboard focus the object.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:setLayeredAttributes"></a>
+    <strong>setLayeredAttributes ( <i>Key</i>, <i>Alpha</i>, <i>Flags</i> )</strong>
+    </dt>
+    <dd>
+    Sets the layered state for the control if possible. </p>
+
+<p> Only Forms are supported in in windows 7 and earlier.
+ Flags can be a combination of LWA<em>ALPHA and/or LWA</em>COLORKEY.
+ See msdn SetLayeredWindowAttributes for more information
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Key</span>
+
+
+
+        </li>
+        <li><span class="parameter">Alpha</span>
+
+
+
+        </li>
+        <li><span class="parameter">Flags</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:setOnEnter"></a>
+    <strong>setOnEnter ( <i>function</i> )</strong>
+    </dt>
+    <dd>
+    Sets an onEnter event (Triggered on focus enter).
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">function</span>
+            <span class="types"><span class="type">func</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:setOnExit"></a>
+    <strong>setOnExit ( <i>function</i> )</strong>
+    </dt>
+    <dd>
+    Sets an onExit event (Triggered on lost focus).
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">function</span>
+            <span class="types"><span class="type">func</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:setShape"></a>
+    <strong>setShape ( <i>bitmap</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">bitmap</span>
+            <span class="types"><span class="type">Bitmap</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "WinControl:setShape"></a>
+    <strong>setShape ( <i>region</i> )</strong>
+    </dt>
+    <dd>
+    Sets the region object as the new shape for this wincontrol.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">region</span>
+            <span class="types"><a class="type" href="../classes/Region.html#">Region</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-15 06:40:03 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

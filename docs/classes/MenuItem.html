@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+<li><a href="#Related_Functions">Related Functions </a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Component.html">Component</a></li>
+  <li><a href="../classes/Control.html">Control</a></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><strong>MenuItem</strong></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><a href="../classes/WinControl.html">WinControl</a></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>MenuItem</code></h1>
+<p>A clickable part of a menu.</p>
+<p> Holds the menu items of a <a href="Menu.html">Menu</a>, <a href="PopupMenu.html">PopupMenu</a>,
+ or even another MenuItem.</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.Component">Component</a></td>
+	<td class="summary">MenuItem 🡄 <a href="Component.html">Component</a> 🡄 <a href="Object.html">Object</a></td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#...">...</a></td>
+	<td class="summary">Unknown property?</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.Caption">Caption</a></td>
+	<td class="summary">Text of the menu item.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.Count">Count</a></td>
+	<td class="summary">Number of children attached to this menuitem.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.Item">Item []</a></td>
+	<td class="summary">Array to access each child menuitem.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.Menu">Menu</a></td>
+	<td class="summary">The menu this item resides in.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.MenuIndex">MenuIndex</a></td>
+	<td class="summary">The position this menu item is in it's parent.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.OnClick">OnClick</a></td>
+	<td class="summary">Function to call when the menu item is activated.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.Parent">Parent</a></td>
+	<td class="summary">The menuitem this item hangs under.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem.Shortcut">Shortcut</a></td>
+	<td class="summary">Shortcut in textform to trigger the menuitem.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:add">add ( <i>menuitem</i> )</a></td>
+	<td class="summary">Adds a menuItem as a submenu item.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:delete">delete ( <i>index</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:doClick">doClick ()</a></td>
+	<td class="summary">Executes the onClick method if one is assigned.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:getCaption">getCaption ()</a></td>
+	<td class="summary">Gets the caption of the menu item.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:getCount">getCount ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:getItem">getItem ( <i>index</i> )</a></td>
+	<td class="summary">Returns the menuitem object at the given index.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:getOnClick">getOnClick ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:getShortcut">getShortcut ()</a></td>
+	<td class="summary">Returns the shortcut for this menu item.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:insert">insert ( <i>index</i>, <i>menuitem</i> )</a></td>
+	<td class="summary">Adds a menuItem as a submenu item at the given index.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:setCaption">setCaption ( <i>caption</i> )</a></td>
+	<td class="summary">Sets the caption of the menu item.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:setOnClick">setOnClick ( <i>function</i> )</a></td>
+	<td class="summary">Sets an onClick event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:setShortcut">setShortcut ( <i>shortcut</i> )</a></td>
+	<td class="summary">Sets the shortcut for this menuitem.</td>
+	</tr>
+</table>
+<h2><a href="#Related_Functions">Related Functions </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#MenuItem:createMenuItem">createMenuItem ( <i>ownermenu</i> )</a></td>
+	<td class="summary">Creates a menu item that gets added to the owner menu.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "MenuItem.Component"></a>
+    <strong>Component</strong>
+    </dt>
+    <dd>
+    MenuItem 🡄 <a href="Component.html">Component</a> 🡄 <a href="Object.html">Object</a>
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "..."></a>
+    <strong>...</strong>
+    </dt>
+    <dd>
+    Unknown property? </p>
+
+<p> Item []</p>
+
+<p> See: <a href="https://github.com/cheat-engine/cheat-engine/blob/ec8d500/Cheat%20Engine/bin/celua.txt#L822">source</a>.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">array</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem.Caption"></a>
+    <strong>Caption</strong>
+    </dt>
+    <dd>
+    Text of the menu item.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem.Count"></a>
+    <strong>Count</strong>
+    </dt>
+    <dd>
+    Number of children attached to this menuitem.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">int</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem.Item"></a>
+    <strong>Item []</strong>
+    </dt>
+    <dd>
+    Array to access each child menuitem.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">array</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem.Menu"></a>
+    <strong>Menu</strong>
+    </dt>
+    <dd>
+    The menu this item resides in.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">Menu</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem.MenuIndex"></a>
+    <strong>MenuIndex</strong>
+    </dt>
+    <dd>
+    The position this menu item is in it's parent.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">int</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem.OnClick"></a>
+    <strong>OnClick</strong>
+    </dt>
+    <dd>
+    Function to call when the menu item is activated.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">func</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem.Parent"></a>
+    <strong>Parent</strong>
+    </dt>
+    <dd>
+    The menuitem this item hangs under.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">MenuItem</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem.Shortcut"></a>
+    <strong>Shortcut</strong>
+    </dt>
+    <dd>
+    Shortcut in textform to trigger the menuitem.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "MenuItem:add"></a>
+    <strong>add ( <i>menuitem</i> )</strong>
+    </dt>
+    <dd>
+    Adds a menuItem as a submenu item.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">menuitem</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:delete"></a>
+    <strong>delete ( <i>index</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:doClick"></a>
+    <strong>doClick ()</strong>
+    </dt>
+    <dd>
+    Executes the onClick method if one is assigned.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:getCaption"></a>
+    <strong>getCaption ()</strong>
+    </dt>
+    <dd>
+    Gets the caption of the menu item.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:getCount"></a>
+    <strong>getCount ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:getItem"></a>
+    <strong>getItem ( <i>index</i> )</strong>
+    </dt>
+    <dd>
+    Returns the menuitem object at the given index.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:getOnClick"></a>
+    <strong>getOnClick ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:getShortcut"></a>
+    <strong>getShortcut ()</strong>
+    </dt>
+    <dd>
+    Returns the shortcut for this menu item.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:insert"></a>
+    <strong>insert ( <i>index</i>, <i>menuitem</i> )</strong>
+    </dt>
+    <dd>
+    Adds a menuItem as a submenu item at the given index.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">menuitem</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:setCaption"></a>
+    <strong>setCaption ( <i>caption</i> )</strong>
+    </dt>
+    <dd>
+    Sets the caption of the menu item.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">caption</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:setOnClick"></a>
+    <strong>setOnClick ( <i>function</i> )</strong>
+    </dt>
+    <dd>
+    Sets an onClick event.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">function</span>
+            <span class="types"><span class="type">func</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "MenuItem:setShortcut"></a>
+    <strong>setShortcut ( <i>shortcut</i> )</strong>
+    </dt>
+    <dd>
+    Sets the shortcut for this menuitem.
+ A shortcut is a string in the form of ("ctrl+x").
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">shortcut</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Related_Functions"></a>Related Functions </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "MenuItem:createMenuItem"></a>
+    <strong>createMenuItem ( <i>ownermenu</i> )</strong>
+    </dt>
+    <dd>
+    Creates a menu item that gets added to the owner menu.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">ownermenu</span>
+            <span class="types"><a class="type" href="../classes/Menu.html#">Menu</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-15 06:40:03 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

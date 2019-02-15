@@ -41,7 +41,15 @@
 <h2>Classes</h2>
 <ul class="nowrap">
   <li><strong>Component</strong></li>
+  <li><a href="../classes/Control.html">Control</a></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/MenuItem.html">MenuItem</a></li>
   <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><a href="../classes/WinControl.html">WinControl</a></li>
 </ul>
 <h2>Modules</h2>
 <ul class="nowrap">
@@ -65,19 +73,17 @@
 <table class="function_list">
 	<tr>
 	<td class="name" nowrap><a href="#Component.Object">Object</a></td>
-	<td class="summary">
-
-</td>
+	<td class="summary">Component 🡄 <a href="Object.html">Object</a></td>
 	</tr>
 </table>
 <h2><a href="#Properties">Properties</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#Component.Component">Component[ <i>int</i> ]</a></td>
+	<td class="name" nowrap><a href="#Component.Component">Component [ <i>int</i> ]</a></td>
 	<td class="summary">Array containing the child components.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Component.ComponentByName">ComponentByName[ <i>string</i> ]</a></td>
+	<td class="name" nowrap><a href="#Component.ComponentByName">ComponentByName [ <i>string</i> ]</a></td>
 	<td class="summary">Returns a component based on the name.</td>
 	</tr>
 	<tr>
@@ -100,35 +106,35 @@
 <h2><a href="#Methods">Methods</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#Component:findComponentByName">findComponentByName</a></td>
+	<td class="name" nowrap><a href="#Component:findComponentByName">findComponentByName ( <i>name</i> )</a></td>
 	<td class="summary">Returns the component with this name.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Component:getComponent">getComponent</a></td>
+	<td class="name" nowrap><a href="#Component:getComponent">getComponent ( <i>index</i> )</a></td>
 	<td class="summary">Returns the specific component.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Component:getComponentCount">getComponentCount</a></td>
+	<td class="name" nowrap><a href="#Component:getComponentCount">getComponentCount ()</a></td>
 	<td class="summary">Returns the number of components attached to his component.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Component:getName">getName</a></td>
+	<td class="name" nowrap><a href="#Component:getName">getName ()</a></td>
 	<td class="summary">Return the name.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Component:getOwner">getOwner</a></td>
+	<td class="name" nowrap><a href="#Component:getOwner">getOwner ()</a></td>
 	<td class="summary">Returns the owner of this component.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Component:getTag">getTag</a></td>
+	<td class="name" nowrap><a href="#Component:getTag">getTag ()</a></td>
 	<td class="summary">Sets an integer value.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Component:setName">setName</a></td>
+	<td class="name" nowrap><a href="#Component:setName">setName ( <i>newname</i> )</a></td>
 	<td class="summary">Changes the name.</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Component:setTag">setTag</a></td>
+	<td class="name" nowrap><a href="#Component:setTag">setTag ( <i>tagvalue</i> )</a></td>
 	<td class="summary">Get the tag value.</td>
 	</tr>
 </table>
@@ -145,9 +151,7 @@
     <strong>Object</strong>
     </dt>
     <dd>
-
-
-
+    Component 🡄 <a href="Object.html">Object</a>
 
     </ul>
     </ul>
@@ -155,10 +159,6 @@
 
 
 
-    <h3>See also:</h3>
-    <ul>
-         <a href="../classes/Object.html#">Object</a>
-    </ul>
 
 
 </dd>
@@ -168,7 +168,7 @@
     <dl class="function">
     <dt>
     <a name = "Component.Component"></a>
-    <strong>Component[ <i>int</i> ]</strong>
+    <strong>Component [ <i>int</i> ]</strong>
     </dt>
     <dd>
     Array containing the child components.  Starts at 0. Readonly.
@@ -187,7 +187,7 @@
 </dd>
     <dt>
     <a name = "Component.ComponentByName"></a>
-    <strong>ComponentByName[ <i>string</i> ]</strong>
+    <strong>ComponentByName [ <i>string</i> ]</strong>
     </dt>
     <dd>
     Returns a component based on the name.  Readonly.
@@ -286,7 +286,7 @@
     <dl class="function">
     <dt>
     <a name = "Component:findComponentByName"></a>
-    <strong>findComponentByName</strong>
+    <strong>findComponentByName ( <i>name</i> )</strong>
     </dt>
     <dd>
     Returns the component with this name.
@@ -310,7 +310,7 @@
 </dd>
     <dt>
     <a name = "Component:getComponent"></a>
-    <strong>getComponent</strong>
+    <strong>getComponent ( <i>index</i> )</strong>
     </dt>
     <dd>
     Returns the specific component.
@@ -335,7 +335,7 @@
 </dd>
     <dt>
     <a name = "Component:getComponentCount"></a>
-    <strong>getComponentCount</strong>
+    <strong>getComponentCount ()</strong>
     </dt>
     <dd>
     Returns the number of components attached to his component.
@@ -351,7 +351,7 @@
 </dd>
     <dt>
     <a name = "Component:getName"></a>
-    <strong>getName</strong>
+    <strong>getName ()</strong>
     </dt>
     <dd>
     Return the name.
@@ -367,7 +367,7 @@
 </dd>
     <dt>
     <a name = "Component:getOwner"></a>
-    <strong>getOwner</strong>
+    <strong>getOwner ()</strong>
     </dt>
     <dd>
     Returns the owner of this component.
@@ -383,7 +383,7 @@
 </dd>
     <dt>
     <a name = "Component:getTag"></a>
-    <strong>getTag</strong>
+    <strong>getTag ()</strong>
     </dt>
     <dd>
     Sets an integer value.  You can use this for ID's.
@@ -399,7 +399,7 @@
 </dd>
     <dt>
     <a name = "Component:setName"></a>
-    <strong>setName</strong>
+    <strong>setName ( <i>newname</i> )</strong>
     </dt>
     <dd>
     Changes the name.
@@ -424,7 +424,7 @@
 </dd>
     <dt>
     <a name = "Component:setTag"></a>
-    <strong>setTag</strong>
+    <strong>setTag ( <i>tagvalue</i> )</strong>
     </dt>
     <dd>
     Get the tag value.
@@ -453,7 +453,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
-<i style="float:right;">Last updated 2019-02-15 02:23:19 </i>
+<i style="float:right;">Last updated 2019-02-15 06:40:03 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>
