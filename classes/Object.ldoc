@@ -1,0 +1,32 @@
+--- Base class for all objects.
+--
+-- @classmod Object
+
+
+--- Name of class.
+--
+-- @prop ClassName
+-- @ptype string
+
+--- Returns the ClassName.
+--
+-- @function getClassName
+-- @return `string` : class name
+-- @see ClassName
+
+--- Returns the address of the specific field.
+--
+-- @function fieldAddress
+-- @tparam string fieldname
+
+---
+-- @function methodAddress
+-- @tparam string methodname
+
+---
+-- @function methodName
+-- @tparam integer address
+
+--- Destroys the object.
+--
+-- @function destroy
