@@ -82,4 +82,9 @@ custom_tags = {
 			return sb.tostring()
 		end,
 	},
+	{
+		'idx',
+		hidden = true,
+		title = 'Index',
+	},
 }
