@@ -3,6 +3,7 @@ project = 'Cheat Engine'
 dir = 'docs'
 not_luadoc = true
 format = 'markdown'
+sort = true
 file = {
 	'classes',
 	'functions',
