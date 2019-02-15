@@ -1,0 +1,112 @@
+---
+-- @classmod WinControl
+
+--- WinControl 🡄 Control 🡄 Component 🡄 Object
+--
+-- @subclass Control
+-- @see Control
+
+
+--- The internal windows handle.
+--
+-- @prop Handle
+-- @ptype int
+
+-- May reduce flickering.
+-- Graphical updates will go to a offscreen bitmap which will then be shown
+-- on the screen instead of directly to the screen.
+--
+-- @prop DoubleBuffered
+-- @ptype bool
+
+--- The number of child controls of this wincontrol.
+--
+-- @prop ControlCount
+-- @ptype int
+
+--- Array to access a child control.
+--
+-- @prop Control
+-- @idx index
+-- @ptype Control
+
+--- Function to be called when the WinControl gains focus.
+--
+-- @prop OnEnter
+-- @ptype func
+
+--- Function to be called when the WinControl loses focus.
+--
+-- @prop OnExit
+-- @ptype func
+
+
+--- Returns the number of Controls attached to this class.
+--
+-- @function getControlCount
+-- @treturn int
+
+--- Returns a WinControl class object.
+--
+-- @function getControl
+-- @tparam int index
+-- @treturn WinControl
+
+--- Gets the control at the given x,y position relative to the wincontrol's position.
+--
+-- @function getControlAtPos
+-- @tparam int x
+-- @tparam int y
+
+--- Returns `true` if the object can be focused.
+--
+-- @function canFocus
+-- @treturn bool
+
+--- Returns `true` when focused.
+--
+-- @function focused
+-- @treturn bool
+
+--- Tries to set keyboard focus the object.
+--
+-- @function setFocus
+
+--- Sets the region object as the new shape for this wincontrol.
+--
+-- @function setShape
+-- @tparam Region region
+
+---
+--
+-- @function setShape
+-- @tparam Bitmap bitmap
+
+--- Sets an onEnter event (Triggered on focus enter).
+--
+-- @function setOnEnter
+-- @tparam func function
+
+---
+--
+-- @function getOnEnter
+
+--- Sets an onExit event (Triggered on lost focus).
+--
+-- @function setOnExit
+-- @tparam func function
+
+---
+--
+-- @function getOnExit
+
+--- Sets the layered state for the control if possible.
+--
+-- Only Forms are supported in in windows 7 and earlier.
+-- Flags can be a combination of LWA_ALPHA and/or LWA_COLORKEY.
+-- See msdn SetLayeredWindowAttributes for more information
+--
+-- @function setLayeredAttributes
+-- @param Key
+-- @param Alpha
+-- @param Flags
