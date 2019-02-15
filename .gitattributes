@@ -1,0 +1,2 @@
+# preserve LF line endings in doc sources
+*.ldoc text eol=lf
