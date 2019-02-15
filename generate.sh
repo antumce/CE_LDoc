@@ -17,3 +17,9 @@ fi
 
 # generate new docs
 ldoc "${DIR_ROOT}"
+
+# modify "Modules" header to "Functions"
+# FIXME: do this within config.ld
+for F in $(find docs/ -type f -name "*.html"); do
+	sed -i -e 's|<h2>Modules</h2>|<h2>Functions</h2>|' "$F";
+done
