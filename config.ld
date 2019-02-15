@@ -88,3 +88,51 @@ custom_tags = {
 		title = 'Index',
 	},
 }
+
+local function name_cropping_handler(item, default_handler, delim)
+	if delim == nil then delim = '.' end
+
+	local basename = nil
+	if string.find(item.name, delim) then
+		local s = string.split(item.name, delim)
+		if #s > 1 then
+			basename = s[2]
+		end
+	end
+
+	if basename ~= nil then
+		if item.type == 'prop' and item.tags.idx then
+			local sb = createStringBuilder()
+			sb.append(basename .. '[ ')
+			local count = 0
+			for _, T in pairs(item.tags.idx) do
+				count = count + 1
+				if count == #item.tags.idx then
+					sb.append('<i>' .. T .. '</i>')
+				else
+					sb.append('<i>' .. T .. '</i>, ')
+				end
+			end
+			sb.append(' ]')
+			basename = sb.tostring()
+		end
+
+		return basename
+	end
+
+	return default_handler(item)
+end
+
+custom_display_name_handler = function(item, default_handler)
+	for _, T in pairs({'subclass', 'prop',}) do
+		if item.type == T then
+			return name_cropping_handler(item, default_handler)
+		end
+	end
+
+	if item.type == 'function' then
+		return name_cropping_handler(item, default_handler, ':')
+	end
+
+	return default_handler(item)
+end
