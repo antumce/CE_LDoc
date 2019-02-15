@@ -123,6 +123,30 @@ local function name_cropping_handler(item, default_handler, delim)
 	return default_handler(item)
 end
 
+local function function_display_handler(item, default_handler)
+	local ret = name_cropping_handler(item, default_handler, ':')
+
+	local sb = createStringBuilder()
+	sb.append(ret)
+	if #item.params == 0 then
+		sb.append(' ()')
+	else
+		sb.append(' ( ')
+		local count = 0
+		for _, p in ipairs(item.params) do
+			count = count + 1
+			if count == #item.params then
+				sb.append('<i>' .. p .. '</i>')
+			else
+				sb.append('<i>' .. p .. '</i>, ')
+			end
+		end
+		sb.append(' )')
+	end
+
+	return sb.tostring()
+end
+
 custom_display_name_handler = function(item, default_handler)
 	for _, T in pairs({'subclass', 'prop',}) do
 		if item.type == T then
@@ -131,7 +155,7 @@ custom_display_name_handler = function(item, default_handler)
 	end
 
 	if item.type == 'function' then
-		return name_cropping_handler(item, default_handler, ':')
+		return function_display_handler(item, default_handler)
 	end
 
 	return default_handler(item)
