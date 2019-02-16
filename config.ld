@@ -82,8 +82,14 @@ custom_tags = {
 			local last = item:sub(#first+1)
 			local sb = createStringBuilder()
 			sb.insert(first)
+
 			if table.contains(prop_types, first) then
+				-- link to external reference
 				sb.prepend('\n\t<a href="' .. prop_types[first].url .. '">')
+				sb.append('</a>\n')
+			elseif isfile('classes/' .. first .. '.ldoc') then
+				-- link to local reference
+				sb.prepend('\n\t<a href="' .. first .. '.html">')
 				sb.append('</a>\n')
 			end
 			if last ~= nil then
