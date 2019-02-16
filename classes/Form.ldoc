@@ -1,0 +1,128 @@
+---
+--
+-- @classmod Form
+
+--- Form &#x1f844; [ScrollingWinControl](ScrollingWinControl.html)  &#x1f844; [CustomControl](CustomControl.html) &#x1f844; [WinControl](WinControl.html) &#x1f844; [Control](Control.html) &#x1f844; [Component](Component) &#x1f844; [Object](Object.html)
+--
+-- @subclass ScrollingWinControl
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a new Form.
+--
+-- @function createForm
+-- @treturn Form
+
+--- @section end
+
+
+--- Allows files to be dragged into the form.
+--
+-- @prop AllowDropFiles
+-- @ptype boolean
+
+--- The current ModalResult value of the form.
+--
+-- Note: When this value gets set the modal form will close
+--
+-- @prop ModalResult
+-- @ptype integer
+
+--- The main menu of the form.
+--
+-- @prop Menu
+-- @ptype MainMenu
+
+--- The function to call when the form gets closed.
+--
+-- @prop OnClose
+-- @ptype function(sender)
+
+--- Called when files are dragged on top of the form.
+--
+-- Filenames is an arraytable with the files.
+--
+-- @prop OnDropFiles
+-- @ptype function(sender, {filenames})
+
+--- The current state of the form.
+--
+-- Possible values: *fsCreating*, *fsVisible*, *fsShowing*, *fsModal*, *fsCreatedMDIChild*, *fsBorderStyleChanged*, *fsFormStyleChanged*, *fsFirstShow*, *fsDisableAutoSize*
+--
+-- @prop FormState
+-- @ptype FormState string (ReadOnly)
+
+
+--- Places the form at the center of the screen.
+--
+-- @function centerScreen
+
+--- Hide the form.
+--
+-- @function hide
+
+--- Show the form.
+--
+-- @function show
+
+--- Closes the form.
+-- Without an onClose this will be the same as hide.
+--
+-- @function close
+
+--- Brings the form to the foreground.
+--
+-- @function bringToFront
+
+--- Show the form and wait for it to close and get the close result.
+--
+-- @function showModal
+
+--- Returns true if the specified form has focus.
+--
+-- @function isForegroundWindow
+-- @treturn boolean
+
+--- Return a CloseAction to determine how to close the window.
+--
+-- function (sender)
+--
+-- @function setOnClose
+-- @param function
+
+--- Returns the function.
+--
+-- @function getOnClose
+-- @treturn function
+
+--- Returns the mainmenu object of this form.
+--
+-- @function getMenu
+-- @treturn MainMenu
+
+---
+--
+-- @function setMenu
+-- @tparam MainMenu menu
+
+--- Sets the borderstyle of the window.
+--
+-- @function setBorderStyle
+-- @param borderstyle
+
+---
+--
+-- @function getBorderStyle
+
+--- Draws the contents of the form to a rasterimage class object.
+--
+-- @function printToRasterImage
+-- @param rasterimage
+
+--- Starts dragging the Form.
+--
+-- Call this on mousedown on any object if you wish that the mousemove will drag the whole Form arround. Useful for borderless windows (Dragging will stop when the mouse button is released).
+--
+-- @function dragNow
