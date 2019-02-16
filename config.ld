@@ -177,15 +177,35 @@ local function function_display_handler(item, default_handler)
 	return sb.tostring()
 end
 
-custom_display_name_handler = function(item, default_handler)
-	for _, T in pairs({'subclass', 'prop',}) do
-		if item.type == T then
-			return property_display_handler(item)
+local function subclass_display_handler(item, default_handler)
+	for a, b in pairs(item) do
+		if a == 'summary' then
+			if string.find(b, '&#x1f844;') then
+				-- TODO: need a method to strip whitespace from strings
+				local inherits = string.split(b, ' &#x1f844; ')
+				for idx = 1, #inherits, 1 do
+					if isfile('classes/' .. inherits[idx] .. '.ldoc') then
+						inherits[idx] = '<a href="' .. inherits[idx] .. '.html">' .. inherits[idx] .. '</a>'
+					end
+				end
+
+				-- join back into single string
+				item['summary'] = table.concat(inherits, ' &#x1f844; ')
+			end
 		end
 	end
 
+	basename = cropName(item.name)
+	return basename
+end
+
+custom_display_name_handler = function(item, default_handler)
 	if item.type == 'function' then
 		return function_display_handler(item, default_handler)
+	elseif item.type == 'prop' then
+		return property_display_handler(item)
+	elseif item.type == 'subclass' then
+		return subclass_display_handler(item)
 	end
 
 	return default_handler(item)
