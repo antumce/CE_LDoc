@@ -1,0 +1,33 @@
+---
+--
+-- @classmod Application
+
+--- Application [CustomApplication](CustomApplication.html) &#x1f844; [Component](Component.html) &#x1f844; [Object](Object.html)
+--
+-- @subclass CustomApplication
+
+
+--- The title of cheat engine in the bar.
+--
+-- @prop Title
+
+--- The icon of Cheat Engine in the bar.
+--
+-- @prop Icon
+
+
+--- Shows the cheat engine app.
+--
+-- @function bringToFront
+
+---
+--
+-- @function processMessages
+
+---
+--
+-- @function terminate
+
+---
+--
+-- @function minimize
