@@ -1,0 +1,109 @@
+---
+--
+-- @classmod Font
+
+--- Font &#x1f844; CustomFont &#x1f844; CanvasHelper &#x1f844; Object
+--
+-- @subclass CustomFont
+
+
+--- Creation
+--
+-- @section creation
+
+--- Returns a font object.
+--
+-- (default initialized based on the main ce window).
+--
+-- @function createFont
+-- @treturn Font
+
+--- @section end
+
+
+---
+--
+-- @prop Name
+-- @ptype string
+
+---
+--
+-- @prop Size
+-- @ptype integer
+
+---
+--
+-- @prop Height
+-- @ptype integer
+
+---
+--
+-- @prop Orientation
+-- @ptype integer
+
+---
+--
+-- Possible values: 'fpDefault', 'fpVariable', 'fpFixed'
+--
+-- @prop Pitch
+-- @ptype string
+
+---
+--
+-- @prop Color
+-- @ptype integer
+
+---
+--
+-- @prop CharSet
+-- @ptype integer
+
+---
+--
+-- Possible values: 'fqDefault', 'fqDraft', 'fqProof', 'fqNonAntialiased', 'fqAntialiased', 'fqCleartype', 'fqCleartypeNatural'
+--
+-- @prop Quality
+-- @ptype string
+
+--- Style of the font.
+--
+-- Possible values: ['fsBold', 'fsItalic', 'fsStrikeOut', 'fsUnderline']
+--
+-- @prop Style
+-- @ptype string set
+
+
+--- Gets the fontname of the font.
+--
+-- @function getName
+-- @treturn string
+
+--- Sets the fontname of the font.
+--
+-- @function setName
+-- @tparam string name
+
+--- Gets the size of the font.
+--
+-- @function getSize
+-- @treturn integer
+
+--- Sets the size of the font.
+--
+-- @function setSize
+-- @tparam integer size
+
+--- Gets the color of the font.
+--
+-- @function getColor
+-- @treturn integer
+
+--- Sets the color of the font.
+--
+-- @function setColor
+-- @tparam integer color
+
+--- Copies the contents of the font given as parameter to this font.
+--
+-- @function assign
+-- @param font
