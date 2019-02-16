@@ -1,0 +1,83 @@
+---
+--
+-- @classmod RadioGroup
+
+--- RadioGroup &#x1f844; GroupBox &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass GroupBox
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a RadioGroup class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createRadioGroup
+-- @tparam WinControl owner
+-- @treturn RadioGroup
+
+--- @section end
+
+
+--- Strings derived object containings all the items in the list.
+--
+-- @prop Items
+-- @ptype Strings
+
+--- The number of columns to split the items into.
+--
+-- @prop Columns
+-- @ptype integer
+
+--- The currently selected item.
+--
+-- @prop ItemIndex
+-- @ptype integer
+
+--- Called when the control is clicked.
+--
+-- @prop OnClick
+-- @ptype function
+
+
+--- Returns the number of rows.
+--
+-- @function getRows
+-- @treturn integer
+
+--- Returns a Strings object.
+--
+-- @function getItems
+-- @treturn Strings
+
+--- Returns the nuber of columns.
+--
+-- @function getColumns
+-- @treturn integer Number of columns.
+
+---
+--
+-- @function setColumns
+-- @tparam integer columns
+
+---
+--
+-- @function getItemIndex
+-- @treturn integer
+
+---
+--
+-- @function setItemIndex
+-- @tparam integer itemindex
+
+---
+--
+-- @function setOnClick
+-- @tparam function onclick
+
+---
+--
+-- @function getOnClick
+-- @treturn function
