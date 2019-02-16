@@ -11,6 +11,20 @@ file = {
 
 readme = "README.md"
 
+--- Function to check if a file exists.
+--
+-- FIXME: Only works if file can be opened for reading.
+local function isfile(filename)
+	local exists = false
+	local f = io.open(filename, 'r')
+	if f ~= nil then
+		exists = true
+		io.close(f)
+	end
+
+	return exists
+end
+
 local function createStringBuilder(var)
 	local ret = {}
 	ret.strings = {}
