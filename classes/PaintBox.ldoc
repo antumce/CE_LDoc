@@ -1,0 +1,19 @@
+---
+--
+-- @classmod PaintBox
+
+--- PaintBox &#x1f844; GraphicControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass GraphicControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a Paintbox class object.
+--
+-- @function createPaintBox
+-- @param owner
+
+--- @section end

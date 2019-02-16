@@ -1,0 +1,20 @@
+---
+--
+-- @classmod Label
+
+--- Label &#x1f844; GraphicControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass GraphicControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a Label class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createLabel
+-- @tparam WinControl owner
+
+--- @section end

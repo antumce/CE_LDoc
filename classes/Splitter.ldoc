@@ -1,0 +1,20 @@
+---
+--
+-- @classmod Splitter
+
+--- Splitter &#x1f844; CustomControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass CustomControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a Splitter class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createSplitter
+-- @tparam WinControl owner
+
+--- @section end
