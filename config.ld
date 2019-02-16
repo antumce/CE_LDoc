@@ -9,6 +9,8 @@ file = {
 	'functions',
 }
 
+readme = "README.md"
+
 local function createStringBuilder(var)
 	local ret = {}
 	ret.strings = {}
