@@ -1,0 +1,38 @@
+---
+--
+-- @classmod Button
+
+--- Button &#x1f844; ButtonControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass ButtonControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a Button class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createButton
+-- @tparam WinControl owner
+-- @treturn Button
+
+--- @section end
+
+--- The result this button will give the modalform when clicked.
+--
+-- @prop ModalResult
+-- @ptype ModalResult
+
+
+---
+--
+-- @function getModalResult
+-- @param button
+
+---
+--
+-- @function setModalResult
+-- @param button
+-- @param mr
