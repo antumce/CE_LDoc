@@ -1,0 +1,7 @@
+--- Common ancestor of several button like objects.
+--
+-- @classmod ButtonControl
+
+--- ButtonControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
