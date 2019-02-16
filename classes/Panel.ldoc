@@ -1,0 +1,91 @@
+---
+--
+-- @classmod Panel
+
+--- Panel &#x1f844; CustomControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass CustomControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a Panel class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createPanel
+-- @tparam WinControl owner
+-- @treturn Panel
+
+--- @section end
+
+
+---
+--
+-- @prop Alignment alignment
+
+---
+--
+-- @prop BevelInner panelBevel
+
+---
+--
+-- @prop BevelOuter panelBevel
+
+---
+--
+-- @prop BevelWidth
+-- @ptype integer
+
+---
+--
+-- @prop FullRepaint
+-- @ptype boolean
+
+
+--- Gets the alignment property.
+--
+-- @function getAlignment
+
+--- Sets the alignment property.
+--
+-- @function setAlignment
+-- @param alignment
+
+---
+--
+-- @function getBevelInner
+
+---
+--
+-- @function setBevelInner
+-- @param PanelBevel
+
+---
+--
+-- @function getBevelOuter
+
+---
+--
+-- @function setBevelOuter
+-- @param PanelBevel
+
+---
+--
+-- @function getBevelWidth
+
+---
+--
+-- @function setBevelWidth
+-- @param BevelWidth
+
+---
+--
+-- @function getFullRepaint
+-- @treturn boolean
+
+---
+--
+-- @function setFullRepaint
+-- @tparam boolean fullrepaint
