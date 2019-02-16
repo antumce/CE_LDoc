@@ -111,47 +111,50 @@ custom_tags = {
 	},
 }
 
-local function name_cropping_handler(item, default_handler, delim)
+local function cropName(name, delim)
+	-- default is single period (.)
 	if delim == nil then delim = '.' end
 
-	local basename = nil
-	if string.find(item.name, delim) then
-		local s = string.split(item.name, delim)
+	local basename = name
+	if string.find(basename, delim) then
+		local s = string.split(basename, delim)
 		if #s > 1 then
 			basename = s[2]
 		end
 	end
 
-	if basename ~= nil then
-		if item.type == 'prop' and (item.tags.idx or (item.tags.ptype and item.tags.ptype[1] == 'array')) then
-			local sb = createStringBuilder()
-			sb.append(basename)
-			if not item.tags.idx then
-				sb.append(' []')
-			else
-				sb.append(' [ ')
-				local count = 0
-				for _, T in pairs(item.tags.idx) do
-					count = count + 1
-					if count == #item.tags.idx then
-						sb.append('<i>' .. T .. '</i>')
-					else
-						sb.append('<i>' .. T .. '</i>, ')
-					end
-				end
-				sb.append(' ]')
-			end
-			basename = sb.tostring()
-		end
+	return basename
+end
 
-		return basename
+local function property_display_handler(item)
+	basename = cropName(item.name)
+
+	if item.tags.idx or (item.tags.ptype and item.tags.ptype[1] == 'array') then
+		local sb = createStringBuilder()
+		sb.append(basename)
+		if not item.tags.idx then
+			sb.append(' []')
+		else
+			sb.append(' [ ')
+			local count = 0
+			for _, T in pairs(item.tags.idx) do
+				count = count + 1
+				if count == #item.tags.idx then
+					sb.append('<i>' .. T .. '</i>')
+				else
+					sb.append('<i>' .. T .. '</i>, ')
+				end
+			end
+			sb.append(' ]')
+		end
+		basename = sb.tostring()
 	end
 
-	return default_handler(item)
+	return basename
 end
 
 local function function_display_handler(item, default_handler)
-	local ret = name_cropping_handler(item, default_handler, ':')
+	local ret = cropName(item.name, ':')
 
 	local sb = createStringBuilder()
 	sb.append(ret)
@@ -177,7 +180,7 @@ end
 custom_display_name_handler = function(item, default_handler)
 	for _, T in pairs({'subclass', 'prop',}) do
 		if item.type == T then
-			return name_cropping_handler(item, default_handler)
+			return property_display_handler(item)
 		end
 	end
 
