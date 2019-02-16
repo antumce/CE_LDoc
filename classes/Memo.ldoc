@@ -1,0 +1,109 @@
+---
+--
+-- @classmod Memo
+
+--- Memo &#x1f844; Edit &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass Edit
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a Memo class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createMemo
+-- @tparam WinControl owner
+-- @treturn Memo
+
+--- @section end
+
+
+--- Strings object for this memo.
+--
+-- @prop Lines
+-- @ptype Strings
+
+--- Set if words at the end of the control should go to the next line.
+--
+-- @prop WordWrap
+-- @ptype boolean
+
+--- Set if tabs will add a tab to the memo.
+-- False if tab will go to the next control.
+--
+-- @prop WantTabs
+-- @ptype boolean
+
+--- Set if returns will send a event or not.
+--
+-- @prop WantReturns
+-- @ptype boolean
+
+--- Set the type of ascrollbars to show.
+--
+-- Possible value: ssNone, ssHorizontal, ssVertical, ssBoth, ssAutoHorizontal, ssAutoVertical, ssAutoBoth
+--
+-- @prop Scrollbars
+-- @ptype Scrollstyle
+
+
+---
+--
+-- @function append
+-- @param string
+
+--- Returns a Strings class.
+--
+-- @function getLines
+
+---
+--
+-- @function getWordWrap
+-- @treturn boolean
+
+---
+--
+-- @function setWordWrap
+-- @tparam boolean wordwrap
+
+---
+--
+-- @function getWantTabs
+-- @treturn boolean
+
+---
+--
+-- @function setWantTabs
+-- @tparam boolean wanttabs
+
+---
+--
+-- @function getWantReturns
+-- @treturn boolean
+
+---
+--
+-- @function setWantReturns
+-- @tparam boolean wantreturns
+
+---
+--
+-- @function getScrollbars
+
+--- Sets the scrollbars.
+-- Horizontal only takes affect when wordwrap is disabled.
+--
+-- valid enum types:
+--   ssNone : No scrollbars
+--   ssHorizontal: Has a horizontal scrollbar
+--   ssVertical: Has a vertical scrollbar
+--   ssBoth: Has both scrollbars
+--   ssAutoHorizontal: Same as above but only shows when there actually is something to scroll for
+--   ssAutoVertical: " " " " ...
+--   ssAutoBoth: " " " " ...
+--
+-- @function setScrollbars
+-- @param scrollbarenumtype
