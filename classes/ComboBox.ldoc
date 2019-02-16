@@ -1,0 +1,74 @@
+---
+--
+-- @classmod ComboBox
+
+--- ComboBox &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a ComboBox class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createComboBox
+-- @tparam WinControl owner
+-- @treturn ComboBox
+
+--- @section end
+
+
+--- Strings derived object containings all the items in the list.
+--
+-- @prop Items
+-- @ptype Strings
+
+--- Get selected index.
+-- -1 is nothing selected.
+--
+-- @prop ItemIndex
+-- @ptype integer
+
+--- The canvas object used to render on the object.
+--
+-- @prop Canvas
+-- @ptype Canvas
+
+
+---
+--
+-- @function clear
+
+---
+--
+-- @function getItems
+-- @treturn Strings
+
+---
+--
+-- @function setItems
+
+---
+--
+-- @function getItemIndex
+-- @treturn integer
+
+---
+--
+-- @function setItemIndex
+-- @tparam integer index
+
+---
+--
+-- @function getCanvas
+-- @treturn Canvas
+
+--- Returns the number of pixels not part of the text of the combobox.
+--
+-- (think about borders, thumb button, etc...)
+--
+-- @function getExtraWidth
+-- @treturn integer
