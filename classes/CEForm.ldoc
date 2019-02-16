@@ -1,0 +1,49 @@
+---
+--
+-- @classmod CEForm
+
+--- CEForm &#x1f844; Form &#x1f844; ScrollingWinControl &#x1f844; CustomControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass Form
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a CEForm class object(window) and returns the pointer for it.
+-- Visible is default true but can be changed.
+--
+-- @function createForm
+-- @tparam boolean visible (optional)
+
+--- Returns the generated CEform.
+--
+-- @function createFormFromFile
+-- @tparam string filename
+
+--- @section end
+
+
+--- Set this if you do not wish to save the forms in the table.
+--
+-- @prop DoNotSaveInTable
+-- @ptype boolean
+
+
+--- Saves a userdefined form.
+--
+-- @function saveToFile
+-- @treturn string filename
+
+--- Returns the DoNotSaveInTable property.
+--
+-- @function getDoNotSaveInTable
+
+--- Sets the DoNotSaveInTable property.
+--
+-- @function setDoNotSaveInTable
+-- @tparam boolean value
+
+--- Sets the current state of the form as the state that will be saved when the table is saved.
+--
+-- @function saveCurrentStateAsDesign
