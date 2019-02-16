@@ -2,7 +2,7 @@
 --
 -- @classmod Stringlist
 
---- Stringlist &#x1f844; [Strings](Strings.html) &#x1f844; [Object](Object.html)
+--- Stringlist &#x1f844; Strings &#x1f844; Object
 --
 -- @subclass Object
 

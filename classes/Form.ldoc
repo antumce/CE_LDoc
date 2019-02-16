@@ -2,7 +2,7 @@
 --
 -- @classmod Form
 
---- Form &#x1f844; [ScrollingWinControl](ScrollingWinControl.html)  &#x1f844; [CustomControl](CustomControl.html) &#x1f844; [WinControl](WinControl.html) &#x1f844; [Control](Control.html) &#x1f844; [Component](Component) &#x1f844; [Object](Object.html)
+--- Form &#x1f844; ScrollingWinControl &#x1f844; CustomControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
 --
 -- @subclass ScrollingWinControl
 

@@ -2,6 +2,6 @@
 --
 -- @classmod CustomApplication
 
---- CustomApplication &#x1f844; [Component](Component.html) &#x1f844; [Object](Object.html)
+--- CustomApplication &#x1f844; Component &#x1f844; Object
 --
 -- @subclass Component

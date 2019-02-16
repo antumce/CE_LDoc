@@ -180,17 +180,22 @@ end
 local function subclass_display_handler(item, default_handler)
 	for a, b in pairs(item) do
 		if a == 'summary' then
-			if string.find(b, '&#x1f844;') then
+			if string.find(b, ' &#x1f844; ') then
 				-- TODO: need a method to strip whitespace from strings
-				local inherits = string.split(b, ' &#x1f844; ')
+				local inherits = string.split(b, ' <- ')
+				-- FIXME: better way to use table.concat?
+				local sb = createStringBuilder()
 				for idx = 1, #inherits, 1 do
 					if isfile('classes/' .. inherits[idx] .. '.ldoc') then
 						inherits[idx] = '<a href="' .. inherits[idx] .. '.html">' .. inherits[idx] .. '</a>'
 					end
+
+					-- FIXME: string.split is not working correctly
+					--sb.append(inherits[idx] .. ' &#x1f844; ')
+					sb.append(inherits[idx] .. ' ')
 				end
 
-				-- join back into single string
-				item['summary'] = table.concat(inherits, ' &#x1f844; ')
+				item['summary'] = sb.tostring()
 			end
 		end
 	end
