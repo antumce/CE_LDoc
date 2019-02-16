@@ -1,0 +1,108 @@
+---
+-- (Mostly an abstract class)
+--
+-- @classmod Strings
+
+--- Strings &#x1f844; [Object](Object.html)
+--
+-- @subclass Object
+
+
+--- The character(s) to count as a linebreak.
+--
+-- @prop LineBreak
+-- @ptype String
+
+--- All the strings in one string.
+--
+-- @prop Text
+-- @ptype String
+
+--- The number of strings in this list.
+--
+-- @prop Count
+-- @ptype Integer
+
+--- Array to access one specific string in the list.
+--
+-- [] = String[]
+--
+-- @prop String
+-- @idx String
+-- @ptype array
+
+
+--- Deletes all strings in the list.
+--
+-- @function clear
+
+--- Adds a string to the list.
+--
+-- @function add
+-- param string
+
+--- Deletes a string from the list.
+--
+-- @function delete
+-- @tparam int index
+
+--- Returns all the strings as one big string.
+--
+-- @function getText
+
+--- Sets the strings of the given strings object to the given text (can be multiline).
+--
+-- @function setText
+
+--- Returns the index of the specified string.
+-- Returns -1 if not found.
+--
+-- @function indexOf
+-- param string
+
+--- Inserts a string at a specific spot moving the items after it.
+--
+-- @function insert
+-- @tparam int index
+-- @param string
+
+--- Returns the number of strings in the list.
+--
+-- @function getCount
+-- @treturn int
+
+--- Removes the given string from the list.
+--
+-- @function remove
+-- @param string
+
+--- Load the strings from a textfile.
+--
+-- @function loadFromFile
+-- @param filename
+
+--- Save the strings to a textfile.
+--
+-- @function saveToFile
+-- @param filename
+
+
+--- Gets the string at the given index.
+--
+-- @function getString
+-- @tparam int index
+-- @treturn String
+
+--- Replaces the string at the given index.
+--
+-- @function setString
+-- @tparam int index
+-- @param string
+
+--- Stops updates from triggering other events (prevents flashing).
+--
+-- @function beginUpdate
+
+--- Call after beginUpdate.
+--
+-- @function endUpdate
