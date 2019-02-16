@@ -1,0 +1,68 @@
+---
+--
+-- @classmod Stringlist
+
+--- Stringlist &#x1f844; [Strings](Strings.html) &#x1f844; [Object](Object.html)
+--
+-- @subclass Object
+
+
+--- Related Functions
+--
+-- @section relfunc
+
+--- Creates a stringlist class object.
+--
+-- (for whatever reason, lua strings are probably easier to use)
+--
+-- @function createStringlist
+
+--- @section end
+
+
+--- Determines if the list should be sorted.
+--
+-- @prop Sorted
+-- @ptype boolean
+
+--- Determines how duplicates should be handled when the list is sorted.
+--
+-- @prop Duplicates
+-- @ptype DuplicatesType
+
+--- Determines if the list is case sensitive or not.
+--
+-- @prop CaseSensitive
+-- @ptype boolean
+
+
+--- Returns the duplicates property.
+--
+-- @function getDuplicates
+
+--- Sets the duplicates property.
+--
+-- One of: *dupIgnore*, *dupAccept*, *dupError*
+--
+-- @function setDuplicates
+-- @param Duplicates
+
+--- Returns true if the list has the sorted property.
+--
+-- @function getSorted
+-- @treturn boolean
+
+--- Sets the sorted property.
+--
+-- @function setSorted
+-- @tparam boolean sorted
+
+--- Returns true if the case sensitive property is set.
+--
+-- @function getCaseSensitive
+-- @treturn boolean
+
+--- Sets the case sensitive property.
+--
+-- @function setCaseSensitive
+-- @tparam boolean sensitive
