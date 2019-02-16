@@ -1,0 +1,42 @@
+---
+--
+-- @classmod Calendar
+
+--- Calendar &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a Calendar class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl. Valid date is
+-- between "September 14, 1752" and "December 31, 9999"
+--
+-- @function createCalendar
+-- @tparam WinControl owner
+-- @treturn Calendar
+
+--- @section end
+
+
+--- Current date of the Calendar.
+--
+-- Format: yyyy-mm-dd
+--
+-- @prop Date
+-- @ptype string
+
+--- Days since December 30, 1899.
+--
+-- @prop DateTime
+-- @ptype number
+
+
+--- returns current date of the Calendar.
+--
+-- Format: ShortDateFormat from OS local settings
+--
+-- @function getDateLocalFormat
