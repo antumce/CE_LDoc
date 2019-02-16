@@ -1,0 +1,21 @@
+---
+--
+-- @classmod ToggleBox
+
+--- ToggleBox &#x1f844; CheckBox &#x1f844; ButtonControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass CheckBox
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a ToggleBox class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createToggleBox
+-- @tparam WinControl owner
+-- @treturn ToggleBox
+
+--- @section end

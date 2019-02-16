@@ -1,0 +1,21 @@
+---
+--
+-- @classmod GroupBox
+
+--- GroupBox &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a GroupBox class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createGroupBox
+-- @tparam WinControl owner
+-- @treturn GroupBox
+
+--- @section end
