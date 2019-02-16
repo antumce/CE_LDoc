@@ -1,0 +1,87 @@
+---
+--
+-- @classmod ListBox
+
+--- ListBox &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a ListBox class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createListBox
+-- @tparam WinControl owner
+-- @treturn ListBox
+
+--- @section end
+
+
+--- When set to true you can select multiple items.
+--
+-- @prop MultiSelect
+-- @ptype boolean
+
+--- Strings derived object containings all the items in the list.
+--
+-- @prop Items
+-- @ptype Strings
+
+--- Returns true if the given line is selected.
+-- Use *Items.Count-1* to find out the max index.
+--
+-- @prop Selected
+-- @ptype array
+
+--- Get selected index.
+-- -1 is nothing selected.
+--
+-- @prop ItemIndex
+-- @ptype integer
+
+--- The canvas object used to render on the object.
+--
+-- @prop Canvas
+-- @ptype Canvas
+
+
+---
+--
+-- @function clear
+
+--- Deselects all items in the list.
+--
+-- @function clearSelection
+
+--- Selects all items in the list.
+--
+-- @function selectAll
+
+--- Returns a strings object.
+--
+-- @function getItems
+-- @treturn Strings
+
+--- Sets a strings object to the listbox.
+--
+-- @function setItems
+-- @tparam Strings items
+
+---
+--
+-- @function getItemIndex
+-- @treturn integer
+
+---
+--
+-- @function setItemIndex
+-- @tparam integer index
+
+---
+--
+-- @function getCanvas
+-- @treturn Canvas
