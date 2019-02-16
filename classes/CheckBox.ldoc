@@ -1,0 +1,67 @@
+---
+--
+-- @classmod CheckBox
+
+--- CheckBox &#x1f844; ButtonControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass ButtonControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a CheckBox class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createCheckBox
+-- @tparam WinControl owner
+-- @treturn CheckBox
+
+--- @section end
+
+
+--- True if checked.
+--
+-- @prop Checked
+-- @ptype boolean
+
+--- True if it can have 3 states. True/False/None.
+--
+-- @prop AllowGrayed: boolean
+
+---
+--
+-- @prop State: checkboxstate - The state. (cbUnchecked=0, cbChecked=1, cbGrayed=2)
+
+--- Function to call when the state it changed.
+--
+-- @prop OnChange
+-- @tparam function onchange
+
+
+---
+--
+-- @function getAllowGrayed
+-- @treturn boolean
+
+---
+--
+-- @function setAllowGrayed
+-- @tparam boolean allowgrayed
+
+--- Returns a state for the checkbox.
+--
+-- Possible return values: cbUnchecked, cbChecked, cbGrayed
+--
+-- @function getState
+
+--- Sets the state of the checkbox.
+--
+-- @function setState
+-- @tparam boolean state
+
+---
+--
+-- @function onChange
+-- @tparam function onchange
