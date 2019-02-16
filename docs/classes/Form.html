@@ -1,0 +1,690 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+<li><a href="#Creation">Creation </a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Application.html">Application</a></li>
+  <li><a href="../classes/Component.html">Component</a></li>
+  <li><a href="../classes/Control.html">Control</a></li>
+  <li><a href="../classes/CustomApplication.html">CustomApplication</a></li>
+  <li><a href="../classes/Font.html">Font</a></li>
+  <li><strong>Form</strong></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/MenuItem.html">MenuItem</a></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><a href="../classes/Stringlist.html">Stringlist</a></li>
+  <li><a href="../classes/Strings.html">Strings</a></li>
+  <li><a href="../classes/WinControl.html">WinControl</a></li>
+</ul>
+<h2>Functions</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Form</code></h1>
+<p>
+
+</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Form.ScrollingWinControl">ScrollingWinControl</a></td>
+	<td class="summary"><a href="Form.html">Form</a> &#x1f844; ScrollingWinControl &#x1f844; CustomControl &#x1f844; <a href="WinControl.html">WinControl</a> &#x1f844; <a href="Control.html">Control</a> &#x1f844; <a href="Component.html">Component</a> &#x1f844; <a href="Object.html">Object</a> </td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Form.AllowDropFiles">AllowDropFiles</a></td>
+	<td class="summary">Allows files to be dragged into the form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form.FormState">FormState</a></td>
+	<td class="summary">The current state of the form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form.Menu">Menu</a></td>
+	<td class="summary">The main menu of the form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form.ModalResult">ModalResult</a></td>
+	<td class="summary">The current ModalResult value of the form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form.OnClose">OnClose</a></td>
+	<td class="summary">The function to call when the form gets closed.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form.OnDropFiles">OnDropFiles</a></td>
+	<td class="summary">Called when files are dragged on top of the form.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Form:bringToFront">bringToFront ()</a></td>
+	<td class="summary">Brings the form to the foreground.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:centerScreen">centerScreen ()</a></td>
+	<td class="summary">Places the form at the center of the screen.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:close">close ()</a></td>
+	<td class="summary">Closes the form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:dragNow">dragNow ()</a></td>
+	<td class="summary">Starts dragging the Form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:getBorderStyle">getBorderStyle ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:getMenu">getMenu ()</a></td>
+	<td class="summary">Returns the mainmenu object of this form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:getOnClose">getOnClose ()</a></td>
+	<td class="summary">Returns the function.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:hide">hide ()</a></td>
+	<td class="summary">Hide the form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:isForegroundWindow">isForegroundWindow ()</a></td>
+	<td class="summary">Returns true if the specified form has focus.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:printToRasterImage">printToRasterImage ( <i>rasterimage</i> )</a></td>
+	<td class="summary">Draws the contents of the form to a rasterimage class object.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:setBorderStyle">setBorderStyle ( <i>borderstyle</i> )</a></td>
+	<td class="summary">Sets the borderstyle of the window.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:setMenu">setMenu ( <i>menu</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:setOnClose">setOnClose ( <i>function</i> )</a></td>
+	<td class="summary">Return a CloseAction to determine how to close the window.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:show">show ()</a></td>
+	<td class="summary">Show the form.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Form:showModal">showModal ()</a></td>
+	<td class="summary">Show the form and wait for it to close and get the close result.</td>
+	</tr>
+</table>
+<h2><a href="#Creation">Creation </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Form:createForm">createForm ()</a></td>
+	<td class="summary">Creates a new Form.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Form.ScrollingWinControl"></a>
+    <strong>ScrollingWinControl</strong>
+    </dt>
+    <dd>
+    <a href="Form.html">Form</a> &#x1f844; ScrollingWinControl &#x1f844; CustomControl &#x1f844; <a href="WinControl.html">WinControl</a> &#x1f844; <a href="Control.html">Control</a> &#x1f844; <a href="Component.html">Component</a> &#x1f844; <a href="Object.html">Object</a>
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Form.AllowDropFiles"></a>
+    <strong>AllowDropFiles</strong>
+    </dt>
+    <dd>
+    Allows files to be dragged into the form.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">boolean</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form.FormState"></a>
+    <strong>FormState</strong>
+    </dt>
+    <dd>
+    The current state of the form. </p>
+
+<p> Possible values: <em>fsCreating</em>, <em>fsVisible</em>, <em>fsShowing</em>, <em>fsModal</em>, <em>fsCreatedMDIChild</em>, <em>fsBorderStyleChanged</em>, <em>fsFormStyleChanged</em>, <em>fsFirstShow</em>, <em>fsDisableAutoSize</em>
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">FormState string (ReadOnly)</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form.Menu"></a>
+    <strong>Menu</strong>
+    </dt>
+    <dd>
+    The main menu of the form.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="MainMenu.html">MainMenu</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form.ModalResult"></a>
+    <strong>ModalResult</strong>
+    </dt>
+    <dd>
+    The current ModalResult value of the form. </p>
+
+<p> Note: When this value gets set the modal form will close
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form.OnClose"></a>
+    <strong>OnClose</strong>
+    </dt>
+    <dd>
+    The function to call when the form gets closed.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">function(sender)</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form.OnDropFiles"></a>
+    <strong>OnDropFiles</strong>
+    </dt>
+    <dd>
+    Called when files are dragged on top of the form. </p>
+
+<p> Filenames is an arraytable with the files.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">function(sender, {filenames})</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Form:bringToFront"></a>
+    <strong>bringToFront ()</strong>
+    </dt>
+    <dd>
+    Brings the form to the foreground.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:centerScreen"></a>
+    <strong>centerScreen ()</strong>
+    </dt>
+    <dd>
+    Places the form at the center of the screen.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:close"></a>
+    <strong>close ()</strong>
+    </dt>
+    <dd>
+    Closes the form.
+ Without an onClose this will be the same as hide.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:dragNow"></a>
+    <strong>dragNow ()</strong>
+    </dt>
+    <dd>
+    Starts dragging the Form. </p>
+
+<p> Call this on mousedown on any object if you wish that the mousemove will drag the whole Form arround. Useful for borderless windows (Dragging will stop when the mouse button is released).
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:getBorderStyle"></a>
+    <strong>getBorderStyle ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:getMenu"></a>
+    <strong>getMenu ()</strong>
+    </dt>
+    <dd>
+    Returns the mainmenu object of this form.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/MainMenu.html#">MainMenu</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:getOnClose"></a>
+    <strong>getOnClose ()</strong>
+    </dt>
+    <dd>
+    Returns the function.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">function</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:hide"></a>
+    <strong>hide ()</strong>
+    </dt>
+    <dd>
+    Hide the form.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:isForegroundWindow"></a>
+    <strong>isForegroundWindow ()</strong>
+    </dt>
+    <dd>
+    Returns true if the specified form has focus.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:printToRasterImage"></a>
+    <strong>printToRasterImage ( <i>rasterimage</i> )</strong>
+    </dt>
+    <dd>
+    Draws the contents of the form to a rasterimage class object.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">rasterimage</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:setBorderStyle"></a>
+    <strong>setBorderStyle ( <i>borderstyle</i> )</strong>
+    </dt>
+    <dd>
+    Sets the borderstyle of the window.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">borderstyle</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:setMenu"></a>
+    <strong>setMenu ( <i>menu</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">menu</span>
+            <span class="types"><a class="type" href="../classes/MainMenu.html#">MainMenu</a></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:setOnClose"></a>
+    <strong>setOnClose ( <i>function</i> )</strong>
+    </dt>
+    <dd>
+    Return a CloseAction to determine how to close the window. </p>
+
+<p> function (sender)
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">function</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:show"></a>
+    <strong>show ()</strong>
+    </dt>
+    <dd>
+    Show the form.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Form:showModal"></a>
+    <strong>showModal ()</strong>
+    </dt>
+    <dd>
+    Show the form and wait for it to close and get the close result.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Creation"></a>Creation </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Form:createForm"></a>
+    <strong>createForm ()</strong>
+    </dt>
+    <dd>
+    Creates a new Form.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/Form.html#">Form</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-16 13:27:02 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

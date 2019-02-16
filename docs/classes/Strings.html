@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Application.html">Application</a></li>
+  <li><a href="../classes/Component.html">Component</a></li>
+  <li><a href="../classes/Control.html">Control</a></li>
+  <li><a href="../classes/CustomApplication.html">CustomApplication</a></li>
+  <li><a href="../classes/Font.html">Font</a></li>
+  <li><a href="../classes/Form.html">Form</a></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/MenuItem.html">MenuItem</a></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><a href="../classes/Stringlist.html">Stringlist</a></li>
+  <li><strong>Strings</strong></li>
+  <li><a href="../classes/WinControl.html">WinControl</a></li>
+</ul>
+<h2>Functions</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Strings</code></h1>
+<p>(Mostly an abstract class)</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Strings.Object">Object</a></td>
+	<td class="summary"><a href="Strings.html">Strings</a> &#x1f844; <a href="Object.html">Object</a> </td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Strings.Count">Count</a></td>
+	<td class="summary">The number of strings in this list.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings.LineBreak">LineBreak</a></td>
+	<td class="summary">The character(s) to count as a linebreak.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings.String">String [ <i>String</i> ]</a></td>
+	<td class="summary">Array to access one specific string in the list.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings.Text">Text</a></td>
+	<td class="summary">All the strings in one string.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Strings:add">add ()</a></td>
+	<td class="summary">Adds a string to the list.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:beginUpdate">beginUpdate ()</a></td>
+	<td class="summary">Stops updates from triggering other events (prevents flashing).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:clear">clear ()</a></td>
+	<td class="summary">Deletes all strings in the list.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:delete">delete ( <i>index</i> )</a></td>
+	<td class="summary">Deletes a string from the list.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:endUpdate">endUpdate ()</a></td>
+	<td class="summary">Call after beginUpdate.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:getCount">getCount ()</a></td>
+	<td class="summary">Returns the number of strings in the list.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:getString">getString ( <i>index</i> )</a></td>
+	<td class="summary">Gets the string at the given index.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:getText">getText ()</a></td>
+	<td class="summary">Returns all the strings as one big string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:indexOf">indexOf ()</a></td>
+	<td class="summary">Returns the index of the specified string.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:insert">insert ( <i>index</i>, <i>string</i> )</a></td>
+	<td class="summary">Inserts a string at a specific spot moving the items after it.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:loadFromFile">loadFromFile ( <i>filename</i> )</a></td>
+	<td class="summary">Load the strings from a textfile.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:remove">remove ( <i>string</i> )</a></td>
+	<td class="summary">Removes the given string from the list.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:saveToFile">saveToFile ( <i>filename</i> )</a></td>
+	<td class="summary">Save the strings to a textfile.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:setString">setString ( <i>index</i>, <i>string</i> )</a></td>
+	<td class="summary">Replaces the string at the given index.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Strings:setText">setText ()</a></td>
+	<td class="summary">Sets the strings of the given strings object to the given text (can be multiline).</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Strings.Object"></a>
+    <strong>Object</strong>
+    </dt>
+    <dd>
+    <a href="Strings.html">Strings</a> &#x1f844; <a href="Object.html">Object</a>
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Strings.Count"></a>
+    <strong>Count</strong>
+    </dt>
+    <dd>
+    The number of strings in this list.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">Integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings.LineBreak"></a>
+    <strong>LineBreak</strong>
+    </dt>
+    <dd>
+    The character(s) to count as a linebreak.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">String</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings.String"></a>
+    <strong>String [ <i>String</i> ]</strong>
+    </dt>
+    <dd>
+    Array to access one specific string in the list. </p>
+
+<p> [] = String[]
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">array</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings.Text"></a>
+    <strong>Text</strong>
+    </dt>
+    <dd>
+    All the strings in one string.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">String</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Strings:add"></a>
+    <strong>add ()</strong>
+    </dt>
+    <dd>
+    Adds a string to the list.
+ param string
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:beginUpdate"></a>
+    <strong>beginUpdate ()</strong>
+    </dt>
+    <dd>
+    Stops updates from triggering other events (prevents flashing).
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:clear"></a>
+    <strong>clear ()</strong>
+    </dt>
+    <dd>
+    Deletes all strings in the list.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:delete"></a>
+    <strong>delete ( <i>index</i> )</strong>
+    </dt>
+    <dd>
+    Deletes a string from the list.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:endUpdate"></a>
+    <strong>endUpdate ()</strong>
+    </dt>
+    <dd>
+    Call after beginUpdate.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:getCount"></a>
+    <strong>getCount ()</strong>
+    </dt>
+    <dd>
+    Returns the number of strings in the list.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">int</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:getString"></a>
+    <strong>getString ( <i>index</i> )</strong>
+    </dt>
+    <dd>
+    Gets the string at the given index.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/Strings.html#Strings.String">String</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:getText"></a>
+    <strong>getText ()</strong>
+    </dt>
+    <dd>
+    Returns all the strings as one big string.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:indexOf"></a>
+    <strong>indexOf ()</strong>
+    </dt>
+    <dd>
+    Returns the index of the specified string.
+ Returns -1 if not found.</p>
+
+<p> param string
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:insert"></a>
+    <strong>insert ( <i>index</i>, <i>string</i> )</strong>
+    </dt>
+    <dd>
+    Inserts a string at a specific spot moving the items after it.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">string</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:loadFromFile"></a>
+    <strong>loadFromFile ( <i>filename</i> )</strong>
+    </dt>
+    <dd>
+    Load the strings from a textfile.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">filename</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:remove"></a>
+    <strong>remove ( <i>string</i> )</strong>
+    </dt>
+    <dd>
+    Removes the given string from the list.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">string</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:saveToFile"></a>
+    <strong>saveToFile ( <i>filename</i> )</strong>
+    </dt>
+    <dd>
+    Save the strings to a textfile.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">filename</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:setString"></a>
+    <strong>setString ( <i>index</i>, <i>string</i> )</strong>
+    </dt>
+    <dd>
+    Replaces the string at the given index.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+            <span class="types"><span class="type">int</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">string</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Strings:setText"></a>
+    <strong>setText ()</strong>
+    </dt>
+    <dd>
+    Sets the strings of the given strings object to the given text (can be multiline).
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-16 13:27:02 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -40,7 +40,7 @@
 
 <h2>Classes</h2>
 <ul class="nowrap">
-  <li><a href="../classes/Application.html">Application</a></li>
+  <li><strong>Application</strong></li>
   <li><a href="../classes/Component.html">Component</a></li>
   <li><a href="../classes/Control.html">Control</a></li>
   <li><a href="../classes/CustomApplication.html">CustomApplication</a></li>
@@ -48,7 +48,7 @@
   <li><a href="../classes/Form.html">Form</a></li>
   <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
   <li><a href="../classes/MainMenu.html">MainMenu</a></li>
-  <li><strong>Menu</strong></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
   <li><a href="../classes/MenuItem.html">MenuItem</a></li>
   <li><a href="../classes/Object.html">Object</a></li>
   <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
@@ -70,7 +70,7 @@
 
 <div id="content">
 
-<h1>Class <code>Menu</code></h1>
+<h1>Class <code>Application</code></h1>
 <p>
 
 </p>
@@ -82,22 +82,44 @@
 <h2><a href="#Inheritance">Inheritance</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#Menu.Component">Component</a></td>
-	<td class="summary"><a href="Menu.html">Menu</a> &#x1f844; <a href="Component.html">Component</a> &#x1f844; <a href="Object.html">Object</a> </td>
+	<td class="name" nowrap><a href="#Application.CustomApplication">CustomApplication</a></td>
+	<td class="summary"><a href="Application.html">Application</a> &#x1f844; <a href="CustomApplication.html">CustomApplication</a> &#x1f844; <a href="Component.html">Component</a> &#x1f844; <a href="Object.html">Object</a> </td>
 	</tr>
 </table>
 <h2><a href="#Properties">Properties</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#Menu.Items">Items</a></td>
-	<td class="summary">The base MenuItem class of this menu (readonly).</td>
+	<td class="name" nowrap><a href="#Application.Icon">Icon</a></td>
+	<td class="summary">The icon of Cheat Engine in the bar.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Application.Title">Title</a></td>
+	<td class="summary">The title of cheat engine in the bar.</td>
 	</tr>
 </table>
 <h2><a href="#Methods">Methods</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#Menu:getItems">getItems ()</a></td>
-	<td class="summary">Returns the main MenuItem of this Menu.</td>
+	<td class="name" nowrap><a href="#Application:bringToFront">bringToFront ()</a></td>
+	<td class="summary">Shows the cheat engine app.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Application:minimize">minimize ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Application:processMessages">processMessages ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Application:terminate">terminate ()</a></td>
+	<td class="summary">
+
+</td>
 	</tr>
 </table>
 
@@ -109,11 +131,11 @@
 
     <dl class="function">
     <dt>
-    <a name = "Menu.Component"></a>
-    <strong>Component</strong>
+    <a name = "Application.CustomApplication"></a>
+    <strong>CustomApplication</strong>
     </dt>
     <dd>
-    <a href="Menu.html">Menu</a> &#x1f844; <a href="Component.html">Component</a> &#x1f844; <a href="Object.html">Object</a>
+    <a href="Application.html">Application</a> &#x1f844; <a href="CustomApplication.html">CustomApplication</a> &#x1f844; <a href="Component.html">Component</a> &#x1f844; <a href="Object.html">Object</a>
 
     </ul>
     </ul>
@@ -129,17 +151,28 @@
 
     <dl class="function">
     <dt>
-    <a name = "Menu.Items"></a>
-    <strong>Items</strong>
+    <a name = "Application.Icon"></a>
+    <strong>Icon</strong>
     </dt>
     <dd>
-    The base MenuItem class of this menu (readonly).
+    The icon of Cheat Engine in the bar.
 
-    <h3>Type:</h3>
-    <ul>
-         <div style="font-style:italic;">
-	<a href="MenuItem.html">MenuItem</a>
-</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Application.Title"></a>
+    <strong>Title</strong>
+    </dt>
+    <dd>
+    The title of cheat engine in the bar.
+
     </ul>
     </ul>
 
@@ -154,11 +187,65 @@
 
     <dl class="function">
     <dt>
-    <a name = "Menu:getItems"></a>
-    <strong>getItems ()</strong>
+    <a name = "Application:bringToFront"></a>
+    <strong>bringToFront ()</strong>
     </dt>
     <dd>
-    Returns the main MenuItem of this Menu.
+    Shows the cheat engine app.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Application:minimize"></a>
+    <strong>minimize ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Application:processMessages"></a>
+    <strong>processMessages ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Application:terminate"></a>
+    <strong>terminate ()</strong>
+    </dt>
+    <dd>
+
+
+
 
     </ul>
     </ul>
