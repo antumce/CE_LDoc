@@ -1,0 +1,93 @@
+---
+--
+-- @classmod ProgressBar
+
+--- ProgressBar &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a ProgressBar class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createProgressBar
+-- @tparam WinControl owner
+-- @treturn ProgressBar
+
+--- @section end
+
+
+--- The minimum positionvalue the progressbar can have.
+--
+-- (default 0)
+--
+-- @prop Min
+-- @ptype integer
+
+--- The maximum positionvalue the progressbar can have.
+--
+-- (default 100)
+--
+-- @prop Max
+-- @ptype integer
+
+--- The position of the progressbar.
+--
+-- @prop Position
+-- @ptype integer
+
+--- The stepsize to step by when stepIt() is called.
+--
+-- @prop Step
+-- @ptype integer
+
+
+--- Increase position with "Step" size.
+--
+-- @function stepIt
+
+--- Increase the position by the given integer value.
+--
+-- @function stepBy
+-- @tparam integer steps
+
+--- Returns the Max property.
+--
+-- @function getMax
+-- @treturn integer
+
+--- Sets the max property.
+--
+-- @function setMax
+-- @tparam integer max
+
+---
+--
+-- @function getMin
+-- @treturn integer
+
+--- Sets the min property.
+--
+-- @function setMin
+-- @tparam integer min
+
+--- Returns the current position.
+--
+-- @function getPosition
+-- @treturn integer
+
+--- Sets the current position.
+--
+-- @function setPosition
+-- @tparam integer pos
+
+--- Sets the current position.
+--
+-- Without slow progress animation on Win7 and later.
+--
+-- @function setPosition2
+-- @tparam integer pos
