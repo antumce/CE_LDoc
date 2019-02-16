@@ -1,0 +1,84 @@
+---
+--
+-- @classmod Image
+
+--- Image &#x1f844; GraphicControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass GraphicControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates an Image class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createImage
+-- @tparam WinControl owner
+-- @treturn Image
+
+--- @section end
+
+
+--- The canvas object to access the picture of the image.
+--
+-- @prop Canvas
+-- @ptype Canvas
+
+--- Determines if some parts of the picture are see through.
+--
+-- (usually based on the bottomleft corner)
+--
+-- @prop Transparent
+-- @ptype boolean
+
+--- Determines if the picture gets stretched when rendered in the image component.
+--
+-- @prop Stretch
+-- @ptype boolean
+
+--- The picture to render.
+--
+-- @prop Picture
+-- @ptype Picture
+
+
+---
+--
+-- @function loadImageFromFile
+-- @param filename
+
+---
+--
+-- @function getStretch
+-- @treturn boolean
+
+---
+--
+-- @function setStretch
+-- @tparam boolean stretch
+
+---
+--
+-- @function getTransparent
+-- @treturn boolean
+
+---
+--
+-- @function setTransparent
+-- @tparam boolean transparent
+
+---
+--
+-- @function getCanvas
+
+---
+--
+-- @function setPicture
+-- @tparam Picture picture
+
+--- Returns the Picture object of this image.
+--
+-- @function getPicture
+-- @treturn Picture
