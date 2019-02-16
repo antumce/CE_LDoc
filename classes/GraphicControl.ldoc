@@ -1,0 +1,19 @@
+---
+--
+-- @classmod GraphicControl
+
+--- GraphicControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass Control
+
+
+--- The canvas for rendering this control.
+--
+-- @prop Canvas
+-- @ptype Canvas
+
+
+--- Returns the Canvas object for the given object that has inherited from customControl.
+--
+-- @function getCanvas
+-- @treturn Canvas
