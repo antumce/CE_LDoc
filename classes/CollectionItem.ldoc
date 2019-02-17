@@ -1,0 +1,48 @@
+--- Base class for some higher level classes.
+-- Often used for columns.
+--
+-- @classmod CollectionItem
+
+--- CollectionItem &#x1f844; Object
+--
+-- @subclass Object
+
+
+---
+--
+-- @prop ID
+-- @ptype integer
+
+--- The index in the array this item belong to.
+--
+-- @prop Index
+-- @ptype integer
+
+---
+--
+-- @prop DisplayName
+-- @ptype string
+
+
+---
+--
+-- @function getID
+-- @treturn integer
+
+---
+--
+-- @function getIndex
+-- @treturn integer
+
+---
+--
+-- @function setIndex
+
+---
+--
+-- @function getDisplayName
+-- @treturn string
+
+---
+--
+-- @function setDisplayName
