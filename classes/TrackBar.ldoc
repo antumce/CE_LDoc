@@ -1,0 +1,86 @@
+---
+--
+-- @classmod TrackBar
+
+--- TrackBar &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a TrackBar class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
+--
+-- @function createTrackBar
+-- @tparam WinControl owner
+-- @treturn TrackBar
+
+--- @section end
+
+
+--- Minimal value for the trackbar.
+--
+-- @prop Min
+-- @ptype integer
+
+--- Maximum value for the trackbar.
+--
+-- @prop Max
+-- @ptype integer
+
+--- The current position.
+--
+-- @prop Position
+-- @ptype integer
+
+--- Function to call when
+--
+-- @prop OnChange
+-- @ptype function
+
+
+---
+--
+-- @function getMax
+-- @treturn integer
+
+---
+--
+-- @function setMax
+-- @tparam integer max
+
+---
+--
+-- @function getMin
+-- @param trackbar
+-- @treturn integer
+
+---
+--
+-- @function setMin
+-- @param trackbar
+-- @tparam integer min
+
+---
+--
+-- @function getPosition
+-- @param progressbar
+
+---
+--
+-- @function setPosition
+-- @param progressbar
+-- @tparam integer pos
+
+---
+--
+-- @function getOnChange
+-- @treturn function
+
+---
+--
+-- @function setOnChange
+-- @tparam function onchange
