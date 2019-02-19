@@ -1,0 +1,38 @@
+--- Part of a PageControl.
+-- This object can contain other objects.
+--
+-- @classmod TabSheet
+
+--- TabSheet &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+
+--- PageControl method to create a new TabSheet object.
+--
+-- @function PageControl.addTab
+-- @treturn TabSheet
+-- @usage
+-- local pageControl = createPageControl(owner)
+-- local tab1 = pageControl.addTab()
+-- @see PageControl
+
+--- @section end
+
+
+--- The current index in the page list of the owning page control.
+--
+-- @prop PageIndex
+-- @ptype integer
+
+--- Tab is shown if `true`, hidden if `false`.
+--
+-- Default: *true*
+--
+-- @prop TabVisible
+-- @ptype boolean
