@@ -1,0 +1,31 @@
+---
+--
+-- @classmod Collection
+
+--- Collection &#x1f844; Object
+--
+-- @subclass Object
+
+
+---
+--
+-- @prop Count
+-- @ptype integer
+
+
+---
+--
+-- @function clear
+-- @param collection
+
+---
+--
+-- @function getCount
+-- @param collection
+-- @treturn integer
+
+---
+--
+-- @function delete
+-- @param collection
+-- @tparam integer index
