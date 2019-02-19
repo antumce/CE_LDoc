@@ -1,0 +1,21 @@
+---
+--
+-- @classmod JpegImage
+
+--- JpegImage &#x1f844; CustomBitmap &#x1f844; RasterImage &#x1f844; Graphic &#x1f844; Object
+--
+-- @subclass CustomBitmap
+
+
+--- Creation
+--
+-- @section creation
+
+--- Returns a Jpeg object.
+--
+-- @function createJpeg
+-- @tparam integer width
+-- @tparam integer height
+-- @treturn JpegImage
+
+--- @section end

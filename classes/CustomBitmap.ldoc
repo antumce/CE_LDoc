@@ -1,0 +1,7 @@
+---
+--
+-- @classmod CustomBitmap
+
+--- CustomBitmap &#x1f844; RasterImage &#x1f844; Graphic &#x1f844; Object
+--
+-- @subclass RasterImage

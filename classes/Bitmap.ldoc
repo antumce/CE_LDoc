@@ -1,0 +1,21 @@
+--- Bitmap based Graphic object.
+--
+-- @classmod Bitmap
+
+--- Bitmap &#x1f844; CustomBitmap &#x1f844; RasterImage &#x1f844; Graphic &#x1f844; Object
+--
+-- @subclass CustomBitmap
+
+
+--- Creation
+--
+-- @section creation
+
+---Returns a Bitmap object.
+--
+-- @function createBitmap
+-- @tparam integer width
+-- @tparam integer height
+-- @treturn Bitmap
+
+--- @section end

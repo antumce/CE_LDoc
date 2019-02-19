@@ -1,0 +1,51 @@
+--- Base class for some graphical controls.
+--
+-- @classmod RasterImage
+
+--- RasterImage &#x1f844; Graphic &#x1f844; Object
+--
+-- @subclass Graphic
+
+
+---
+--
+-- @prop Canvas: Canvas
+
+--- The pixelformat for this image.
+-- Will clear the current image if it had one. Supported pixelformats:
+-- pf1bit, pf4bit, pf8bit, pf15bit, pf16bit, pf24bit, pf32bit (recommended).
+--
+-- @prop PixelFormat
+-- @ptype PixelFormat
+
+---
+--
+-- @prop TransparentColor
+-- @ptype integer
+
+
+--- Returns the Canvas object for this image.
+--
+-- @function getCanvas
+-- @treturn Canvas
+
+---  Returns the current pixelformat.
+--
+-- @function getPixelFormat
+-- @treturn PixelFormat
+
+--- Sets the pixelformat for this image.
+-- Will clear the current image if it had one. Supported pixelformats:
+-- pf1bit, pf4bit, pf8bit, pf15bit, pf16bit, pf24bit, pf32bit (recommended)
+--
+-- @function setPixelFormat
+-- @param pixelformat
+
+--- Sets the color that will be rendered as transparent when drawn.
+--
+-- @function setTransparentColor
+-- @ptype integer color
+
+---  Returns the color set to be transparent.
+--
+-- @function getTransparentColor

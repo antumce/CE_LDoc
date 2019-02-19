@@ -1,0 +1,64 @@
+--- Container for the Graphic class.
+--
+-- @classmod Picture
+
+--- Picture &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- Creation
+--
+-- @section creation
+
+--- Returns a empty picture object.
+--
+-- @function createPicture
+-- @treturn Picture
+
+--- @section end
+
+
+---
+--
+-- @prop Graphic
+
+---
+--
+-- @prop PNG
+
+---
+--
+-- @prop Bitmap
+
+---
+--
+-- @prop Jpeg
+
+---
+--
+-- @prop Icon
+
+
+---
+--
+-- @function loadFromFile
+-- @tparam string filename
+
+---
+--
+-- @function saveToFile
+-- @tparam string filename
+
+--- Loads a picture from a stream.
+--
+-- Note that the stream position must be set to the start of the picture.
+--
+-- @function loadFromStream
+-- @param stream
+-- @param[opt] originalextension
+
+---
+--
+-- @function assign
+-- @param sourcepicture

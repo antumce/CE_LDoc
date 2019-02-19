@@ -1,0 +1,21 @@
+---
+--
+-- @classmod PortableNetworkGraphic
+
+--- PortableNetworkGraphic &#x1f844; CustomBitmap &#x1f844; RasterImage &#x1f844; Graphic &#x1f844; Object
+--
+-- @subclass CustomBitmap
+
+
+--- Creation
+--
+-- @section creation
+
+--- Returns a PortableNetworkGraphic object.
+--
+-- @function createPNG
+-- @tparam integer width
+-- @tparam integer height
+-- @treturn PortableNetworkGraphic
+
+--- @section end

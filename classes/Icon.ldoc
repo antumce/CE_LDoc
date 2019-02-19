@@ -1,0 +1,19 @@
+---
+--
+-- @classmod Icon
+
+--- Icon &#x1f844; CustomBitmap &#x1f844; RasterImage &#x1f844; Graphic &#x1f844; Object
+--
+-- @subclass CutomBitmap
+
+
+--- Creation
+--
+-- @section creation
+
+--- Returns an Icon object.
+--
+-- @function createIcon
+-- @tparam integer width
+-- @tparam integer height
+-- @treturn Icon

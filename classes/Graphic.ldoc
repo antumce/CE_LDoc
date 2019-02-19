@@ -1,0 +1,51 @@
+---
+--
+-- Abstract class.
+--
+-- @classmod Graphic
+
+--- Graphic &#x1f844; Object
+--
+--
+-- @subclass Object
+
+
+---
+--
+-- @prop Width
+-- @ptype integer
+
+---
+--
+-- @prop Height
+-- @ptype integer
+
+---
+--
+-- @prop Transparent
+-- @ptype boolean
+
+
+--- Gets the current width in pixels of this graphics object.
+--
+-- @function getWidth
+-- @param graphic
+-- @treturn integer
+
+--- Sets the width in pixels.
+--
+-- @function setWidth
+-- @param graphic
+-- @tparam integer width
+
+---
+--
+-- @function getHeight
+-- @param graphic
+-- @treturn integer
+
+---
+--
+-- @function setHeight
+-- @param graphic
+-- @tparam integer height
