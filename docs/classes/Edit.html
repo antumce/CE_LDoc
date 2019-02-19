@@ -1,0 +1,1006 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+<li><a href="#Creation">Creation </a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Addresslist.html">Addresslist</a></li>
+  <li><a href="../classes/Application.html">Application</a></li>
+  <li><a href="../classes/Bitmap.html">Bitmap</a></li>
+  <li><a href="../classes/Brush.html">Brush</a></li>
+  <li><a href="../classes/Button.html">Button</a></li>
+  <li><a href="../classes/ButtonControl.html">ButtonControl</a></li>
+  <li><a href="../classes/CEForm.html">CEForm</a></li>
+  <li><a href="../classes/Calendar.html">Calendar</a></li>
+  <li><a href="../classes/Canvas.html">Canvas</a></li>
+  <li><a href="../classes/CanvasHelper.html">CanvasHelper</a></li>
+  <li><a href="../classes/CheatComponent.html">CheatComponent</a></li>
+  <li><a href="../classes/CheckBox.html">CheckBox</a></li>
+  <li><a href="../classes/Collection.html">Collection</a></li>
+  <li><a href="../classes/CollectionItem.html">CollectionItem</a></li>
+  <li><a href="../classes/ComboBox.html">ComboBox</a></li>
+  <li><a href="../classes/CommonDialog.html">CommonDialog</a></li>
+  <li><a href="../classes/Component.html">Component</a></li>
+  <li><a href="../classes/Control.html">Control</a></li>
+  <li><a href="../classes/CriticalSection.html">CriticalSection</a></li>
+  <li><a href="../classes/CustomApplication.html">CustomApplication</a></li>
+  <li><a href="../classes/CustomBitmap.html">CustomBitmap</a></li>
+  <li><a href="../classes/CustomBrush.html">CustomBrush</a></li>
+  <li><a href="../classes/CustomCanvas.html">CustomCanvas</a></li>
+  <li><a href="../classes/CustomControl.html">CustomControl</a></li>
+  <li><a href="../classes/CustomPen.html">CustomPen</a></li>
+  <li><a href="../classes/Disassemblerview.html">Disassemblerview</a></li>
+  <li><a href="../classes/DisassemblerviewLine.html">DisassemblerviewLine</a></li>
+  <li><strong>Edit</strong></li>
+  <li><a href="../classes/Event.html">Event</a></li>
+  <li><a href="../classes/FileDialog.html">FileDialog</a></li>
+  <li><a href="../classes/FileStream.html">FileStream</a></li>
+  <li><a href="../classes/FindDialog.html">FindDialog</a></li>
+  <li><a href="../classes/Font.html">Font</a></li>
+  <li><a href="../classes/Form.html">Form</a></li>
+  <li><a href="../classes/FoundList.html">FoundList</a></li>
+  <li><a href="../classes/GenericHotkey.html">GenericHotkey</a></li>
+  <li><a href="../classes/Graphic.html">Graphic</a></li>
+  <li><a href="../classes/GraphicControl.html">GraphicControl</a></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/GroupBox.html">GroupBox</a></li>
+  <li><a href="../classes/HandleStream.html">HandleStream</a></li>
+  <li><a href="../classes/Hexadecimal.html">Hexadecimal</a></li>
+  <li><a href="../classes/Icon.html">Icon</a></li>
+  <li><a href="../classes/Image.html">Image</a></li>
+  <li><a href="../classes/JpegImage.html">JpegImage</a></li>
+  <li><a href="../classes/Label.html">Label</a></li>
+  <li><a href="../classes/ListBox.html">ListBox</a></li>
+  <li><a href="../classes/ListColumn.html">ListColumn</a></li>
+  <li><a href="../classes/ListColumns.html">ListColumns</a></li>
+  <li><a href="../classes/ListItem.html">ListItem</a></li>
+  <li><a href="../classes/ListItems.html">ListItems</a></li>
+  <li><a href="../classes/Listview.html">Listview</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/MemScan.html">MemScan</a></li>
+  <li><a href="../classes/Memo.html">Memo</a></li>
+  <li><a href="../classes/MemoryRecord.html">MemoryRecord</a></li>
+  <li><a href="../classes/MemoryRecordHotkey.html">MemoryRecordHotkey</a></li>
+  <li><a href="../classes/MemoryStream.html">MemoryStream</a></li>
+  <li><a href="../classes/Memoryview.html">Memoryview</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/MenuItem.html">MenuItem</a></li>
+  <li><a href="../classes/MultiReadExclusiveWriteSynchronizer.html">MultiReadExclusiveWriteSynchronizer</a></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/OpenDialog.html">OpenDialog</a></li>
+  <li><a href="../classes/PaintBox.html">PaintBox</a></li>
+  <li><a href="../classes/Panel.html">Panel</a></li>
+  <li><a href="../classes/Pen.html">Pen</a></li>
+  <li><a href="../classes/Picture.html">Picture</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/PortableNetworkGraphic.html">PortableNetworkGraphic</a></li>
+  <li><a href="../classes/ProgressBar.html">ProgressBar</a></li>
+  <li><a href="../classes/RadioGroup.html">RadioGroup</a></li>
+  <li><a href="../classes/RasterImage.html">RasterImage</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><a href="../classes/SaveDialog.html">SaveDialog</a></li>
+  <li><a href="../classes/ScrollingWinControl.html">ScrollingWinControl</a></li>
+  <li><a href="../classes/SelectDirectoryDialog.html">SelectDirectoryDialog</a></li>
+  <li><a href="../classes/Semaphore.html">Semaphore</a></li>
+  <li><a href="../classes/Splitter.html">Splitter</a></li>
+  <li><a href="../classes/Stream.html">Stream</a></li>
+  <li><a href="../classes/StringStream.html">StringStream</a></li>
+  <li><a href="../classes/Stringlist.html">Stringlist</a></li>
+  <li><a href="../classes/Strings.html">Strings</a></li>
+  <li><a href="../classes/Structure.html">Structure</a></li>
+  <li><a href="../classes/StructureElement.html">StructureElement</a></li>
+  <li><a href="../classes/StructureFrm.html">StructureFrm</a></li>
+  <li><a href="../classes/TObject.html">TObject</a></li>
+  <li><a href="../classes/TableFile.html">TableFile</a></li>
+  <li><a href="../classes/Thread.html">Thread</a></li>
+  <li><a href="../classes/Timer.html">Timer</a></li>
+  <li><a href="../classes/ToggleBox.html">ToggleBox</a></li>
+  <li><a href="../classes/TrackBar.html">TrackBar</a></li>
+  <li><a href="../classes/TreeNode.html">TreeNode</a></li>
+  <li><a href="../classes/TreeNodes.html">TreeNodes</a></li>
+  <li><a href="../classes/Treeview.html">Treeview</a></li>
+  <li><a href="../classes/WinControl.html">WinControl</a></li>
+  <li><a href="../classes/structColumn.html">structColumn</a></li>
+  <li><a href="../classes/structGroup.html">structGroup</a></li>
+  <li><a href="../classes/xmplayer.html">xmplayer</a></li>
+</ul>
+<h2>Functions</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+  <li><a href="../modules/global_events.html">global_events</a></li>
+  <li><a href="../modules/structure_functions.html">structure_functions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Edit</code></h1>
+<p>
+
+</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#Edit.WinControl">WinControl</a></td>
+	<td class="summary"><a href="Edit.html">Edit</a> &#x1f844; <a href="WinControl.html">WinControl</a> &#x1f844; <a href="Control.html">Control</a> &#x1f844; <a href="Component.html">Component</a> &#x1f844; <a href="Object.html">Object</a> </td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#Edit.OnChange">OnChange</a></td>
+	<td class="summary">The function to call when the editfield is changed.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit.OnKeyDown">OnKeyDown</a></td>
+	<td class="summary">The function to call for the KeyDown event.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit.OnKeyPress">OnKeyPress</a></td>
+	<td class="summary">The function to call for the KeyPress event.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit.OnKeyUp">OnKeyUp</a></td>
+	<td class="summary">The function to call for the KeyUp event.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit.SelLength">SelLength</a></td>
+	<td class="summary">The length of the current selection (readonly).</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit.SelStart">SelStart</a></td>
+	<td class="summary">The starting index of the current selection (zero-indexed, readonly).</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit.SelText">SelText</a></td>
+	<td class="summary">The current selected contents of the edit field (readonly).</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit.Text">Text</a></td>
+	<td class="summary">The current contents of the editfield.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#Edit:clear">clear ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:clearSelection">clearSelection ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:copyToClipboard">copyToClipboard ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:cutToClipboard">cutToClipboard ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:getOnChange">getOnChange ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:getOnKeyDown">getOnKeyDown ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:getOnKeyPress">getOnKeyPress ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:getOnKeyUp">getOnKeyUp ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:getSelLength">getSelLength ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:getSelStart">getSelStart ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:getSelText">getSelText ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:pasteFromClipboard">pasteFromClipboard ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:select">select ( <i>start</i>, <i>length</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:selectAll">selectAll ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:selectText">selectText ( <i>start</i>, <i>length</i> )</a></td>
+	<td class="summary">Set the control's current selection.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:setOnChange">setOnChange ( <i>onchange</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:setOnKeyDown">setOnKeyDown ( <i>onkeydown</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:setOnKeyPress">setOnKeyPress ( <i>onkeypress</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Edit:setOnKeyUp">setOnKeyUp ( <i>onkeyup</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+</table>
+<h2><a href="#Creation">Creation </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#Edit:createEdit">createEdit ( <i>owner</i> )</a></td>
+	<td class="summary">Creates an Edit class object which belongs to the given owner.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Edit.WinControl"></a>
+    <strong>WinControl</strong>
+    </dt>
+    <dd>
+    <a href="Edit.html">Edit</a> &#x1f844; <a href="WinControl.html">WinControl</a> &#x1f844; <a href="Control.html">Control</a> &#x1f844; <a href="Component.html">Component</a> &#x1f844; <a href="Object.html">Object</a>
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Edit.OnChange"></a>
+    <strong>OnChange</strong>
+    </dt>
+    <dd>
+    The function to call when the editfield is changed.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">function</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit.OnKeyDown"></a>
+    <strong>OnKeyDown</strong>
+    </dt>
+    <dd>
+    The function to call for the KeyDown event.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">function</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit.OnKeyPress"></a>
+    <strong>OnKeyPress</strong>
+    </dt>
+    <dd>
+    The function to call for the KeyPress event.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">function</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit.OnKeyUp"></a>
+    <strong>OnKeyUp</strong>
+    </dt>
+    <dd>
+    The function to call for the KeyUp event.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">function</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit.SelLength"></a>
+    <strong>SelLength</strong>
+    </dt>
+    <dd>
+    The length of the current selection (readonly).
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">number</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit.SelStart"></a>
+    <strong>SelStart</strong>
+    </dt>
+    <dd>
+    The starting index of the current selection (zero-indexed, readonly).
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">number</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit.SelText"></a>
+    <strong>SelText</strong>
+    </dt>
+    <dd>
+    The current selected contents of the edit field (readonly).
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit.Text"></a>
+    <strong>Text</strong>
+    </dt>
+    <dd>
+    The current contents of the editfield.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Edit:clear"></a>
+    <strong>clear ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:clearSelection"></a>
+    <strong>clearSelection ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:copyToClipboard"></a>
+    <strong>copyToClipboard ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:cutToClipboard"></a>
+    <strong>cutToClipboard ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:getOnChange"></a>
+    <strong>getOnChange ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">function</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:getOnKeyDown"></a>
+    <strong>getOnKeyDown ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">function</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:getOnKeyPress"></a>
+    <strong>getOnKeyPress ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">function</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:getOnKeyUp"></a>
+    <strong>getOnKeyUp ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">function</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:getSelLength"></a>
+    <strong>getSelLength ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:getSelStart"></a>
+    <strong>getSelStart ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:getSelText"></a>
+    <strong>getSelText ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:pasteFromClipboard"></a>
+    <strong>pasteFromClipboard ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:select"></a>
+    <strong>select ( <i>start</i>, <i>length</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">start</span>
+
+
+
+        </li>
+        <li><span class="parameter">length</span>
+
+
+
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:selectAll"></a>
+    <strong>selectAll ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:selectText"></a>
+    <strong>selectText ( <i>start</i>, <i>length</i> )</strong>
+    </dt>
+    <dd>
+    Set the control's current selection.
+ If no length is specified, selects everything after start.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">start</span>
+
+
+
+        </li>
+        <li><span class="parameter">length</span>
+
+
+
+         (<em>optional</em>)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:setOnChange"></a>
+    <strong>setOnChange ( <i>onchange</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">onchange</span>
+            <span class="types"><span class="type">function</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:setOnKeyDown"></a>
+    <strong>setOnKeyDown ( <i>onkeydown</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">onkeydown</span>
+            <span class="types"><span class="type">function</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:setOnKeyPress"></a>
+    <strong>setOnKeyPress ( <i>onkeypress</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">onkeypress</span>
+            <span class="types"><span class="type">function</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Edit:setOnKeyUp"></a>
+    <strong>setOnKeyUp ( <i>onkeyup</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">onkeyup</span>
+            <span class="types"><span class="type">function</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Creation"></a>Creation </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Edit:createEdit"></a>
+    <strong>createEdit ( <i>owner</i> )</strong>
+    </dt>
+    <dd>
+    Creates an Edit class object which belongs to the given owner.
+ Owner can be any object inherited from WinControl.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">owner</span>
+            <span class="types"><a class="type" href="../classes/WinControl.html#">WinControl</a></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/Edit.html#">Edit</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-19 13:49:22 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

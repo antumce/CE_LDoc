@@ -1,0 +1,1228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Addresslist.html">Addresslist</a></li>
+  <li><a href="../classes/Application.html">Application</a></li>
+  <li><a href="../classes/Bitmap.html">Bitmap</a></li>
+  <li><a href="../classes/Brush.html">Brush</a></li>
+  <li><a href="../classes/Button.html">Button</a></li>
+  <li><a href="../classes/ButtonControl.html">ButtonControl</a></li>
+  <li><a href="../classes/CEForm.html">CEForm</a></li>
+  <li><a href="../classes/Calendar.html">Calendar</a></li>
+  <li><strong>Canvas</strong></li>
+  <li><a href="../classes/CanvasHelper.html">CanvasHelper</a></li>
+  <li><a href="../classes/CheatComponent.html">CheatComponent</a></li>
+  <li><a href="../classes/CheckBox.html">CheckBox</a></li>
+  <li><a href="../classes/Collection.html">Collection</a></li>
+  <li><a href="../classes/CollectionItem.html">CollectionItem</a></li>
+  <li><a href="../classes/ComboBox.html">ComboBox</a></li>
+  <li><a href="../classes/CommonDialog.html">CommonDialog</a></li>
+  <li><a href="../classes/Component.html">Component</a></li>
+  <li><a href="../classes/Control.html">Control</a></li>
+  <li><a href="../classes/CriticalSection.html">CriticalSection</a></li>
+  <li><a href="../classes/CustomApplication.html">CustomApplication</a></li>
+  <li><a href="../classes/CustomBitmap.html">CustomBitmap</a></li>
+  <li><a href="../classes/CustomBrush.html">CustomBrush</a></li>
+  <li><a href="../classes/CustomCanvas.html">CustomCanvas</a></li>
+  <li><a href="../classes/CustomControl.html">CustomControl</a></li>
+  <li><a href="../classes/CustomPen.html">CustomPen</a></li>
+  <li><a href="../classes/Disassemblerview.html">Disassemblerview</a></li>
+  <li><a href="../classes/DisassemblerviewLine.html">DisassemblerviewLine</a></li>
+  <li><a href="../classes/Edit.html">Edit</a></li>
+  <li><a href="../classes/Event.html">Event</a></li>
+  <li><a href="../classes/FileDialog.html">FileDialog</a></li>
+  <li><a href="../classes/FileStream.html">FileStream</a></li>
+  <li><a href="../classes/FindDialog.html">FindDialog</a></li>
+  <li><a href="../classes/Font.html">Font</a></li>
+  <li><a href="../classes/Form.html">Form</a></li>
+  <li><a href="../classes/FoundList.html">FoundList</a></li>
+  <li><a href="../classes/GenericHotkey.html">GenericHotkey</a></li>
+  <li><a href="../classes/Graphic.html">Graphic</a></li>
+  <li><a href="../classes/GraphicControl.html">GraphicControl</a></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/GroupBox.html">GroupBox</a></li>
+  <li><a href="../classes/HandleStream.html">HandleStream</a></li>
+  <li><a href="../classes/Hexadecimal.html">Hexadecimal</a></li>
+  <li><a href="../classes/Icon.html">Icon</a></li>
+  <li><a href="../classes/Image.html">Image</a></li>
+  <li><a href="../classes/JpegImage.html">JpegImage</a></li>
+  <li><a href="../classes/Label.html">Label</a></li>
+  <li><a href="../classes/ListBox.html">ListBox</a></li>
+  <li><a href="../classes/ListColumn.html">ListColumn</a></li>
+  <li><a href="../classes/ListColumns.html">ListColumns</a></li>
+  <li><a href="../classes/ListItem.html">ListItem</a></li>
+  <li><a href="../classes/ListItems.html">ListItems</a></li>
+  <li><a href="../classes/Listview.html">Listview</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/MemScan.html">MemScan</a></li>
+  <li><a href="../classes/Memo.html">Memo</a></li>
+  <li><a href="../classes/MemoryRecord.html">MemoryRecord</a></li>
+  <li><a href="../classes/MemoryRecordHotkey.html">MemoryRecordHotkey</a></li>
+  <li><a href="../classes/MemoryStream.html">MemoryStream</a></li>
+  <li><a href="../classes/Memoryview.html">Memoryview</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/MenuItem.html">MenuItem</a></li>
+  <li><a href="../classes/MultiReadExclusiveWriteSynchronizer.html">MultiReadExclusiveWriteSynchronizer</a></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/OpenDialog.html">OpenDialog</a></li>
+  <li><a href="../classes/PaintBox.html">PaintBox</a></li>
+  <li><a href="../classes/Panel.html">Panel</a></li>
+  <li><a href="../classes/Pen.html">Pen</a></li>
+  <li><a href="../classes/Picture.html">Picture</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/PortableNetworkGraphic.html">PortableNetworkGraphic</a></li>
+  <li><a href="../classes/ProgressBar.html">ProgressBar</a></li>
+  <li><a href="../classes/RadioGroup.html">RadioGroup</a></li>
+  <li><a href="../classes/RasterImage.html">RasterImage</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><a href="../classes/SaveDialog.html">SaveDialog</a></li>
+  <li><a href="../classes/ScrollingWinControl.html">ScrollingWinControl</a></li>
+  <li><a href="../classes/SelectDirectoryDialog.html">SelectDirectoryDialog</a></li>
+  <li><a href="../classes/Semaphore.html">Semaphore</a></li>
+  <li><a href="../classes/Splitter.html">Splitter</a></li>
+  <li><a href="../classes/Stream.html">Stream</a></li>
+  <li><a href="../classes/StringStream.html">StringStream</a></li>
+  <li><a href="../classes/Stringlist.html">Stringlist</a></li>
+  <li><a href="../classes/Strings.html">Strings</a></li>
+  <li><a href="../classes/Structure.html">Structure</a></li>
+  <li><a href="../classes/StructureElement.html">StructureElement</a></li>
+  <li><a href="../classes/StructureFrm.html">StructureFrm</a></li>
+  <li><a href="../classes/TObject.html">TObject</a></li>
+  <li><a href="../classes/TableFile.html">TableFile</a></li>
+  <li><a href="../classes/Thread.html">Thread</a></li>
+  <li><a href="../classes/Timer.html">Timer</a></li>
+  <li><a href="../classes/ToggleBox.html">ToggleBox</a></li>
+  <li><a href="../classes/TrackBar.html">TrackBar</a></li>
+  <li><a href="../classes/TreeNode.html">TreeNode</a></li>
+  <li><a href="../classes/TreeNodes.html">TreeNodes</a></li>
+  <li><a href="../classes/Treeview.html">Treeview</a></li>
+  <li><a href="../classes/WinControl.html">WinControl</a></li>
+  <li><a href="../classes/structColumn.html">structColumn</a></li>
+  <li><a href="../classes/structGroup.html">structGroup</a></li>
+  <li><a href="../classes/xmplayer.html">xmplayer</a></li>
+</ul>
+<h2>Functions</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+  <li><a href="../modules/global_events.html">global_events</a></li>
+  <li><a href="../modules/structure_functions.html">structure_functions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>Canvas</code></h1>
+<p>
+
+</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#Canvas.Object">Object</a></td>
+	<td class="summary"><a href="Canvas.html">Canvas</a> &#x1f844; <a href="CustomCanvas.html">CustomCanvas</a> &#x1f844; <a href="Object.html">Object</a> </td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#Canvas.Brush">Brush</a></td>
+	<td class="summary">The brush object.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas.Font">Font</a></td>
+	<td class="summary">The font object</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas.Height">Height</a></td>
+	<td class="summary">Height of the canvas.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas.Pen">Pen</a></td>
+	<td class="summary">The pen object.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas.Width">Width</a></td>
+	<td class="summary">Width of the canvas.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#Canvas:clear">clear ()</a></td>
+	<td class="summary">Clears the canvas.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:copyRect">copyRect ( <i>dest_x1</i>, <i>dest_y1</i>, <i>dest_x2</i>, <i>dest_y2</i>, <i>sourceCanvas</i>, <i>source_x1</i>, <i>source_y1</i>, <i>source_x2</i>, <i>source_y2</i> )</a></td>
+	<td class="summary">Draws an image from one source to another.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:draw">draw ( <i>x</i>, <i>y</i>, <i>graphic</i> )</a></td>
+	<td class="summary">Draw the image of a specific Graphic class.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:ellipse">ellipse ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:fillRect">fillRect ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:floodFill">floodFill ( <i>x</i>, <i>y</i>, <i>color</i>, <i>opt</i> )</a></td>
+	<td class="summary">Fills the picture till/with a color.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getBrush">getBrush ()</a></td>
+	<td class="summary">Returns the brush object of this canvas.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getClipRect">getClipRect ()</a></td>
+	<td class="summary">Returns a table containing the fields Left, Top, Right and Bottom, which define the invalidated region of the graphical object.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getFont">getFont ()</a></td>
+	<td class="summary">Returns the font object of this canvas.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getHeight">getHeight ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getPen">getPen ()</a></td>
+	<td class="summary">Returns the pen object of this canvas.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getPenPosition">getPenPosition ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getPixel">getPixel ( <i>x</i>, <i>y</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getTextHeight">getTextHeight ( <i>text</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getTextWidth">getTextWidth ( <i>text</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:getWidth">getWidth ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:gradientFill">gradientFill ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>startcolor</i>, <i>stopcolor</i>, <i>direction</i> )</a></td>
+	<td class="summary">Gradient fills a rectangle.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:line">line ( <i>sourcex</i>, <i>sourcey</i>, <i>destinationx</i>, <i>destinationy</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:lineTo">lineTo ( <i>destinationx</i>, <i>destinationy</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:rect">rect ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:setPenPosition">setPenPosition ( <i>x</i>, <i>y</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:setPixel">setPixel ( <i>x</i>, <i>y</i>, <i>color</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#Canvas:textOut">textOut ( <i>x</i>, <i>y</i>, <i>text</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Canvas.Object"></a>
+    <strong>Object</strong>
+    </dt>
+    <dd>
+    <a href="Canvas.html">Canvas</a> &#x1f844; <a href="CustomCanvas.html">CustomCanvas</a> &#x1f844; <a href="Object.html">Object</a>
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Canvas.Brush"></a>
+    <strong>Brush</strong>
+    </dt>
+    <dd>
+    The brush object.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="Brush.html">Brush</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas.Font"></a>
+    <strong>Font</strong>
+    </dt>
+    <dd>
+    The font object
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="Font.html">Font</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas.Height"></a>
+    <strong>Height</strong>
+    </dt>
+    <dd>
+    Height of the canvas.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas.Pen"></a>
+    <strong>Pen</strong>
+    </dt>
+    <dd>
+    The pen object.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="Pen.html">Pen</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas.Width"></a>
+    <strong>Width</strong>
+    </dt>
+    <dd>
+    Width of the canvas.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Canvas:clear"></a>
+    <strong>clear ()</strong>
+    </dt>
+    <dd>
+    Clears the canvas.
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:copyRect"></a>
+    <strong>copyRect ( <i>dest_x1</i>, <i>dest_y1</i>, <i>dest_x2</i>, <i>dest_y2</i>, <i>sourceCanvas</i>, <i>source_x1</i>, <i>source_y1</i>, <i>source_x2</i>, <i>source_y2</i> )</strong>
+    </dt>
+    <dd>
+    Draws an image from one source to another.
+ Useful in cases of doublebuffering.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">dest_x1</span>
+
+
+
+        </li>
+        <li><span class="parameter">dest_y1</span>
+
+
+
+        </li>
+        <li><span class="parameter">dest_x2</span>
+
+
+
+        </li>
+        <li><span class="parameter">dest_y2</span>
+
+
+
+        </li>
+        <li><span class="parameter">sourceCanvas</span>
+
+
+
+        </li>
+        <li><span class="parameter">source_x1</span>
+
+
+
+        </li>
+        <li><span class="parameter">source_y1</span>
+
+
+
+        </li>
+        <li><span class="parameter">source_x2</span>
+
+
+
+        </li>
+        <li><span class="parameter">source_y2</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:draw"></a>
+    <strong>draw ( <i>x</i>, <i>y</i>, <i>graphic</i> )</strong>
+    </dt>
+    <dd>
+    Draw the image of a specific Graphic class.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">graphic</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:ellipse"></a>
+    <strong>ellipse ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x1</span>
+
+
+
+        </li>
+        <li><span class="parameter">y1</span>
+
+
+
+        </li>
+        <li><span class="parameter">x2</span>
+
+
+
+        </li>
+        <li><span class="parameter">y2</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:fillRect"></a>
+    <strong>fillRect ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x1</span>
+
+
+
+        </li>
+        <li><span class="parameter">y1</span>
+
+
+
+        </li>
+        <li><span class="parameter">x2</span>
+
+
+
+        </li>
+        <li><span class="parameter">y2</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:floodFill"></a>
+    <strong>floodFill ( <i>x</i>, <i>y</i>, <i>color</i>, <i>opt</i> )</strong>
+    </dt>
+    <dd>
+    Fills the picture till/with a color. </p>
+
+<p> <em>filltype</em> can be:
+ - fsSurface: fill till the color (it fills all except this color) <br/>
+ - fsBorder:  fill this color (it fills only connected pixels of this color)
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+
+
+
+        </li>
+        <li><span class="parameter">color</span>
+         (default=brush.Color)
+         (<em>optional</em>)
+        </li>
+        <li><span class="parameter">opt</span>
+        ] filltype (default=fsSurface)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getBrush"></a>
+    <strong>getBrush ()</strong>
+    </dt>
+    <dd>
+    Returns the brush object of this canvas.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/Brush.html#">Brush</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getClipRect"></a>
+    <strong>getClipRect ()</strong>
+    </dt>
+    <dd>
+    Returns a table containing the fields Left, Top, Right and Bottom, which define the invalidated region of the graphical object.
+ Use this to only render what needs to be rendered in the onPaint event of objects.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.3/manual.html#6.6">table</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getFont"></a>
+    <strong>getFont ()</strong>
+    </dt>
+    <dd>
+    Returns the font object of this canvas.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/Font.html#">Font</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getHeight"></a>
+    <strong>getHeight ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getPen"></a>
+    <strong>getPen ()</strong>
+    </dt>
+    <dd>
+    Returns the pen object of this canvas.
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="../classes/Pen.html#">Pen</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getPenPosition"></a>
+    <strong>getPenPosition ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getPixel"></a>
+    <strong>getPixel ( <i>x</i>, <i>y</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getTextHeight"></a>
+    <strong>getTextHeight ( <i>text</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getTextWidth"></a>
+    <strong>getTextWidth ( <i>text</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:getWidth"></a>
+    <strong>getWidth ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:gradientFill"></a>
+    <strong>gradientFill ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>startcolor</i>, <i>stopcolor</i>, <i>direction</i> )</strong>
+    </dt>
+    <dd>
+    Gradient fills a rectangle. </p>
+
+<p> Direction can be 0 or 1. 0=Vertical 1=Horizontal.
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x1</span>
+
+
+
+        </li>
+        <li><span class="parameter">y1</span>
+
+
+
+        </li>
+        <li><span class="parameter">x2</span>
+
+
+
+        </li>
+        <li><span class="parameter">y2</span>
+
+
+
+        </li>
+        <li><span class="parameter">startcolor</span>
+
+
+
+        </li>
+        <li><span class="parameter">stopcolor</span>
+
+
+
+        </li>
+        <li><span class="parameter">direction</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:line"></a>
+    <strong>line ( <i>sourcex</i>, <i>sourcey</i>, <i>destinationx</i>, <i>destinationy</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sourcex</span>
+
+
+
+        </li>
+        <li><span class="parameter">sourcey</span>
+
+
+
+        </li>
+        <li><span class="parameter">destinationx</span>
+
+
+
+        </li>
+        <li><span class="parameter">destinationy</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:lineTo"></a>
+    <strong>lineTo ( <i>destinationx</i>, <i>destinationy</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">destinationx</span>
+
+
+
+        </li>
+        <li><span class="parameter">destinationy</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:rect"></a>
+    <strong>rect ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x1</span>
+
+
+
+        </li>
+        <li><span class="parameter">y1</span>
+
+
+
+        </li>
+        <li><span class="parameter">x2</span>
+
+
+
+        </li>
+        <li><span class="parameter">y2</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:setPenPosition"></a>
+    <strong>setPenPosition ( <i>x</i>, <i>y</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+            <span class="types"><span class="type">integer</span></span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:setPixel"></a>
+    <strong>setPixel ( <i>x</i>, <i>y</i>, <i>color</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+
+
+
+        </li>
+        <li><span class="parameter">color</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Canvas:textOut"></a>
+    <strong>textOut ( <i>x</i>, <i>y</i>, <i>text</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+
+
+
+        </li>
+        <li><span class="parameter">y</span>
+
+
+
+        </li>
+        <li><span class="parameter">text</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-19 13:49:22 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

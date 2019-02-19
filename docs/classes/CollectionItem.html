@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Cheat Engine Docs</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>Cheat Engine</h1>
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Inheritance">Inheritance</a></li>
+<li><a href="#Properties">Properties</a></li>
+<li><a href="#Methods">Methods</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><a href="../classes/Addresslist.html">Addresslist</a></li>
+  <li><a href="../classes/Application.html">Application</a></li>
+  <li><a href="../classes/Bitmap.html">Bitmap</a></li>
+  <li><a href="../classes/Brush.html">Brush</a></li>
+  <li><a href="../classes/Button.html">Button</a></li>
+  <li><a href="../classes/ButtonControl.html">ButtonControl</a></li>
+  <li><a href="../classes/CEForm.html">CEForm</a></li>
+  <li><a href="../classes/Calendar.html">Calendar</a></li>
+  <li><a href="../classes/Canvas.html">Canvas</a></li>
+  <li><a href="../classes/CanvasHelper.html">CanvasHelper</a></li>
+  <li><a href="../classes/CheatComponent.html">CheatComponent</a></li>
+  <li><a href="../classes/CheckBox.html">CheckBox</a></li>
+  <li><a href="../classes/Collection.html">Collection</a></li>
+  <li><strong>CollectionItem</strong></li>
+  <li><a href="../classes/ComboBox.html">ComboBox</a></li>
+  <li><a href="../classes/CommonDialog.html">CommonDialog</a></li>
+  <li><a href="../classes/Component.html">Component</a></li>
+  <li><a href="../classes/Control.html">Control</a></li>
+  <li><a href="../classes/CriticalSection.html">CriticalSection</a></li>
+  <li><a href="../classes/CustomApplication.html">CustomApplication</a></li>
+  <li><a href="../classes/CustomBitmap.html">CustomBitmap</a></li>
+  <li><a href="../classes/CustomBrush.html">CustomBrush</a></li>
+  <li><a href="../classes/CustomCanvas.html">CustomCanvas</a></li>
+  <li><a href="../classes/CustomControl.html">CustomControl</a></li>
+  <li><a href="../classes/CustomPen.html">CustomPen</a></li>
+  <li><a href="../classes/Disassemblerview.html">Disassemblerview</a></li>
+  <li><a href="../classes/DisassemblerviewLine.html">DisassemblerviewLine</a></li>
+  <li><a href="../classes/Edit.html">Edit</a></li>
+  <li><a href="../classes/Event.html">Event</a></li>
+  <li><a href="../classes/FileDialog.html">FileDialog</a></li>
+  <li><a href="../classes/FileStream.html">FileStream</a></li>
+  <li><a href="../classes/FindDialog.html">FindDialog</a></li>
+  <li><a href="../classes/Font.html">Font</a></li>
+  <li><a href="../classes/Form.html">Form</a></li>
+  <li><a href="../classes/FoundList.html">FoundList</a></li>
+  <li><a href="../classes/GenericHotkey.html">GenericHotkey</a></li>
+  <li><a href="../classes/Graphic.html">Graphic</a></li>
+  <li><a href="../classes/GraphicControl.html">GraphicControl</a></li>
+  <li><a href="../classes/GraphicsObject.html">GraphicsObject</a></li>
+  <li><a href="../classes/GroupBox.html">GroupBox</a></li>
+  <li><a href="../classes/HandleStream.html">HandleStream</a></li>
+  <li><a href="../classes/Hexadecimal.html">Hexadecimal</a></li>
+  <li><a href="../classes/Icon.html">Icon</a></li>
+  <li><a href="../classes/Image.html">Image</a></li>
+  <li><a href="../classes/JpegImage.html">JpegImage</a></li>
+  <li><a href="../classes/Label.html">Label</a></li>
+  <li><a href="../classes/ListBox.html">ListBox</a></li>
+  <li><a href="../classes/ListColumn.html">ListColumn</a></li>
+  <li><a href="../classes/ListColumns.html">ListColumns</a></li>
+  <li><a href="../classes/ListItem.html">ListItem</a></li>
+  <li><a href="../classes/ListItems.html">ListItems</a></li>
+  <li><a href="../classes/Listview.html">Listview</a></li>
+  <li><a href="../classes/MainMenu.html">MainMenu</a></li>
+  <li><a href="../classes/MemScan.html">MemScan</a></li>
+  <li><a href="../classes/Memo.html">Memo</a></li>
+  <li><a href="../classes/MemoryRecord.html">MemoryRecord</a></li>
+  <li><a href="../classes/MemoryRecordHotkey.html">MemoryRecordHotkey</a></li>
+  <li><a href="../classes/MemoryStream.html">MemoryStream</a></li>
+  <li><a href="../classes/Memoryview.html">Memoryview</a></li>
+  <li><a href="../classes/Menu.html">Menu</a></li>
+  <li><a href="../classes/MenuItem.html">MenuItem</a></li>
+  <li><a href="../classes/MultiReadExclusiveWriteSynchronizer.html">MultiReadExclusiveWriteSynchronizer</a></li>
+  <li><a href="../classes/Object.html">Object</a></li>
+  <li><a href="../classes/OpenDialog.html">OpenDialog</a></li>
+  <li><a href="../classes/PaintBox.html">PaintBox</a></li>
+  <li><a href="../classes/Panel.html">Panel</a></li>
+  <li><a href="../classes/Pen.html">Pen</a></li>
+  <li><a href="../classes/Picture.html">Picture</a></li>
+  <li><a href="../classes/PopupMenu.html">PopupMenu</a></li>
+  <li><a href="../classes/PortableNetworkGraphic.html">PortableNetworkGraphic</a></li>
+  <li><a href="../classes/ProgressBar.html">ProgressBar</a></li>
+  <li><a href="../classes/RadioGroup.html">RadioGroup</a></li>
+  <li><a href="../classes/RasterImage.html">RasterImage</a></li>
+  <li><a href="../classes/Region.html">Region</a></li>
+  <li><a href="../classes/SaveDialog.html">SaveDialog</a></li>
+  <li><a href="../classes/ScrollingWinControl.html">ScrollingWinControl</a></li>
+  <li><a href="../classes/SelectDirectoryDialog.html">SelectDirectoryDialog</a></li>
+  <li><a href="../classes/Semaphore.html">Semaphore</a></li>
+  <li><a href="../classes/Splitter.html">Splitter</a></li>
+  <li><a href="../classes/Stream.html">Stream</a></li>
+  <li><a href="../classes/StringStream.html">StringStream</a></li>
+  <li><a href="../classes/Stringlist.html">Stringlist</a></li>
+  <li><a href="../classes/Strings.html">Strings</a></li>
+  <li><a href="../classes/Structure.html">Structure</a></li>
+  <li><a href="../classes/StructureElement.html">StructureElement</a></li>
+  <li><a href="../classes/StructureFrm.html">StructureFrm</a></li>
+  <li><a href="../classes/TObject.html">TObject</a></li>
+  <li><a href="../classes/TableFile.html">TableFile</a></li>
+  <li><a href="../classes/Thread.html">Thread</a></li>
+  <li><a href="../classes/Timer.html">Timer</a></li>
+  <li><a href="../classes/ToggleBox.html">ToggleBox</a></li>
+  <li><a href="../classes/TrackBar.html">TrackBar</a></li>
+  <li><a href="../classes/TreeNode.html">TreeNode</a></li>
+  <li><a href="../classes/TreeNodes.html">TreeNodes</a></li>
+  <li><a href="../classes/Treeview.html">Treeview</a></li>
+  <li><a href="../classes/WinControl.html">WinControl</a></li>
+  <li><a href="../classes/structColumn.html">structColumn</a></li>
+  <li><a href="../classes/structGroup.html">structGroup</a></li>
+  <li><a href="../classes/xmplayer.html">xmplayer</a></li>
+</ul>
+<h2>Functions</h2>
+<ul class="nowrap">
+  <li><a href="../modules/createForm.html">createForm</a></li>
+  <li><a href="../modules/global_events.html">global_events</a></li>
+  <li><a href="../modules/structure_functions.html">structure_functions</a></li>
+</ul>
+<h2>Topics</h2>
+<ul class="">
+  <li><a href="../topics/readme.md.html">readme</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>CollectionItem</code></h1>
+<p>Base class for some higher level classes.</p>
+<p> Often used for columns.</p>
+
+
+<h2><a href="#Inheritance">Inheritance</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#CollectionItem.Object">Object</a></td>
+	<td class="summary"><a href="CollectionItem.html">CollectionItem</a> &#x1f844; <a href="Object.html">Object</a> </td>
+	</tr>
+</table>
+<h2><a href="#Properties">Properties</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#CollectionItem.DisplayName">DisplayName</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#CollectionItem.ID">ID</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#CollectionItem.Index">Index</a></td>
+	<td class="summary">The index in the array this item belong to.</td>
+	</tr>
+</table>
+<h2><a href="#Methods">Methods</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#CollectionItem:getDisplayName">getDisplayName ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#CollectionItem:getID">getID ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#CollectionItem:getIndex">getIndex ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#CollectionItem:setDisplayName">setDisplayName ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#CollectionItem:setIndex">setIndex ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Inheritance"></a>Inheritance</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "CollectionItem.Object"></a>
+    <strong>Object</strong>
+    </dt>
+    <dd>
+    <a href="CollectionItem.html">CollectionItem</a> &#x1f844; <a href="Object.html">Object</a>
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Properties"></a>Properties</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "CollectionItem.DisplayName"></a>
+    <strong>DisplayName</strong>
+    </dt>
+    <dd>
+
+
+
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">
+	<a href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a>
+</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CollectionItem.ID"></a>
+    <strong>ID</strong>
+    </dt>
+    <dd>
+
+
+
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CollectionItem.Index"></a>
+    <strong>Index</strong>
+    </dt>
+    <dd>
+    The index in the array this item belong to.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Methods"></a>Methods</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "CollectionItem:getDisplayName"></a>
+    <strong>getDisplayName ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CollectionItem:getID"></a>
+    <strong>getID ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CollectionItem:getIndex"></a>
+    <strong>getIndex ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">integer</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CollectionItem:setDisplayName"></a>
+    <strong>setDisplayName ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CollectionItem:setIndex"></a>
+    <strong>setIndex ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
+<i style="float:right;">Last updated 2019-02-19 13:49:22 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
