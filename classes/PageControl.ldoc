@@ -1,0 +1,103 @@
+--- A tabbed interface object that can hold multiple pages.
+--
+-- @classmod PageControl
+
+--- PageControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+
+--- Returns a newly created PageControl.
+--
+-- @function createPageControl
+-- @tparam WinControl owner
+-- @treturn PageControl
+
+--- @section end
+
+
+--- Tabs are shown if `true`, hidden if `false`.
+--
+-- Default: *true*
+--
+-- @prop ShowTabs
+-- @ptype boolean
+
+--- Defines along which edge tabs are located.
+--
+-- Options: *tpTop* (default), *tpBottom*, *tpLeft*, *tpRight*
+--
+-- @prop TabPosition
+-- @ptype string
+
+--- Index of the currently selected tab (beginning at *0*).
+--
+-- Default: *0*
+--
+-- @prop TabIndex
+-- @ptype integer
+
+---
+--
+-- Default: *0*
+--
+-- @prop TabOrder
+-- @ptype integer
+
+---
+--
+-- Default: *true*
+--
+-- @prop TabStop
+-- @ptype boolean
+
+--- Contains the currently selected TabSheet.
+--
+-- @prop ActivePage
+-- @ptype TabSheet
+
+--- Total number of pages.
+--
+-- @prop PageCount
+-- @ptype integer
+
+--- Table of current TabSheet objects.
+--
+-- @prop Page
+-- @ptype table
+
+--- Action executed when selected tab changes.
+--
+-- @prop OnChange
+-- @ptype function
+
+---
+--
+-- *Not currently available?*
+--
+-- @prop OnCloseTabClicked
+-- @ptype function
+
+
+--- Creates & returns new TabSheet.
+--
+-- @function addTab
+-- @treturn TabSheet
+
+---
+--
+-- *Not currently available?*
+--
+-- @function getPageCount
+-- @treturn integer
+
+---
+--
+-- *Not currently available?*
+--
+-- @function getPage
