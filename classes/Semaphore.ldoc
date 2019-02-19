@@ -1,0 +1,28 @@
+---
+--
+-- @classmod Semaphore
+
+--- Semaphore &#x1f844; Object
+--
+-- @subclass Object
+
+--- Creation
+--
+-- @section creation
+
+--- Returns an semaphore object.
+--
+-- @function createSemaphore
+-- @param count
+-- @treturn Semaphore
+
+--- @section end
+
+
+---
+--
+-- @function acquire
+
+---
+--
+-- @function release
