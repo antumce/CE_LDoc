@@ -1,0 +1,54 @@
+---
+--
+-- @classmod TableFile
+
+--- TableFile &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- Creation
+--
+-- @section creation
+
+
+--- Returns the TableFile class object for the saved file.
+--
+-- @function findTableFile
+-- @tparam string filename
+
+--- Add a new file to your table.
+-- If no filepath is specified, it will create a blank file. Otherwise, it will read the contents from disk.
+--
+-- @function createTableFile
+-- @tparam string filename
+-- @tparam[opt] string filepath
+-- @treturn TableFile
+
+--- @section end
+
+
+---
+--
+-- @prop Name
+-- @ptype string
+
+---
+--
+-- @prop Stream
+-- @ptype MemoryStream
+
+
+--- Deletes this file from your table.
+--
+-- @function delete
+
+---
+--
+-- @function saveToFile
+-- @tparam string filename
+
+--- Gets a MemoryStream object.
+--
+-- @function getData
+-- @treturn MemoryStream
