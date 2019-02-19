@@ -8,63 +8,77 @@
 -- @subclass WinControl
 
 
-
----
+--- Background color.
 --
--- @prop Color: Integer - background color
+-- @prop Color
+-- @ptype integer
 
----
+--- Text color.
 --
--- @prop Textcolor: integer - text color
+-- @prop Textcolor
+-- @ptype integer
 
----
+--- The textcolor to show when activated is true.
 --
--- @prop Activationcolor: integer - The textcolor to show when activated is true
+-- @prop Activationcolor
+-- @ptype integer
 
----
+--- Toggles between the ActivationColor and the TextColor.
 --
--- @prop Activated: boolean - Toggles between the ActivationColor and the TextColor
+-- @prop Activated
+-- @ptype boolean
 
----
+--- The x position of the optional edit field.
 --
--- @prop Editleft:integer - The x position of the optional edit field
+-- @prop Editleft
+-- @ptype integer
 
----
+--- The width of the optional edit field.
 --
--- @prop Editwidth: integer - the width of the optional edit field
+-- @prop Editwidth
+-- @ptype integer
 
----
+--- The string of the optional edit field.
 --
--- @prop Editvalue:string - The string of the optional edit field
+-- @prop Editvalue
+-- @ptype string
 
----
+--- The hotkeypart of the cheat line.
 --
--- @prop Hotkey:string read - The hotkeypart of the cheat line
+-- @prop Hotkey
+-- @ptype string read
 
----
+--- Description part of the cheat line.
 --
--- @prop Description:string - Description part of the cheat line
+-- @prop Description
+-- @ptype string
 
----
+--- The x position of the hotkey line.
 --
--- @prop Hotkeyleft: integer - The x position of the hotkey line
+-- @prop Hotkeyleft
+-- @ptype integer
 
----
+--- The x position of the Description line.
 --
--- @prop Descriptionleft:integer - The x position of the Description line
+-- @prop Descriptionleft
+-- @ptype integer
 
----
+--- Decides if the hotkey label should be shown.
 --
--- @prop ShowHotkey: boolean - Decides if the hotkey label should be shown
+-- @prop ShowHotkey
+-- @ptype boolean
 
----
+--- Decides if the editbox should be shown.
 --
--- @prop HasEditBox: boolean - Decides if the editbox should be shown
+-- @prop HasEditBox
+-- @ptype boolean
 
----
+--- Decides if the checkbox should be shown.
 --
--- @prop HasCheckbox: boolean - Decides if the checkbox should be shown
+-- @prop HasCheckbox
+-- @ptype boolean
 
----
+--- The font to use to render the text.
 --
--- @prop Font: Font - The font to use to render the text
+-- @prop Font
+-- @ptype Font
