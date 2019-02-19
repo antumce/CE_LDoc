@@ -1,0 +1,50 @@
+--- The xmplayer class has already been defined as xmplayer, no need to create it manually.
+--
+-- @classmod xmplayer
+
+
+--- Indicator that the xmplayer is currently playing a xm file.
+--
+-- @prop IsPlaying
+-- @ptype boolean
+
+--- Indicator that the xmplayer is actually actively loaded in memory.
+--
+-- @prop Initialized
+-- @ptype boolean
+
+
+---
+--
+-- @function setVolume
+-- @tparam integer vol
+
+---
+--
+-- @function playXM
+-- @tparam string filename
+-- @param[opt] noloop
+
+---
+--
+-- @function playXM
+-- @param tablefile
+-- @param[opt] noloop
+
+---
+--
+-- @function playXM
+-- @param Stream
+-- @param[opt] noloop
+
+---
+--
+-- @function pause
+
+---
+--
+-- @function resume
+
+---
+--
+-- @function stop
