@@ -2,15 +2,23 @@
 --
 -- @module global_events
 
-  function onMemRecPreExecute(memoryrecord, newstate BOOLEAN):
-    If above function is defined it will be called before action* has been performed.
-    Active property is about to change to newState.
 
-  function onMemRecPostExecute(memoryrecord, newState BOOLEAN, succeeded BOOLEAN):
-    If above function is defined it will be called after action*.
-    Active property was supposed to change to newState.
-    If 'succeeded' is true it means that Active state has changed and is newState.
+--- If function is defined it will be called before action* has been performed.
+-- Active property is about to change to newState.
+--
+-- @function function onMemRecPreExecute
+-- @tparam MemoryRecord memoryrecord
+-- @tparam boolean newstate
 
-    newState and succeeded are read only.
-
-    *action can be: running auto assembler script (ENABLE or DISABLE section), freezing and unfreezing.
+--- If function is defined it will be called after action*.
+-- Active property was supposed to change to newState.
+-- If 'succeeded' is true it means that Active state has changed and is newState.
+--
+-- newState and succeeded are read only.
+--
+-- *action can be: running auto assembler script (ENABLE or DISABLE section), freezing and unfreezing.
+--
+-- @function function onMemRecPostExecute
+-- @tparam MemoryRecord memoryrecord
+-- @tparam boolean newState
+-- @tparam boolean succeeded
