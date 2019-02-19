@@ -1,6 +1,6 @@
 --- Global Events
 --
--- @module global_events
+-- @global events
 
 
 --- If function is defined it will be called before action* has been performed.
