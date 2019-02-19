@@ -1,0 +1,38 @@
+---
+--
+-- @classmod FileDialog
+
+--- FileDialog &#x1f844; CommonDialog &#x1f844; Component &#x1f844; Object
+--
+-- @subclass CommonDialog
+
+
+--- When not using filters this will be the default extention used if no extension is given.
+--
+-- @prop DefaultExt
+-- @ptype string
+
+--- Stringlist containing all selected files if multiple files are selected.
+--
+-- @prop Files
+-- @ptype Strings
+
+--- The filename that was selected.
+--
+-- @prop FileName
+-- @ptype string
+
+--- A filter formatted string.
+--
+-- @prop Filter
+-- @ptype string
+
+--- The index of which filter to use.
+--
+-- @prop FilterIndex
+-- @ptype integer
+
+--- Sets the folder the filedialog will show first.
+--
+-- @prop InitialDir
+-- @ptype string
