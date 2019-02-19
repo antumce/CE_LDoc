@@ -1,0 +1,110 @@
+---
+--
+-- @classmod TreeNode
+
+--- TreeNode &#x1f844; TObject
+--
+-- @subclass TObject
+
+
+--- The text of the treenode.
+--
+-- @prop Text
+-- @ptype string
+
+--- The treenode this object is a child of. (can be nil) (ReadOnly).
+--
+-- @prop Parent
+-- @ptype TreeNode
+
+--- The level this node is at.
+--
+-- @prop Level
+-- @ptype integer
+
+--- Set to true if it has children, or you wish it to have an expand sign.
+--
+-- @prop HasChildren
+-- @ptype boolean
+
+--- Set to true if it has been expanded.
+--
+-- @prop Expanded
+-- @ptype boolean
+
+--- The number of children this node has.
+--
+-- @prop Count
+-- @ptype integer
+
+--- Array to access the child nodes of this node.
+--
+-- @prop Items
+-- @ptype array
+-- @return Treenode
+
+---
+--
+--  Same as [Items](#TreeNode.Items)
+--
+-- @fixme property name
+-- @prop FIXME []
+
+--- The index based on the parent.
+--
+-- @prop Index
+-- @ptype integer
+
+--- The index based on the TreeView's Treenodes object (Items).
+--
+-- @prop AbsoluteIndex
+-- @ptype integer
+
+--- Set to true if currently selected.
+--
+-- @prop Selected
+-- @ptype boolean
+
+--- Set to true if selected as well, but not the main selected object.
+--
+-- @prop MultiSelected
+-- @ptype boolean
+
+--- Space to store 4 or 8 bytes depending on which version of CE is used.
+--
+-- @prop Data
+-- @ptype Pointer
+
+
+---
+--
+-- @function delete
+
+---
+--
+-- @function deleteChildren
+
+---
+--
+-- @function makeVisible
+
+--- Expands the given node.
+--
+-- @function expand
+-- @tparam[opt] boolean recursive (default: true)
+
+--- Collapses the given node.
+--
+-- @function collapse
+-- @tparam[opt] boolean recursive (default: true)
+
+--- Returns the treenode object that's behind this treenode on the same level.
+--
+-- @function getNextSibling
+-- @treturn TreeNode
+
+--- Returns a Treenode object that is a child of the treenode used to create it.
+--
+-- @function add
+-- @tparam string text
+-- @treturn TreeNode
