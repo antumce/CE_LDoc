@@ -1,0 +1,17 @@
+---
+--
+-- @classmod DisassemblerviewLine
+
+--- DisassemblerviewLine &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- The current address of this line.
+--
+-- @prop Address
+
+--- The Disassemblerview that owns this line.
+--
+-- @prop Owner
+-- @ptype Disassemblerview
