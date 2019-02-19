@@ -1,0 +1,83 @@
+---
+--
+-- @classmod Thread
+
+--- Thread &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- Creation
+--
+-- @section creation
+
+--- Executes the given function in another thread using the systems thread mechanism.
+-- The function returns the Thread class object
+--  function declaration: function (Thread, ...)
+--
+-- @function createThread
+-- @tparam function func
+-- @usage thread = createThread(function(Thread, ...), ...)
+
+--- Same as createNativeThread but it won't run until resume is called on it.
+--
+-- @function createThreadSuspended
+-- @tparam function func
+-- @usage thread = createThreadSuspended(function(Thread, ...), ...)
+
+--- @section end
+
+
+--- This name will be shown when the thread terminated abnormally.
+--
+-- @prop name
+-- @ptype string
+
+--- Returns true if the thread has reached the end.
+-- Do not rely on this if the thread is freeOnTerminate(true) (which is the default).
+--
+-- @prop Finished
+-- @ptype boolean
+
+--- Returns true if the Terminate method has been called.
+--
+-- @prop Terminated
+-- @ptype boolean
+
+
+--- When set to true the thread object will free itself when the function ends.
+--
+-- (default=true)
+-- Note: Use this only from inside the thread function as the thread might have already terminated and freed itself when called.
+--
+-- @function freeOnTerminate
+-- @param state
+
+--- This wil cause the tread to get the main thread to execute the given function and wait for it to finish.
+-- Called from inside the thread.
+--
+-- Usually for GUI access
+-- Returns the return value of the given function
+--
+-- @function synchronize
+-- @tparam function func
+-- @usage Thread.synchronize(function(thread, ...), ...)
+
+--- Waits for the given thread to finish.
+--
+-- (Not recommended to call this from inside the thread itself)
+--
+-- @function waitfor
+
+--- Suspend the thread's execution.
+--
+-- @function suspend
+
+--- Resume the thread's execution.
+--
+-- @function resume
+
+--- Tells the thread it should terminate.
+-- The Terminated property will become true.
+--
+-- @function terminate
