@@ -1,0 +1,67 @@
+---
+--
+-- @classmod ListItem
+
+--- ListItem &#x1f844; TObject
+--
+-- @subclass TObject
+
+
+--- The text of this listitem.
+--
+-- @prop Caption
+-- @ptype string
+
+--- Determines if the checkbox is checked (if it has a checkbox).
+--
+-- @prop Checked
+-- @ptype boolean
+
+--- The Strings object that hold the subitems.
+--
+-- @prop SubItems
+-- @ptype Strings
+
+--- Returns true if selected.
+--
+-- @prop Selected
+-- @ptype boolean
+
+--- The index in the Items object of the owner of this listitem (readonly).
+--
+-- @prop Index
+-- @ptype integer
+
+--- The ListItems object that owns this ListItem (readonly).
+--
+-- @prop Owner
+-- @ptype ListItems
+
+
+---
+--
+-- @function delete()
+
+---
+--
+-- @function getCaption() : Returns the first columns string of the listitem
+
+---
+--
+-- @function setCaption(string) : Sets the first column string of the listitem
+
+---
+--
+-- @function getChecked() : Returns true if the listitem is checked
+
+---
+--
+-- @function setChecked(boolean): Sets the checkbox of the listbox to the given state
+
+---
+--
+-- @function getSubItems(): Returns a Strings object
+
+---
+--
+-- @function makeVisible(partial): Scrolls the listview so this item becomes visible (Cheat Engine 6.4 and later)
