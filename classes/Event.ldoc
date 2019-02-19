@@ -1,0 +1,37 @@
+---
+--
+-- @classmod Event
+
+--- Event &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- Creation
+--
+-- @section creation
+
+--- Returns an event object.
+--
+-- @function createEvent
+-- @param ManualReset
+-- @param InitialState
+-- @treturn Event
+
+--- @section end
+
+
+---
+--
+-- @function resetEvent
+
+---
+--
+-- @function setEvent
+
+--- Waits for the event to be set.
+-- Returns wrSignaled(0), wrTimeout(1), wrAbandoned(2) or wrError(3).
+--
+-- @function waitFor
+-- @param timeout
+-- @treturn integer
