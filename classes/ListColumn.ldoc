@@ -9,65 +9,81 @@
 
 ---
 --
--- @prop AutoSize: boolean
+-- @prop AutoSize
+-- @ptype boolean
 
 ---
 --
--- @prop Caption: string
+-- @prop Caption
+-- @ptype string
 
 ---
 --
--- @prop MaxWidth: integer
+-- @prop MaxWidth
+-- @ptype integer
 
 ---
 --
--- @prop MinWidth: integer
+-- @prop MinWidth
+-- @ptype integer
 
 ---
 --
--- @prop Width: integer
+-- @prop Width
+-- @ptype integer
 
 ---
 --
--- @prop Visible: boolean
+-- @prop Visible
+-- @ptype boolean
 
 
 ---
 --
--- @function getAutosize()
+-- @function getAutosize
+-- @treturn boolean
 
 ---
 --
--- @function setAutosize(boolean)
+-- @function setAutosize
+-- @tparam boolean autosize
 
 ---
 --
--- @function getCaption()
+-- @function getCaption
+-- @treturn string
 
 ---
 --
--- @function setCaption(caption)
+-- @function setCaption
+-- @tparam string caption
 
 ---
 --
--- @function getMaxWidth()
+-- @function getMaxWidth
+-- @treturn integer
 
 ---
 --
--- @function setMaxWidth(width)
+-- @function setMaxWidth
+-- @tparam integer width
 
 ---
 --
--- @function getMinWidth()
+-- @function getMinWidth
+-- @treturn integer
 
 ---
 --
--- @function setMinWidth(width)
+-- @function setMinWidth
+-- @tparam integer width
 
 ---
 --
--- @function getWidth()
+-- @function getWidth
+-- @treturn integer
 
 ---
 --
--- @function setWidth(width)
+-- @function setWidth
+-- @tparam integer width
