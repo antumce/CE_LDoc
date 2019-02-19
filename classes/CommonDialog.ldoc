@@ -1,0 +1,31 @@
+---
+--
+-- @classmod CommonDialog
+
+--- CommonDialog &#x1f844; Component &#x1f844; Object
+--
+-- @subclass Component
+
+
+---
+--
+-- @prop OnShow
+-- @ptype function
+-- @usage CommonDialog.OnShow = function(sender)
+
+---
+--
+-- @prop OnClose
+-- @ptype function
+-- @usage CommonDialog.OnClose = function(sender)
+
+--- The caption at top of the dialog.
+--
+-- @prop Title
+-- @ptype string
+
+
+--- Shows the dialog and return true/false depending on the dialog.
+--
+-- @function Execute
+-- @treturn boolean
