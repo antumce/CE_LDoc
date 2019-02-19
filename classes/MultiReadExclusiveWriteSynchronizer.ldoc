@@ -1,0 +1,37 @@
+---
+--
+-- @classmod MultiReadExclusiveWriteSynchronizer
+
+--- MultiReadExclusiveWriteSynchronizer &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- Creation
+--
+-- @section creation
+
+
+--- Returns a MultiReadExclusiveWriteSynchronizer.
+--
+-- @function createMultiReadExclusiveWriteSynchronizer
+-- @treturn MultiReadExclusiveWriteSynchronizer
+
+--- @section end
+
+
+---
+--
+-- @function beginWrite
+
+---
+--
+-- @function endWrite
+
+---
+--
+-- @function beginRead
+
+---
+--
+-- @function endRead
