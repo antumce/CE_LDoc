@@ -1,0 +1,107 @@
+---
+--
+-- @classmod Listview
+
+--- Listview &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- Creation
+--
+-- @section creation
+
+
+---
+--
+-- @function createListView(owner): Creates a ListView class object which belongs to the given owner. Owner can be any object inherited from WinControl
+
+--- @section end
+
+
+---
+--
+-- @prop Columns: ListColumns - The Listcolumns object of the listview (Readonly)
+
+---
+--
+-- @prop Items: ListItems - The ListItems objects of the listview
+
+---
+--
+-- @prop ItemIndex: integer - The currently selected index in the Items object  (-1 if nothing is selected)
+
+---
+--
+-- @prop Selected: ListItem - The currently selected listitem (nil if nothing is selected)
+
+---
+--
+-- @prop Canvas: Canvas - The canvas object used to render the listview  (Readonly)
+
+---
+--
+-- @prop AutoWidthLastColumn: Boolean - When set to true the last column will resize when the control resizes
+
+---
+--
+-- @prop HideSelection: Boolean - When set to true the selection will not hide when the focus leaves the control
+
+---
+--
+-- @prop RowSelect: Boolean - When set to true the whole row will be selected instead of just the first column
+
+---
+--
+-- @prop OwnerData: Boolean - When set to true the listview will call the onData function for every line being displayed. Use Items.Count to set the number of virtual lines
+
+
+---
+--
+-- @prop OnData: function(sender, ListItem) - Called when a listview with OwnerData true renders a line
+
+
+---
+--
+-- @prop OnCustomDraw: function(Sender, {Top, Left, Bottom, Right}, DefaultDraw Optional): NewDefaultDraw
+
+---
+--
+-- @prop OnCustomDrawItem: function(Sender, ListItem, {cdsSelected=true/false(nil), cdsGrayed=true/false(nil), cdsDisabled, cdsChecked, cdsFocused, cdsDefault, cdsHot, cdsMarked, cdsIndeterminate}, DefaultDraw Optional): NewDefaultDraw
+
+---
+--
+-- @prop OnCustomDrawSubItem: function(Sender, ListItem, SubItemIndex, {cdsSelected=true/false(nil), cdsGrayed=true/false(nil), cdsDisabled, cdsChecked, cdsFocused, cdsDefault, cdsHot, cdsMarked, cdsIndeterminate}, DefaultDraw Optional): NewDefaultDraw
+
+
+---
+--
+-- @function clear()
+
+---
+--
+-- @function getColumns() : ListColumns - Returns a ListColumns object
+
+---
+--
+-- @function getItems(): ListItems - Returns a ListItems object
+
+---
+--
+-- @function getItemIndex(): integer -  Returns the currently selected index in the Items object
+
+---
+--
+-- @function setItemIndex(index: integer)- Sets the current itemindex
+
+---
+--
+-- @function getCanvas() : Canvas - Returns the canvas object used to render the listview
+
+---
+--
+-- @function beginUpdate() - Tells the listview to stop updating while you're busy
+
+---
+--
+-- @function endUpdate() - Applies all updates between beginUpdate and endUpdate
