@@ -1,0 +1,23 @@
+---
+--
+-- @classmod CustomControl
+
+--- CustomControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass WinControl
+
+
+--- The canvas object for drawing on the control (Readonly).
+--
+-- @prop Canvas
+-- @ptype Canvas
+
+---
+--
+-- @prop OnPaint: an OnPaint event you can assign to do some extra painting
+
+
+--- Returns the Canvas object for the given object that has inherited from customControl.
+--
+-- @function getCanvas
+-- @treturn Canvas
