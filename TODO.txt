@@ -1,0 +1,5 @@
+TODO:
+- add "defines.lua" from source
+  - https://github.com/cheat-engine/cheat-engine/blob/master/Cheat%20Engine/bin/defines.lua
+- add documentation from wiki
+  - https://wiki.cheatengine.org/index.php?title=Lua#Classes
