@@ -1,0 +1,3 @@
+--- The visual hexadecimal object used on the memory view window.
+--
+-- @classmod Hexadecimalview

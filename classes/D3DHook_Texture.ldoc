@@ -1,0 +1,4 @@
+--- This class controls the texture in memory.
+-- Without a sprite to use it, it won't show.
+--
+-- @classmod D3DHook_Texture

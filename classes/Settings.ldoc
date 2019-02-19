@@ -1,0 +1,3 @@
+--- This class can be used to read out and set settings of cheat engine and of plugins, and store your own data.
+--
+-- @classmod Settings

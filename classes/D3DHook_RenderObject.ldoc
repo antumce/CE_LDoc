@@ -1,0 +1,3 @@
+--- The abstract class used to control in what manner objects are rendered.
+--
+-- @classmod D3DHook_RenderObject

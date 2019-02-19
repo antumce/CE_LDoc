@@ -1,0 +1,3 @@
+--- The d3dhook functions provide a method to render graphics and text inside the game, as long as it is running in directx9, 10 or 11.
+--
+-- @classmod D3DHOOK

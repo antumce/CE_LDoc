@@ -1,0 +1,3 @@
+--- The custom type is an convertor of raw data, to a human readable interpretation.
+--
+-- @classmod CustomType

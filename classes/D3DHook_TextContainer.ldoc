@@ -1,0 +1,3 @@
+--- A D3DHook_Sprite class draws a piece of text on the screen based on the used fontmap.
+--
+-- @classmod D3DHook_TextContainer

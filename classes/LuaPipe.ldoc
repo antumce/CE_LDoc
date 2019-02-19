@@ -1,0 +1,3 @@
+--- Abstract class that LuaPipeServer and LuaPipeClient inherit from.
+--
+-- @classmod LuaPipe
