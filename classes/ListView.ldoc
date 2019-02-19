@@ -12,96 +12,125 @@
 -- @section creation
 
 
----
+--- Creates a ListView class object which belongs to the given owner.
+-- Owner can be any object inherited from WinControl.
 --
--- @function createListView(owner): Creates a ListView class object which belongs to the given owner. Owner can be any object inherited from WinControl
+-- @function createListView
+-- @tparam WinControl owner
 
 --- @section end
 
 
----
+--- The Listcolumns object of the listview. (Readonly)
 --
--- @prop Columns: ListColumns - The Listcolumns object of the listview (Readonly)
+-- @prop Columns
+-- @ptype ListColumns
 
----
+--- The ListItems objects of the listview.
 --
--- @prop Items: ListItems - The ListItems objects of the listview
+-- @prop Items
+-- @ptype ListItems
 
----
+--- The currently selected index in the Items object.
 --
--- @prop ItemIndex: integer - The currently selected index in the Items object  (-1 if nothing is selected)
-
----
+-- (-1 if nothing is selected)
 --
--- @prop Selected: ListItem - The currently selected listitem (nil if nothing is selected)
+-- @prop ItemIndex
+-- @ptype integer
 
----
+--- The currently selected listitem.
 --
--- @prop Canvas: Canvas - The canvas object used to render the listview  (Readonly)
-
----
+-- (nil if nothing is selected)
 --
--- @prop AutoWidthLastColumn: Boolean - When set to true the last column will resize when the control resizes
+-- @prop Selected
+-- @ptype ListItem
 
----
+--- The canvas object used to render the listview. (Readonly)
 --
--- @prop HideSelection: Boolean - When set to true the selection will not hide when the focus leaves the control
+-- @prop Canvas
+-- @ptype Canvas
 
----
+--- When set to true the last column will resize when the control resizes.
 --
--- @prop RowSelect: Boolean - When set to true the whole row will be selected instead of just the first column
+-- @prop AutoWidthLastColumn
+-- @ptype boolean
 
----
+--- When set to true the selection will not hide when the focus leaves the control.
 --
--- @prop OwnerData: Boolean - When set to true the listview will call the onData function for every line being displayed. Use Items.Count to set the number of virtual lines
+-- @prop HideSelection
+-- @ptype boolean
 
-
----
+--- When set to true the whole row will be selected instead of just the first column.
 --
--- @prop OnData: function(sender, ListItem) - Called when a listview with OwnerData true renders a line
+-- @prop RowSelect
+-- @ptype boolean
 
-
----
+--- When set to true the listview will call the onData function for every line being displayed.
+-- Use Items.Count to set the number of virtual lines.
 --
--- @prop OnCustomDraw: function(Sender, {Top, Left, Bottom, Right}, DefaultDraw Optional): NewDefaultDraw
+-- @prop OwnerData
+-- @ptype boolean
 
----
+
+--- Called when a listview with OwnerData true renders a line.
 --
--- @prop OnCustomDrawItem: function(Sender, ListItem, {cdsSelected=true/false(nil), cdsGrayed=true/false(nil), cdsDisabled, cdsChecked, cdsFocused, cdsDefault, cdsHot, cdsMarked, cdsIndeterminate}, DefaultDraw Optional): NewDefaultDraw
+-- @prop OnData
+-- @ptype function
+-- @usage ListView.OnData = function(sender, ListItem)
 
----
---
--- @prop OnCustomDrawSubItem: function(Sender, ListItem, SubItemIndex, {cdsSelected=true/false(nil), cdsGrayed=true/false(nil), cdsDisabled, cdsChecked, cdsFocused, cdsDefault, cdsHot, cdsMarked, cdsIndeterminate}, DefaultDraw Optional): NewDefaultDraw
-
-
----
---
--- @function clear()
-
----
---
--- @function getColumns() : ListColumns - Returns a ListColumns object
 
 ---
 --
--- @function getItems(): ListItems - Returns a ListItems object
+-- @prop OnCustomDraw
+-- @ptype function
+-- @usage ListView.OnCustomDraw = function(Sender, {Top, Left, Bottom, Right}, DefaultDraw Optional): NewDefaultDraw
 
 ---
 --
--- @function getItemIndex(): integer -  Returns the currently selected index in the Items object
+-- @prop OnCustomDrawItem
+-- @ptype function
+-- @usage ListView.OnCustomDrawItem = function(Sender, ListItem, {cdsSelected=true/false(nil), cdsGrayed=true/false(nil), cdsDisabled, cdsChecked, cdsFocused, cdsDefault, cdsHot, cdsMarked, cdsIndeterminate}, DefaultDraw Optional): NewDefaultDraw
 
 ---
 --
--- @function setItemIndex(index: integer)- Sets the current itemindex
+-- @prop OnCustomDrawSubItem
+-- @ptype function
+-- @usage ListView.OnCustomDrawSubItem function(Sender, ListItem, SubItemIndex, {cdsSelected=true/false(nil), cdsGrayed=true/false(nil), cdsDisabled, cdsChecked, cdsFocused, cdsDefault, cdsHot, cdsMarked, cdsIndeterminate}, DefaultDraw Optional): NewDefaultDraw
+
 
 ---
 --
--- @function getCanvas() : Canvas - Returns the canvas object used to render the listview
+-- @function clear
 
----
+--- Returns a ListColumns object.
 --
--- @function beginUpdate() - Tells the listview to stop updating while you're busy
+-- @function getColumns
+-- @treturn ListColumns
 
----
+--- Returns a ListItems object.
 --
--- @function endUpdate() - Applies all updates between beginUpdate and endUpdate
+-- @function getItems
+-- @treturn ListItems
+
+--- Returns the currently selected index in the Items object.
+--
+-- @function getItemIndex
+-- @treturn integer
+
+--- Sets the current itemindex.
+--
+-- @function setItemIndex
+-- @tparam integer index
+
+--- Returns the canvas object used to render the listview.
+--
+-- @function getCanvas
+-- @treturn Canvas
+
+--- Tells the listview to stop updating while you're busy.
+--
+-- @function beginUpdate
+
+--- Applies all updates between beginUpdate and endUpdate.
+--
+-- @function endUpdate
