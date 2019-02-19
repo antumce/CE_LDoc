@@ -1,6 +1,6 @@
---- Functions to create Form objects
+--- Functions to manage Form objects
 --
--- @global create_functions
+-- @global functions
 
 
 ---
