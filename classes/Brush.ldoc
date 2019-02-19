@@ -1,0 +1,23 @@
+---
+--
+-- @classmod Brush
+
+--- Brush &#x1f844; CustomBrush &#x1f844; CanvasHelper &#x1f844; Object
+--
+-- @subclass CustomBrush
+
+
+---
+--
+-- @prop Color
+-- @ptype integer
+
+
+---
+--
+-- @function getColor
+-- @treturn integer
+
+---
+--
+-- @function setColor

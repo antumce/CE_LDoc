@@ -1,0 +1,40 @@
+---
+--
+-- @classmod Pen
+
+--- Pen &#x1f844; CustomPen &#x1f844; CanvasHelper &#x1f844; Object
+--
+-- @subclass CustomPen
+
+
+
+--- The color of the pen.
+--
+-- @prop Color
+-- @ptype integer
+
+--- Thickness of the pen.
+--
+-- @prop Width
+-- @ptype integer
+
+
+---
+--
+-- @function getColor
+-- @treturn integer
+
+---
+--
+-- @function setColor
+-- @tparam integer color
+
+---
+--
+-- @function getWidth
+-- @treturn integer
+
+---
+--
+-- @function setWidth
+-- @tparam integer width
