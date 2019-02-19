@@ -1,0 +1,49 @@
+---
+--
+-- @classmod ListItems
+
+--- ListItems &#x1f844; TObject
+--
+-- @subclass TObject
+
+
+--- The number of ListItems this object holds (Normally read only, but writable if OwnerData is true in the listview).
+--
+-- @prop Count
+-- @ptype integer
+
+--- Array to access each ListItem object.
+--
+-- @prop Item
+-- @ptype array
+-- @return ListItem
+
+--- Same as [Item](#ListItems.Item)
+--
+-- @fixme property name
+-- @prop FIXME []
+
+
+---
+--
+-- @function clear()
+
+---
+--
+-- @function getCount()
+
+---
+--
+-- @function getItem(integer) : Return the listitem object at the given index
+
+---
+--
+-- @function add(): Returns a new ListItem object
+
+---
+--
+-- @function displayRect(code): returns the displayed rectangle of the listitem. code can be: drBounds(0), drIcon(1), drLabel(2), drSelectBounds(3)
+
+---
+--
+-- @function displayRectSubItem(code): returns the displayed rectangle of the listitem. code can be: drBounds(0), drIcon(1), drLabel(2), drSelectBounds(3)
