@@ -8,47 +8,62 @@
 -- @section creation
 
 
-
 ---
 --
--- @function createStructureForm(address, groupname OPTIONAL, structurename OPTIONAL)
+-- @function createStructureForm
+-- @param address
+-- @param[opt] groupname
+-- @param[opt] structurename
+-- @treturn StructureFrm
 
----
+--- returns a table of StructureFrm objects (can be useful for finding a structure window with the wanted structure).
 --
--- @function enumStructureForms() : returns a table of StructureFrm objects (can be useful for finding a structure window with the wanted structure)
+-- @function enumStructureForms
+-- @treturn table[StructureFrm]
 
 --- @section end
 
 
----
+--- The currently selected structure.
 --
--- @prop MainStruct: structure - The currently selected structure
+-- @prop MainStruct
+-- @ptype Structure
 
----
+--- The number of columns (columns=address).
 --
--- @prop ColumnCount: integer - the number of columns (columns=address)
+-- @prop ColumnCount
+-- @ptype integer
 
----
+--- Fetches a structColumn object from the structure form.
 --
--- @prop Column[index]: structColumn - Fetches a structColumn object from the structure form
+-- @prop Column
+-- @idx index
+-- @ptype array
+-- @treturn structColumn
 
----
+--- The number of groups.
 --
--- @prop GroupCount: integer - The number of groups
+-- @prop GroupCount
+-- @ptype integer
 
----
+--- Fetches a structGroup object from the structure form.
 --
--- @prop Group[index]: structGroup - Fetches a structGroup object from the structure form
+-- @prop Group
+-- @idx index
+-- @ptype array
+-- @return structGroup
 
 
----
+--- Forces a refresh.
 --
--- @function structChange() : Forces a refresh
+-- @function structChange
 
----
+--- Adds a new column in the currently focuses group and returns it's structColumn object.
 --
--- @function addColumn(): Adds a new column in the currently focuses group and returns it's structColumn object
+-- @function addColumn
+-- @treturn structColumn
 
----
+--- Adds a new group and returns the structGroup object.
 --
--- @function addGroup(): Adds a new group and returns the structGroup object
+-- @function addGroup
+-- @treturn structGroup
