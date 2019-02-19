@@ -40,28 +40,34 @@
 
 ---
 --
--- @function delete()
+-- @function delete
 
----
+--- Returns the first columns string of the listitem.
 --
--- @function getCaption() : Returns the first columns string of the listitem
+-- @function getCaption
+-- @treturn string
 
----
+--- Sets the first column string of the listitem.
 --
--- @function setCaption(string) : Sets the first column string of the listitem
+-- @function setCaption
+-- @tparam string caption
 
----
+--- Returns true if the listitem is checked.
 --
--- @function getChecked() : Returns true if the listitem is checked
+-- @function getChecked
+-- @treturn boolean
 
----
+--- Sets the checkbox of the listbox to the given state.
 --
--- @function setChecked(boolean): Sets the checkbox of the listbox to the given state
+-- @function setChecked
+-- @tparam boolean checked
 
----
+--- Returns a Strings object.
 --
--- @function getSubItems(): Returns a Strings object
+-- @function getSubItems
+-- @treturn Strings
 
----
+--- Scrolls the listview so this item becomes visible (Cheat Engine 6.4 and later).
 --
--- @function makeVisible(partial): Scrolls the listview so this item becomes visible (Cheat Engine 6.4 and later)
+-- @function makeVisible
+-- @param partial
