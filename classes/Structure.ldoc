@@ -1,0 +1,91 @@
+---
+--
+-- @classmod Structure
+
+--- Structure &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- The name of the structure.
+--
+-- @prop Name
+-- @ptype string
+
+--- The number of bytes between the last element and the start (ReadOnly).
+--
+-- @prop Size
+-- @ptype integer
+
+--- Number of elements in the structure (ReadOnly).
+--
+-- @prop Count
+-- @ptype integer
+
+--- Returns the structure element at the given index (ReadOnly).
+--
+-- @prop Element[]
+-- @idx index
+-- @ptype array
+-- @treturn structureElement
+
+
+---
+--
+-- @function getName(): Returns the name
+
+---
+--
+-- @function setName(name): Sets the name
+
+---
+--
+-- @function getElement(index): Returns a structureElement object (Changing offsets can change the index)
+
+---
+--
+-- @function getElementByOffset(offset): Returns a structureElement object where the specified offset is at least the requested offset
+
+---
+--
+-- @function addElement(): Adds a new blank structureElement and returns it
+
+---
+--
+-- @function autoGuess(baseaddresstoguessfrom, offset, size)
+
+---
+--
+-- @function fillFromDotNetAddress(address, changeName): Fills the structure with the layout gathered from querying .NET.  If changeName is true, the structure will take the name of the .NET class.  (6.4+)
+
+
+---
+--
+-- @function beginUpdate(): Call this when you want to make multiple updates to a structure. It will speed up the update process
+
+---
+--
+-- @function endUpdate(): Call this when done
+
+---
+--
+-- @function addToGlobalStructureList(): Add this to the list of structures for the user to select from. (Global structures will get saved to the table)
+
+---
+--
+-- @function removeFromGlobalStructureList(): Remove from the list of structures.
+
+
+Structure class related functions:
+
+---
+--
+-- @function getStructureCount(): Returns the number of Global structures. (Global structures are the visible structures)
+
+---
+--
+-- @function getStructure(index): Returns the Structure object at the given index
+
+---
+--
+-- @function createStructure(name): Returns an empty structure object (Not yet added to the Global list. Call structure.addToGlobalStructureList manually)
