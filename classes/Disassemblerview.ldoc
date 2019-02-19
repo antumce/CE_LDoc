@@ -7,48 +7,63 @@
 -- @subclass Panel
 
 
----
+--- The currently selected address in the disassemblerview.
 --
--- @prop SelectedAddress: integer - The currently selected address in the disassemblerview
+-- @prop SelectedAddress
+-- @ptype integer
+
+--- The secondary selected address in the disassemblerview
+--
+-- @prop SelectedAddress2
+-- @ptype integer
+
+--- The first address to show.
+--
+-- @prop TopAddress
+-- @ptype integer
+
+--- Determines if the jumplines should be shown.
+--
+-- @prop ShowJumplines
+-- @ptype boolean
+
+--- If set to true the focus rectangle won't be shown.
+--
+-- @prop HideFocusRect
+-- @ptype boolean
 
 ---
 --
--- @prop SelectedAddress2: integer - The secondary selected address in the disassemblerview
+-- @prop SpaceAboveLines
+-- @ptype integer
 
 ---
 --
--- @prop TopAddress: Integer - The first address to show
+-- @prop SpaceBelowLines
+-- @ptype integer
 
----
+--- Function to call when the selection has changed.
 --
--- @prop ShowJumplines: boolean - Determines if the jumplines should be shown
+-- @prop OnSelectionChange
+-- @ptype function
+-- @param sender
+-- @param address
+-- @param address2
+-- @usage Disassemblerview.OnSelectionChange = function(sender, address, address2)
 
----
+--- Function to call when you wish to provide the disassembler view with an extra image containing data you wish to show.
+--  This function is called once to get an image to show above the instruction, and once to get an image to show under the instruction and optional comments.
+--  The image for both calls must be different objects as rendering will only be done when both calls have been completed
 --
--- @prop HideFocusRect: boolean - If set to true the focus rectangle won't be shown
-
----
+--  Sender is a DisassemblerviewLine object
+--  If no coordinates are given the image will be centered above/below the instruction
 --
--- @prop SpaceAboveLines: integer
+-- @prop OnExtraLineRender
+-- @ptype function
+-- @usage Disassemblerview.OnExtraLineRender = function function(sender, Address, AboveInstruction, Selected): RasterImage OPTIONAL, x OPTIONAL, y OPTIONAL
 
----
+
+--- Background picture of the disasemblerview.
 --
--- @prop SpaceBelowLines: integer
-
----
---
--- @prop OnSelectionChange: function(sender, address, address2) - Function to call when the selection has changed
-
----
---
--- @prop OnExtraLineRender: function(sender, Address, AboveInstruction, Selected): RasterImage OPTIONAL, x OPTIONAL, y OPTIONAL
-    Function to call when you wish to provide the disassembler view with an extra image containing data you wish to show.
-    This function is called once to get an image to show above the instruction, and once to get an image to show under the instruction and optional comments.
-    The image for both calls must be different objects as rendering will only be done when both calls have been completed
-
-    Sender is a DisassemblerviewLine object
-    If no coordinates are given the image will be centered above/below the instruction
-
----
---
--- @prop Osb: Bitmap : Background picture of the disasemblerview
+-- @prop Osb
+-- @ptype Bitmap
