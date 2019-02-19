@@ -7,7 +7,7 @@ sort = true
 wrap = true
 file = {
 	'classes',
-	'functions',
+	'globals',
 }
 
 readme = "README.md"
