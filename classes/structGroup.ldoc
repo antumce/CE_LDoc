@@ -1,0 +1,32 @@
+---
+--
+-- @classmod structGroup
+
+
+--- Gets the current name.
+--
+-- @prop name
+-- @ptype string
+
+--- Gets the groupbox object.
+--
+-- @prop box
+-- @ptype Groupbox
+
+--- Gets the number of columns in the group.
+--
+-- @prop columnCount
+-- @ptype integer
+
+--- Returns the specific structColumn object.
+--
+-- @prop columns
+-- @idx index
+-- @ptype array
+-- @treturn structColumn
+
+
+--- Adds a new columns to the specific group and returns it's structColumn object.
+--
+-- @function addColumns
+-- @treturn structColumn
