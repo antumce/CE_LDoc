@@ -4,6 +4,7 @@ dir = 'docs'
 not_luadoc = true
 format = 'markdown'
 sort = true
+wrap = true
 file = {
 	'classes',
 	'functions',
