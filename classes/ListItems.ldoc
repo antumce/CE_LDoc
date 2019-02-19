@@ -26,24 +26,34 @@
 
 ---
 --
--- @function clear()
+-- @function clear
 
 ---
 --
--- @function getCount()
+-- @function getCount
+-- @treturn integer
 
----
+--- Return the listitem object at the given index.
 --
--- @function getItem(integer) : Return the listitem object at the given index
+-- @function getItem
+-- @tparam integer index
+-- @treturn ListItem
 
----
+--- Returns a new ListItem object.
 --
--- @function add(): Returns a new ListItem object
+-- @function add
+-- @treturn ListItem
 
----
+--- Returns the displayed rectangle of the listitem.
 --
--- @function displayRect(code): returns the displayed rectangle of the listitem. code can be: drBounds(0), drIcon(1), drLabel(2), drSelectBounds(3)
+-- Code can be: drBounds(0), drIcon(1), drLabel(2), drSelectBounds(3).
+--
+-- @function displayRect
+-- @tparam integer code
 
----
+--- Returns the displayed rectangle of the listitem.
 --
--- @function displayRectSubItem(code): returns the displayed rectangle of the listitem. code can be: drBounds(0), drIcon(1), drLabel(2), drSelectBounds(3)
+-- Code can be: drBounds(0), drIcon(1), drLabel(2), drSelectBounds(3).
+--
+-- @function displayRectSubItem
+-- @tparam int code
