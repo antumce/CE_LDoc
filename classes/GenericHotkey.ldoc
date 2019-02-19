@@ -1,0 +1,56 @@
+---
+--
+-- @classmod GenericHotkey
+
+--- GenericHotkey &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- Creation
+--
+-- @section creation
+
+--- Returns an initialized GenericHotkey class object.
+-- Maximum of 5 keys.
+--
+-- createHotkey(function, {keys, ...}) : ^
+--
+-- @function createHotkey
+-- @param function
+-- @param keys
+-- @param[opt] ...
+
+--- @section end
+
+
+--- Interval in milliseconds that determines the minimum time between hotkey activations.
+-- If 0, the global delay is used.
+--
+-- @prop DelayBetweenActivate
+-- @ptype integer
+
+--- The function to call when the hotkey is pressed.
+--
+-- @prop onHotkey
+-- @ptype function
+
+
+---
+--
+-- @function getKeys
+
+---
+--
+-- @function setKeys
+-- @param key
+-- @param[opt] ...
+
+---
+--
+-- @function setOnHotkey
+-- @param table
+
+---
+--
+-- @function getOnHotkey
