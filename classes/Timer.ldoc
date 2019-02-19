@@ -1,0 +1,74 @@
+---
+--
+-- @classmod Timer
+
+--- Timer &#x1f844; Component &#x1f844; Object
+--
+-- @subclass Component
+
+--- Creation
+--
+-- @section creation
+
+--- Creates a timer object.
+-- If enabled is not given it will be enabled by default (will start as
+-- soon as an onTimer event has been assigned). Owner may be *nil*, but
+-- you will be responsible for destroying it instead of being the
+-- responsibility of the owner object.
+--
+-- @function createTimer
+-- @param[opt] owner
+-- @param[opt] enabled
+
+--- @section end
+
+
+--- The number of milliseconds (1000=1 second) between executions.
+--
+-- @prop Interval
+-- @ptype integer
+
+---
+--
+-- @prop Enabled
+-- @ptype boolean
+
+--- The function to call when the timer triggers.
+--
+-- @prop OnTimer
+-- @ptype function
+-- @usage Timer.OnTimer = function(timer)
+
+
+---
+--
+-- @function getInterval
+-- @treturn integer
+
+--- Sets the speed on how often the timer should trigger.
+--
+-- In milliseconds (1000=1 second).
+--
+-- @function setInterval
+-- @tparam integer interval
+
+---
+--
+-- @function getOnTimer
+
+---
+--
+-- @function setOnTimer
+-- @tparam function func
+-- @usage Timer.setOnTimer(function(time))
+
+---
+--
+-- @function getEnabled
+-- @treturn boolean
+
+---
+--
+-- @function setEnabled
+-- @tparam boolean enabled
+-- @tparam boolean enabled
