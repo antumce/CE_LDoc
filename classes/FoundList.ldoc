@@ -1,0 +1,68 @@
+--- The foundlist is an object that opens the current memscan's result file and provides an interface for reading out the addresses.
+--
+-- @classmod FoundList Class
+
+
+
+--- Creation
+--
+-- @section creation
+
+
+---
+--
+-- @function createFoundList
+-- @param memscan
+-- @treturn FoundList
+
+--- @section end
+
+
+--- Number of results found.
+--
+-- @prop Count
+-- @ptype integer
+
+--- Returns the address as a string at the given index.
+--
+-- @prop Address
+-- @idx index
+-- @ptype string
+
+--- Returns the value as a string at the given index.
+--
+-- @prop Value
+-- @idx index
+-- @ptype string
+
+--- Same as [Address](#Address)
+--
+-- @prop FIXME []
+-- @idx index
+-- @ptype string
+
+
+--- Call this when a memscan has finished scanning. This will open the results for reading.
+--
+-- @function initialize
+
+--- Release the results.
+--
+-- @function deinitialize
+
+---
+--
+-- @function getCount
+-- @treturn integer
+
+--- Returns the address as a string.
+--
+-- @function getAddress
+-- @tparam integer index
+-- @treturn string
+
+--- Returs the value as a string.
+--
+-- @function getValue
+-- @tparam integer index
+-- @treturn string
