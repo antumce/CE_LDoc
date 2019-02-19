@@ -1,0 +1,35 @@
+---
+--
+-- @classmod FindDialog
+
+--- FindDialog &#x1f844; CommonDialog &#x1f844; Component &#x1f844; Object
+--
+-- @subclass CommonDialog
+
+
+---
+--
+-- @prop FindText: String - The text the user wishes to find
+
+--- Find Options.
+--
+-- Options:
+--     { frDown, frFindNext, frHideMatchCase, frHideWholeWord,
+--       frHideUpDown, frMatchCase, frDisableMatchCase, frDisableUpDown,
+--       frDisableWholeWord, frReplace, frReplaceAll, frWholeWord, frShowHelp,
+--       frEntireScope, frHideEntireScope, frPromptOnReplace, frHidePromptOnReplace }
+--
+-- @prop Options
+-- @ptype Enum
+
+--- Called when the find button has been clicked.
+--
+-- @prop OnFind
+-- @ptype function
+-- @usage CommonDialog.OnFind = function(sender)
+
+--- Called when the help button is visible (see Options) and clicked.
+--
+-- @prop OnHelp
+-- @ptype function
+-- @usage CommonDialog.OnHelp = function(sender)
