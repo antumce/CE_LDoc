@@ -62,6 +62,7 @@ local function indent(text)
 end
 
 -- custom types
+new_type('global', 'Globals', true)
 new_type('subclass', 'Inheritance')
 new_type('prop', 'Properties')
 alias('inherits', 'subclass')
