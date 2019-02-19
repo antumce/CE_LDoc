@@ -1,0 +1,68 @@
+---
+--
+-- @classmod Treeview
+
+--- TreeView &#x1f844; CustomControl &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass CustomControl
+
+
+--- Creation
+--
+-- @section creation
+
+
+---
+--
+-- @function createTreeView
+-- @param owner
+-- @treturn Treeview
+
+--- @section end
+
+
+--- The Treenodes object of the treeview (ReadOnly).
+--
+-- @prop Items
+-- @ptype TreeNodes
+
+--- The currently selected treenode.
+--
+-- @prop Selected
+-- @ptype TreeNode
+
+
+---
+--
+-- @function beginUpdate
+
+---
+--
+-- @function endUpdate
+
+---
+--
+-- @function getItems
+-- @treturn TreeNodes
+
+---
+--
+-- @function getSelected
+-- @treturn TreeNode
+
+---
+--
+-- @function setSelected
+
+--- Collapses all the nodes, including the children's nodes.
+--
+-- @function fullCollapse
+
+--- Expands all the nodes and all their children.
+--
+-- @function fullExpand
+
+--- Saves the contents of the treeview to disk.
+--
+-- @function saveToFile
+-- @tparam string filename
