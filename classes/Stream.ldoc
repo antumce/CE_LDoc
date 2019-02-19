@@ -1,0 +1,74 @@
+---
+--
+-- @classmod Stream
+
+
+---
+--
+-- @prop Size
+-- @ptype integer
+
+---
+--
+-- @prop Position
+-- @ptype integer
+
+
+--- Copies count bytes from the given stream to this stream.
+--
+-- @function copyFrom
+-- @param stream
+-- @param count
+
+--- Returns a bytetable containing the bytes of the stream.
+-- This increases the position.
+--
+-- @function read
+-- @param count
+-- @return bytetable
+
+--- Writes the given bytetable to the stream.
+--
+-- @function write
+-- @param bytetable
+-- @param[opt] count
+
+---
+--
+-- @function readByte
+-- @treturn integer
+
+---
+--
+-- @function writeByte
+-- @tparam integer byte
+
+---
+--
+-- @function readWord
+-- @treturn integer
+
+---
+--
+-- @function writeWord
+-- @tparam integer word
+
+---
+--
+-- @function readDword
+-- @treturn integer
+
+---
+--
+-- @function writeDword
+-- @tparam integer dword
+
+---
+--
+-- @function readQword
+-- @treturn integer
+
+---
+--
+-- @function writeQword
+-- @tparam integer qword
