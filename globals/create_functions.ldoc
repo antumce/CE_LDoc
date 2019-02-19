@@ -9,3 +9,33 @@
 -- @function createForm
 -- @tparam bool visible Form will be visible if `true`, hidden if `false` (default: `true`)
 -- @return [Form](../classes/Form.html)
+
+
+--- Structure class functions
+--
+-- @section structure
+-- @see Structure
+
+
+--- Returns the number of Global structures.
+--
+-- (Global structures are the visible structures)
+--
+-- @function getStructureCount
+-- @treturn integer
+
+--- Returns the Structure object at the given index.
+--
+-- @function getStructure
+-- @tparam integer index
+-- @treturn Structure
+
+--- Returns an empty structure object.
+--
+-- (Not yet added to the Global list. Call structure.addToGlobalStructureList manually)
+--
+-- @function createStructure
+-- @param name
+-- @treturn Structure
+
+--- @section end
