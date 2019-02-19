@@ -1,0 +1,169 @@
+---
+--
+-- @classmod Addresslist
+
+--- Addresslist &#x1f844; Panel &#x1f844; WinControl &#x1f844; Control &#x1f844; Component &#x1f844; Object
+--
+-- @subclass Panel
+
+
+--- The number of records in the table.
+--
+-- @prop Count
+-- @ptype integer
+
+--- The number of records that are selected.
+--
+-- @prop SelCount
+-- @ptype integer
+
+--- The main selected record.
+--
+-- @prop SelectedRecord
+-- @ptype MemoryRecord
+
+--- Array to access the individial memory records.
+--
+-- @prop MemoryRecord
+-- @ptype array
+-- @return MemoryRecord
+
+--- Default accessor.
+--
+-- Same as [MemoryRecord](AddressList.MemoryRecord)
+--
+-- @fixme propery name
+-- @prop FIXME []
+-- @ptype array
+-- @return MemoryRecord
+
+---
+--
+-- @prop CheckboxActiveSelectedColor
+-- @ptype color color
+
+---
+--
+-- @prop CheckboxActiveColor
+-- @ptype color
+
+---
+--
+-- @prop CheckboxSelectedColor
+-- @ptype color
+
+---
+--
+-- @prop CheckboxColor
+-- @ptype color
+
+---
+--
+-- @prop SelectedBackgroundColor
+-- @ptype color
+
+---
+--
+-- @prop SelectedSecondaryBackgroundColor
+-- @ptype color
+
+---
+--
+-- @prop ExpandSignColor
+-- @ptype color
+
+---
+--
+-- @prop IncreaseArrowColor
+-- @ptype color
+
+---
+--
+-- @prop DecreaseArrowColor
+-- @ptype color
+
+--- Called when the user initiates a description column change on a record.
+-- Return true if you handle it, false for normal behaviour.
+--
+-- @prop OnDescriptionChange
+-- @ptype function
+-- @return boolean
+-- @usage Addresslist.OnDescriptionChange = function(addresslist, memrec)
+
+--- Called when the user initiates an address column change on a record.
+-- Return true if you handle it, false for normal behaviour.
+--
+-- @prop OnAddressChange
+-- @ptype function
+-- @return boolean
+-- @usage Addresslist.OnAddressChange = function(addresslist ,memrec)
+
+--- Called when the user initiates a type column change on a record.
+-- Return true if you handle it, false for normal behaviour.
+--
+-- @prop OnTypeChange
+-- @ptype function
+-- @return boolean
+-- @usage Addresslist.OnTypeChange = function(addresslist ,memrec)
+
+--- Called when the user initiates a value column change on a record.
+-- Return true if you handle it, false for normal behaviour.
+--
+-- @prop OnValueChange
+-- @ptype function
+-- @return boolean
+-- @usage Addresslist.OnValueChange = function(addresslist, memrec)
+
+
+---
+--
+-- @function getCount()
+
+---
+--
+-- @function getMemoryRecord(index)
+
+---
+--
+-- @function getMemoryRecordByDescription(description): returns a MemoryRecord object
+
+---
+--
+-- @function getMemoryRecordByID(ID)
+
+---
+--
+-- @function createMemoryRecord() : creates an generic cheat table entry and add it to the list
+
+---
+--
+-- @function getSelectedRecords():  Returns a table containing all the selected records
+
+---
+--
+-- @function doDescriptionChange() : Will show the GUI window to change the description of the selected entry
+
+---
+--
+-- @function doAddressChange() : Will show the GUI window to change the address of the selected entry
+
+---
+--
+-- @function doTypeChange() : Will show the GUI window to change the type of the selected entries
+
+---
+--
+-- @function doValueChange() : Will show the GUI window to change the value of the selected entries
+
+---
+--
+-- @function getSelectedRecord() : Gets the main selected memoryrecord
+
+---
+--
+-- @function setSelectedRecord(memrec) : Sets the currently selected memoryrecord. This will unselect all other entries
+
+
+---
+--
+-- @function disableAllWithoutExecute(): Disables all memory records without executing their [Disable] section
