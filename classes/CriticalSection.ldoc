@@ -1,0 +1,34 @@
+---
+--
+-- @classmod CriticalSection
+
+--- CriticalSection &#x1f844; Object
+--
+-- @subclass Object
+
+
+--- Creation
+--
+-- @section creation
+
+
+--- Returns a critical section object.
+--
+-- @function createCriticalSection
+-- @treturn CriticalSection
+
+--- @section end
+
+
+---
+--
+-- @function enter
+
+---
+--
+-- @function leave
+
+--- Returns true if entered, false if not.
+--
+-- @function tryEnter
+-- @treturn boolean
