@@ -24,53 +24,71 @@
 
 --- Returns the structure element at the given index (ReadOnly).
 --
--- @prop Element[]
+-- @prop Element
 -- @idx index
 -- @ptype array
 -- @treturn structureElement
 
 
----
+--- Returns the name.
 --
--- @function getName(): Returns the name
+-- @function getName
+-- @treturn string
+
+--- Sets the name.
+--
+-- @function setName
+-- @tparam string name
+
+--- Returns a structureElement object.
+--
+-- (Changing offsets can change the index)
+--
+-- @function getElement
+-- @tparam integer index
+-- @treturn StructureElement
+
+--- Returns a structureElement object where the specified offset is at least the requested offset.
+--
+-- @function getElementByOffset
+-- @param offset
+-- @treturn StructureElement
+
+--- Adds a new blank structureElement and returns it.
+--
+-- @function addElement
+-- @treturn StructureElement
 
 ---
 --
--- @function setName(name): Sets the name
+-- @function autoGuess
+-- @param baseaddresstoguessfrom
+-- @param offset
+-- @param size
 
----
+--- Fills the structure with the layout gathered from querying .NET.
+-- If changeName is true, the structure will take the name of the .NET class.  (6.4+)
 --
--- @function getElement(index): Returns a structureElement object (Changing offsets can change the index)
+-- @function fillFromDotNetAddress
+-- @param address
+-- @param changeName
 
----
+
+--- Call this when you want to make multiple updates to a structure.
+-- It will speed up the update process
 --
--- @function getElementByOffset(offset): Returns a structureElement object where the specified offset is at least the requested offset
+-- @function beginUpdate
 
----
+--- Call this when done.
 --
--- @function addElement(): Adds a new blank structureElement and returns it
+-- @function endUpdate
 
----
+--- Add this to the list of structures for the user to select from.
 --
--- @function autoGuess(baseaddresstoguessfrom, offset, size)
-
----
+-- (Global structures will get saved to the table)
 --
--- @function fillFromDotNetAddress(address, changeName): Fills the structure with the layout gathered from querying .NET.  If changeName is true, the structure will take the name of the .NET class.  (6.4+)
+-- @function addToGlobalStructureList
 
-
----
+--- Remove from the list of structures.
 --
--- @function beginUpdate(): Call this when you want to make multiple updates to a structure. It will speed up the update process
-
----
---
--- @function endUpdate(): Call this when done
-
----
---
--- @function addToGlobalStructureList(): Add this to the list of structures for the user to select from. (Global structures will get saved to the table)
-
----
---
--- @function removeFromGlobalStructureList(): Remove from the list of structures.
+-- @function removeFromGlobalStructureList
