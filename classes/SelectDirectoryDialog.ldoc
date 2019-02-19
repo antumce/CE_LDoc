@@ -1,0 +1,19 @@
+---
+--
+-- @classmod SelectDirectoryDialog
+
+--- SelectDirectoryDialog &#x1f844; OpenDialog &#x1f844; FileDialog &#x1f844; CommonDialog &#x1f844; Component &#x1f844; Object
+--
+-- @subclass OpenDialog
+
+
+--- Creation
+--
+-- @section creation
+
+---
+--
+-- @function createSelectDirectoryDialog
+-- @param owner
+
+--- @section end
