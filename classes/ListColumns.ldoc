@@ -1,0 +1,36 @@
+---
+--
+-- @classmod ListColumns
+
+--- ListColumns &#x1f844; Collection &#x1f844; Object
+--
+-- @subclass Collection
+
+
+--- Array to access a column.
+--
+-- @prop Columns
+-- @ptype array
+
+--- Same as [Columns](#ListColumns.Columns)
+--
+-- @fixme property name
+-- @prop FIXME []
+-- @ptype array
+
+
+--- Returns a new ListColumn object.
+--
+-- @function add
+
+--- Returns a ListColumn object.
+--
+-- @function getColumn
+-- @tparam integer index
+-- @treturn ListColumn
+
+--- Sets a ListColum object (not recommended, use add instead).
+--
+-- @function setColumn
+-- @tparam integer index
+-- @param listcolumns
