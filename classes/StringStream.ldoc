@@ -1,0 +1,25 @@
+---
+--
+-- @classmod StringStream
+
+--- StringStream &#x1f844; Stream &#x1f844; Object
+--
+-- @subclass Stream
+
+
+--- Creation
+--
+-- @section creation
+
+---
+--
+-- @function createStringStream
+-- @tparam string str
+-- @treturn StringStream
+
+--- @section end
+
+
+--- The internal string.
+--
+-- @prop DataString

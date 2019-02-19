@@ -1,0 +1,20 @@
+---
+--
+-- @classmod FileStream
+
+--- FileStream &#x1f844; HandleStream &#x1f844; Stream &#x1f844; Object
+--
+-- @subclass HandlStream
+
+--- Creation
+--
+-- @section creation
+
+---
+--
+-- @function createFileStream
+-- @tparam string filename
+-- @param mode
+-- @treturn FileStream
+
+--- @section end

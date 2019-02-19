@@ -1,0 +1,36 @@
+---
+--
+-- @classmod MemoryStream
+
+--- MemoryStream &#x1f844; Stream &#x1f844; Object
+--
+-- @subclass Stream
+
+
+--- Creation
+--
+-- @section creation
+
+---
+--
+-- @function createMemoryStream
+-- @treturn MemoryStream
+
+--- @section end
+
+
+--- The address in Cheat Engine's memory this stream is loaded (READONLY, tends to change).
+--
+-- @prop Memory
+-- @ptype integer
+
+
+--- Replaces the contents in the memory stream with the contents of a file on disk.
+--
+-- @function loadFromFile
+-- @tparam string filename
+
+--- Writes the contents of the memory stream to the specified file.
+--
+-- @function saveToFile
+-- @tparam string filename

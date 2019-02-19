@@ -1,0 +1,7 @@
+---
+--
+-- @classmod HandleStream
+
+--- HandleStream &#x1f844; Stream &#x1f844; Object
+--
+-- @subclass Stream
