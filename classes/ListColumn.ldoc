@@ -1,0 +1,73 @@
+---
+--
+-- @classmod ListColumn
+
+--- ListColumn &#x1f844; CollectionItem &#x1f844; Object
+--
+-- @subclass CollectionItem
+
+
+---
+--
+-- @prop AutoSize: boolean
+
+---
+--
+-- @prop Caption: string
+
+---
+--
+-- @prop MaxWidth: integer
+
+---
+--
+-- @prop MinWidth: integer
+
+---
+--
+-- @prop Width: integer
+
+---
+--
+-- @prop Visible: boolean
+
+
+---
+--
+-- @function getAutosize()
+
+---
+--
+-- @function setAutosize(boolean)
+
+---
+--
+-- @function getCaption()
+
+---
+--
+-- @function setCaption(caption)
+
+---
+--
+-- @function getMaxWidth()
+
+---
+--
+-- @function setMaxWidth(width)
+
+---
+--
+-- @function getMinWidth()
+
+---
+--
+-- @function setMinWidth(width)
+
+---
+--
+-- @function getWidth()
+
+---
+--
+-- @function setWidth(width)
