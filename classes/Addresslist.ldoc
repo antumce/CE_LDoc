@@ -117,53 +117,63 @@
 
 ---
 --
--- @function getCount()
+-- @function getCount
+-- @treturn integer
 
 ---
 --
--- @function getMemoryRecord(index)
+-- @function getMemoryRecord
+-- @tparam integer index
+-- @treturn MemoryRecord
+
+--- Returns a MemoryRecord object.
+--
+-- @function getMemoryRecordByDescription
+-- @tparam string description
+-- @treturn MemoryRecord
 
 ---
 --
--- @function getMemoryRecordByDescription(description): returns a MemoryRecord object
+-- @function getMemoryRecordByID
+-- @tparam integer ID
+-- @treturn MemoryRecord
 
----
+--- Creates an generic cheat table entry and add it to the list.
 --
--- @function getMemoryRecordByID(ID)
+-- @function createMemoryRecord
 
----
+---  Returns a table containing all the selected records.
 --
--- @function createMemoryRecord() : creates an generic cheat table entry and add it to the list
+-- @function getSelectedRecords
+-- @treturn table[MemoryRecord]
 
----
+--- Will show the GUI window to change the description of the selected entry.
 --
--- @function getSelectedRecords():  Returns a table containing all the selected records
+-- @function doDescriptionChange
 
----
+--- Will show the GUI window to change the address of the selected entry.
 --
--- @function doDescriptionChange() : Will show the GUI window to change the description of the selected entry
+-- @function doAddressChange
 
----
+--- Will show the GUI window to change the type of the selected entries.
 --
--- @function doAddressChange() : Will show the GUI window to change the address of the selected entry
+-- @function doTypeChange
 
----
+--- Will show the GUI window to change the value of the selected entries.
 --
--- @function doTypeChange() : Will show the GUI window to change the type of the selected entries
+-- @function doValueChange
 
----
+--- Gets the main selected memoryrecord.
 --
--- @function doValueChange() : Will show the GUI window to change the value of the selected entries
+-- @function getSelectedRecord
+-- @treturn MemoryRecord
 
----
+--- Sets the currently selected memoryrecord.
+-- This will unselect all other entries.
 --
--- @function getSelectedRecord() : Gets the main selected memoryrecord
+-- @function setSelectedRecord
+-- @tparam MemoryRecord memrec
 
----
+--- Disables all memory records without executing their [Disable] section.
 --
--- @function setSelectedRecord(memrec) : Sets the currently selected memoryrecord. This will unselect all other entries
-
-
----
---
--- @function disableAllWithoutExecute(): Disables all memory records without executing their [Disable] section
+-- @function disableAllWithoutExecute
