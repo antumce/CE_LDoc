@@ -7,38 +7,57 @@
 -- @subclass Panel
 
 
----
+--- The top address.
 --
--- @prop Address: integer - The top address
+-- @prop Address
+-- @ptype integer
+
+--- True if something is selected.
+--
+-- @prop HasSelection
+-- @ptype boolean
 
 ---
 --
--- @prop HasSelection: boolean - True if something is selected
+-- @prop SelectionStart
+-- @ptype integer
 
 ---
 --
--- @prop SelectionStart: integer
+-- @prop SelectionStop
+-- @ptype integer
+
+--- The type being shown.
+--
+-- Possible values: dtByte, dtByteDec, dtWord, dtWordDec, dtDword, dtDwordDec, dtQword, dtQwordDec, dtSingle, dtDouble.
+--
+-- @prop DisplayType
+-- @ptype displaytype
 
 ---
 --
--- @prop SelectionStop: integer
+-- @prop OnAddressChange
+-- @ptype function(hexadecimalview, function)
+-- @usage function(hexadecimalview, address)
 
 ---
 --
--- @prop DisplayType: displaytype - The type being shown: dtByte, dtByteDec, dtWord, dtWordDec, dtDword, dtDwordDec, dtQword, dtQwordDec, dtSingle, dtDouble
+-- @prop OnByteSelect
+-- @ptype function(hexadecimalview, function)
+-- @usage function(hexadecimalview, address, address2)
 
----
+--- Called when a character is being rendered.
+-- Use this to change it or change the canvas fonts (Warning: slow).
 --
--- @prop OnAddressChange(hexadecimalview, function): function(hexadecimalview, address)
+-- @prop OnCharacterRender
+-- @ptype function
+-- @return text end
+-- @usage Hexadecimal.OnCharacterRender = function(sender, address, text)
 
----
+--- Called when a value (depending on the displaytype) is being rendered.
+-- Use this to change it or change the canvas fonts (Warning: slow).
 --
--- @prop OnByteSelect(hexadecimalview, function): function(hexadecimalview, address, address2)
-
----
---
--- @prop OnCharacterRender: function(sender, address, text) return text end - Called when a character is being rendered. Use this to change it or change the canvas fonts (Warning: slow)
-
----
---
--- @prop OnValueRender: function(sender, address, text) return text end - Called when a value (depending on the displaytype) is being rendered. Use this to change it or change the canvas fonts (Warning: slow)
+-- @prop OnValueRender
+-- @ptype function
+-- @return text end
+-- @usage Hexadecimal.OnValueRender = function(sender, address, text)
