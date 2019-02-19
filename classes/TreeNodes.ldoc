@@ -1,0 +1,60 @@
+---
+--
+-- @classmod TreeNodes
+
+--- TreeNodes &#x1f844; TObject
+--
+-- @subclass TObject
+
+
+--- The total number of Treenodes this object has.
+--
+-- @prop Count
+-- @ptype integer
+
+--- Array to access each node.
+--
+-- @prop Item
+-- @ptype array
+-- @return TreeNode
+
+---
+-- Same as [Item](#Item)
+--
+-- @fixme property name
+-- @prop FIXME []
+-- @ptype array
+-- @return TreeNode
+
+
+---
+--
+-- @function clear
+
+---
+--
+-- @function getCount
+-- @treturn integer
+
+--- Return the TreeNode object at the given index (based on the TreeView's Treenodes).
+--
+-- @function getItem
+-- @tparam integer index
+-- @treturn TreeNode
+
+--- Returns a new root Treenode object.
+--
+-- @function add
+-- @tparam string text
+
+--- Returns a new treenode object that has been inserted before the given treenode.
+--
+-- @function insert
+-- @param treenode
+-- @param string
+
+--- Returns a new treenode object that has been inserted after the given treenode.
+--
+-- @function insertBehind
+-- @param treenode
+-- @param string
