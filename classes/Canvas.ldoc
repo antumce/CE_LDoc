@@ -1,0 +1,195 @@
+---
+--
+-- @classmod Canvas
+
+--- Canvas &#x1f844; CustomCanvas &#x1f844; Object
+--
+-- @subclass Object 
+
+
+--- The brush object.
+--
+-- @prop Brush
+-- @ptype Brush
+
+--- The pen object.
+--
+-- @prop Pen
+-- @ptype Pen
+
+--- The font object
+--
+-- @prop Font
+-- @ptype Font
+
+--- Width of the canvas.
+--
+-- @prop Width
+-- @ptype integer
+
+--- Height of the canvas.
+--
+-- @prop Height
+-- @ptype integer
+
+
+--- Returns the brush object of this canvas.
+--
+-- @function getBrush
+-- @treturn Brush
+
+--- Returns the pen object of this canvas.
+--
+-- @function getPen
+-- @treturn Pen
+
+--- Returns the font object of this canvas.
+--
+-- @function getFont
+-- @treturn Font
+
+---
+--
+-- @function getWidth
+-- @treturn integer
+
+---
+--
+-- @function getHeight
+-- @treturn integer
+
+---
+--
+-- @function getPenPosition
+
+---
+--
+-- @function setPenPosition
+-- @tparam integer x
+-- @tparam integer y
+
+--- Clears the canvas.
+--
+-- @function clear
+
+---
+--
+-- @function line
+-- @param sourcex
+-- @param sourcey
+-- @param destinationx
+-- @param destinationy
+
+---
+--
+-- @function lineTo
+-- @param destinationx
+-- @param destinationy
+
+---
+--
+-- @function rect
+-- @param x1
+-- @param y1
+-- @param x2
+-- @param y2
+
+---
+--
+-- @function fillRect
+-- @param x1
+-- @param y1
+-- @param x2
+-- @param y2
+
+---
+--
+-- @function textOut
+-- @param x
+-- @param y
+-- @param text
+
+---
+--
+-- @function getTextWidth
+-- @param text
+
+---
+--
+-- @function getTextHeight
+-- @param text
+
+---
+--
+-- @function getPixel
+-- @param x
+-- @param y
+
+---
+--
+-- @function setPixel
+-- @param x
+-- @param y
+-- @param color
+
+--- Fills the picture till/with a color.
+--
+-- *filltype* can be:
+-- - fsSurface: fill till the color (it fills all except this color)        
+-- - fsBorder:  fill this color (it fills only connected pixels of this color)
+--
+-- @function floodFill
+-- @param x
+-- @param y
+-- @param[opt] color (default=brush.Color)
+-- @param [opt] filltype (default=fsSurface)
+
+
+
+---
+--
+-- @function ellipse
+-- @param x1
+-- @param y1
+-- @param x2
+-- @param y2
+
+--- Gradient fills a rectangle.
+--
+-- Direction can be 0 or 1. 0=Vertical 1=Horizontal.
+--
+-- @function gradientFill
+-- @param x1
+-- @param y1
+-- @param x2
+-- @param y2
+-- @param startcolor
+-- @param stopcolor
+-- @tparam integer direction
+
+--- Draws an image from one source to another.
+-- Useful in cases of doublebuffering.
+--
+-- @function copyRect
+-- @param dest_x1
+-- @param dest_y1
+-- @param dest_x2
+-- @param dest_y2
+-- @param sourceCanvas
+-- @param source_x1
+-- @param source_y1
+-- @param source_x2
+-- @param source_y2
+
+--- Draw the image of a specific Graphic class.
+--
+-- @function draw
+-- @tparam integer x
+-- @tparam integer y
+-- @param graphic
+
+--- Returns a table containing the fields Left, Top, Right and Bottom, which define the invalidated region of the graphical object.
+-- Use this to only render what needs to be rendered in the onPaint event of objects.
+--
+-- @function getClipRect
+-- @treturn table
