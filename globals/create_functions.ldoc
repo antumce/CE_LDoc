@@ -1,6 +1,6 @@
---- Function to create Form objects
+--- Functions to create Form objects
 --
--- @module createForm
+-- @global create_functions
 
 
 ---
