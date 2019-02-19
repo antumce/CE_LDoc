@@ -1,0 +1,24 @@
+---
+--
+-- @classmod structColumn
+
+
+--- The current address.
+--
+-- @prop Address
+-- @ptype integer
+
+--- Gets/sets the visual address.
+--
+-- @prop AddressText
+-- @ptype string
+
+--- Gets/sets the focused state.
+--
+-- @prop Focused
+-- @ptype boolean
+
+
+--- Focuses the current column.
+--
+-- @function focus
