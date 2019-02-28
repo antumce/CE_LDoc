@@ -1,0 +1,56 @@
+---
+--
+-- @global definitions
+
+
+--- CheckBox state.
+--
+-- @def CheckBox
+-- @ptype integer
+-- @value cbUnchecked (0) Not checked
+-- @value cbChecked (1) Checked
+-- @value cbGrayed (2) Grayed
+-- @see CheckBox
+
+---
+--
+-- @def ButtonType
+-- @ptype integer
+-- @value mbYes (*0*): A button with the locale text for 'Yes'. Returns ***mrYes***.
+-- @value mbNo (*1*): A button with the locale text for 'No'.
+-- @value mbOK (*2*): A button with the locale text for 'Ok'.
+-- @value mbCancel (*3*): A button with the locale text for 'Cancel'.
+-- @value mbAbort (*4*): A button with the locale text for 'Abort'.
+-- @value mbRetry (*5*): A button with the locale text for 'Retry'.
+-- @value mbIgnore (*6*): A button with the locale text for 'Ignore'.
+-- @value mbAll (*7*): A button with the locale text for 'All'.
+-- @value mbNoToAll (*8*): A button with the locale text for 'No to all'.
+-- @value mbYesToAll (*9*): A button with the locale text for 'Yes to all'.
+-- @value mbHelp (*10*): A button with the locale text for 'Help'.
+-- @value mbClose (*11*): A button with the locale text for 'Close'.
+
+---
+--
+-- @def DialogType
+-- @ptype integer
+-- @value mtWarning (*0*): Display a dialog with a Warning icon(red !) and play the Warning sound.
+-- @value mtError (*1*): Display a dialog with an Error icon(red X) and play the Error sound.
+-- @value mtInformation (*2*): Displays a dialog with the Information(Blue !) icon.
+-- @value mtConfirmation (*3*): Displays a dialog with the Confirmation (?) icon.
+
+---
+--
+-- @def ButtonResult
+-- @ptype integer
+-- @value mrNone (*0*): Returned when the dialog is closed or the Close button is pressed.
+-- @value mrOK (*1*): Returned when the 'ok' button is pressed.
+-- @value mrCancel (*2*): Returned when the 'cancel' button is pressed.
+-- @value mrAbort (*3*): Returned when the 'abort' button is pressed.
+-- @value mrRetry (*4*): Returned when the 'retry' button is pressed.
+-- @value mrIgnore (*5*): Returned when the 'ignore' button is pressed.
+-- @value mrYes (*6*): Returned when the 'yes' button is pressed.
+-- @value mrNo (*7*): Returned when the 'no' button is pressed.
+-- @value mrAll (*8*): Returned when the 'all' button is pressed.
+-- @value mrNoToAll (*9*): Returned when the 'no to all' button is pressed.
+-- @value mrYesToAll (*10*): Returned when the 'yes to all' button is pressed.
+-- @value mrLast (*10*): Returned when the 'last' button is pressed.

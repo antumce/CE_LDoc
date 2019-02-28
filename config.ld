@@ -66,6 +66,7 @@ new_type('global', 'Globals', true)
 new_type('subclass', 'Inheritance')
 new_type('prop', 'Properties')
 alias('inherits', 'subclass')
+new_type('def', 'Definition Type')
 
 -- custom tags
 custom_tags = {
@@ -110,6 +111,10 @@ custom_tags = {
 		'idx',
 		hidden = true,
 		title = 'Index',
+	},
+	{
+		'value',
+		title = 'Possible values',
 	},
 }
 
