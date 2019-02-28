@@ -39,3 +39,26 @@
 -- @treturn Structure
 
 --- @section end
+
+
+--- Functions for show message dialogs
+--
+-- @section dialogs
+
+
+---
+--
+-- @function messageDialog
+-- @tparam string text Message text to display.
+-- @tparam DialogType type Can be one of *mtWarning* (*0*), *mtError* (*1*), *mtInformation* (*2*), or *mtConfirmation* (*3*).
+-- @tparam ButtonType button Button displayed on dialog.
+-- @tparam ButtonType ... Additional buttons.
+-- @see definitions.ButtonType
+-- @see definitions.DialogType
+
+---
+--
+-- @function showMessage
+-- @tparam string Message text to display.
+
+--- @section end
