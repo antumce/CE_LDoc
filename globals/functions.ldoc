@@ -3,12 +3,24 @@
 -- @global functions
 
 
+--- Forms
+--
+-- @section forms
+
+
 ---
 -- Creates a new Form object.
 --
 -- @function createForm
 -- @tparam bool visible Form will be visible if `true`, hidden if `false` (default: `true`)
 -- @return [Form](../classes/Form.html)
+
+--- Returns the main Form.
+--
+-- @function getMainForm
+-- @treturn Form The main Form object.
+
+--- @section end
 
 
 --- Structure class functions
@@ -41,9 +53,11 @@
 --- @section end
 
 
---- Functions for show message dialogs
+--- Messages
 --
--- @section dialogs
+-- Functions for show message dialogs.
+--
+-- @section messages
 
 
 ---
