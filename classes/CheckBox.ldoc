@@ -58,8 +58,11 @@
 
 --- Sets the state of the checkbox.
 --
+-- See also: [CheckBox state](../globals/definitions.html#CheckBox)
+--
 -- @function setState
 -- @tparam boolean state
+-- @see c CheckBox state:../globals/definitions.html#CheckBox
 
 ---
 --

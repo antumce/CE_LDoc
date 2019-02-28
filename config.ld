@@ -116,7 +116,24 @@ custom_tags = {
 		'value',
 		title = 'Possible values',
 	},
+	{
+		-- 'see' tag for creating mauanl links
+		'msee',
+		title = "See also",
+	},
 }
+
+custom_see_handler('^c .*', function(value)
+	print('CUSTOM SEE HANDLER')
+	value = value:sub(3)
+	print('Value: ' .. value)
+	value = string.split(value, ':')
+	local name = value[1]
+	local url = value[2]
+	print('Name :' .. name)
+	print('URL: ' .. url)
+	return name, url
+end)
 
 local function cropName(name, delim)
 	-- default is single period (.)
