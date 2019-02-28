@@ -33,14 +33,16 @@
 <h2>Contents</h2>
 <ul>
 <li><a href="#Functions">Functions</a></li>
+<li><a href="#Structure_class_functions">Structure class functions </a></li>
+<li><a href="#Functions_for_show_message_dialogs">Functions for show message dialogs </a></li>
 </ul>
 
 
-<h2>Global Functions</h2>
+<h2>Globals</h2>
 <ul class="nowrap">
-  <li><a href="../modules/createForm.html">createForm</a></li>
-  <li><a href="../modules/global_events.html">global_events</a></li>
-  <li><strong>structure_functions</strong></li>
+  <li><a href="../globals/definitions.html">definitions</a></li>
+  <li><a href="../globals/events.html">events</a></li>
+  <li><strong>functions</strong></li>
 </ul>
 <h2>Classes</h2>
 <ul class="nowrap">
@@ -172,14 +174,21 @@
 
 <div id="content">
 
-<h1>Module <code>structure_functions</code></h1>
-<p>Structure class related functions.</p>
+<h1>Global <code>functions</code></h1>
+<p>Functions to manage Form objects</p>
 <p>
 
 </p>
 
 
 <h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#createForm">createForm ( <i>visible</i> )</a></td>
+	<td class="summary">Creates a new Form object.</td>
+	</tr>
+</table>
+<h2><a href="#Structure_class_functions">Structure class functions </a></h2>
 <table class="function_list">
 	<tr>
 	<td class="name" ><a href="#createStructure">createStructure ( <i>name</i> )</a></td>
@@ -194,12 +203,61 @@
 	<td class="summary">Returns the number of Global structures.</td>
 	</tr>
 </table>
+<h2><a href="#Functions_for_show_message_dialogs">Functions for show message dialogs </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" ><a href="#messageDialog">messageDialog ( <i>text</i>, <i>type</i>, <i>button</i>, <i>...</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#showMessage">showMessage ( <i>Message</i> )</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+</table>
 
 <br/>
 <br/>
 
 
     <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "createForm"></a>
+    <strong>createForm ( <i>visible</i> )</strong>
+    </dt>
+    <dd>
+    Creates a new Form object.
+
+    </ul>
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">visible</span>
+            <span class="types"><span class="type">bool</span></span>
+         Form will be visible if <code>true</code>, hidden if <code>false</code> (default: <code>true</code>)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        <a href="../classes/Form.html">Form</a>
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Structure_class_functions"></a>Structure class functions </h2>
 
     <dl class="function">
     <dt>
@@ -211,6 +269,8 @@
 
 <p> (Not yet added to the Global list. Call structure.addToGlobalStructureList manually)
 
+    </ul>
+    </ul>
     </ul>
     </ul>
 
@@ -243,6 +303,8 @@
     <dd>
     Returns the Structure object at the given index.
 
+    </ul>
+    </ul>
     </ul>
     </ul>
 
@@ -280,6 +342,8 @@
 
     </ul>
     </ul>
+    </ul>
+    </ul>
 
 
     <h3>Returns:</h3>
@@ -296,13 +360,88 @@
 
 </dd>
 </dl>
+    <h2 class="section-header "><a name="Functions_for_show_message_dialogs"></a>Functions for show message dialogs </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "messageDialog"></a>
+    <strong>messageDialog ( <i>text</i>, <i>type</i>, <i>button</i>, <i>...</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a></span>
+         Message text to display.
+        </li>
+        <li><span class="parameter">type</span>
+            <span class="types"><span class="type">DialogType</span></span>
+         Can be one of <em>mtWarning</em> (<em>0</em>), <em>mtError</em> (<em>1</em>), <em>mtInformation</em> (<em>2</em>), or <em>mtConfirmation</em> (<em>3</em>).
+        </li>
+        <li><span class="parameter">button</span>
+            <span class="types"><span class="type">ButtonType</span></span>
+         Button displayed on dialog.
+        </li>
+        <li><span class="parameter">...</span>
+            <span class="types"><span class="type">ButtonType</span></span>
+         Additional buttons.
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <li><a href="../globals/definitions.html#ButtonType">definitions.ButtonType</a></li>
+         <li><a href="../globals/definitions.html#DialogType">definitions.DialogType</a></li>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "showMessage"></a>
+    <strong>showMessage ( <i>Message</i> )</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Message</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.3/manual.html#6.4">string</a></span>
+         text to display.
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
 
 
 </div> <!-- id="content" -->
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
-<i style="float:right;">Last updated 2019-02-19 15:02:34 </i>
+<i style="float:right;">Last updated 2019-02-27 23:30:35 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>

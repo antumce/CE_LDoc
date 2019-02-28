@@ -32,15 +32,15 @@
 
 <h2>Contents</h2>
 <ul>
-<li><a href="#Functions">Functions</a></li>
+<li><a href="#Definition_Type">Definition Type</a></li>
 </ul>
 
 
-<h2>Global Functions</h2>
+<h2>Globals</h2>
 <ul class="nowrap">
-  <li><strong>createForm</strong></li>
-  <li><a href="../modules/global_events.html">global_events</a></li>
-  <li><a href="../modules/structure_functions.html">structure_functions</a></li>
+  <li><strong>definitions</strong></li>
+  <li><a href="../globals/events.html">events</a></li>
+  <li><a href="../globals/functions.html">functions</a></li>
 </ul>
 <h2>Classes</h2>
 <ul class="nowrap">
@@ -172,18 +172,38 @@
 
 <div id="content">
 
-<h1>Module <code>createForm</code></h1>
-<p>Function to create Form objects</p>
+<h1>Global <code>definitions</code></h1>
+<p>
+
+</p>
 <p>
 
 </p>
 
 
-<h2><a href="#Functions">Functions</a></h2>
+<h2><a href="#Definition_Type">Definition Type</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" ><a href="#createForm">createForm ( <i>visible</i> )</a></td>
-	<td class="summary">Creates a new Form object.</td>
+	<td class="name" ><a href="#ButtonResult">ButtonResult</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#ButtonType">ButtonType</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#CheckBox">CheckBox</a></td>
+	<td class="summary">CheckBox state.</td>
+	</tr>
+	<tr>
+	<td class="name" ><a href="#DialogType">DialogType</a></td>
+	<td class="summary">
+
+</td>
 	</tr>
 </table>
 
@@ -191,32 +211,137 @@
 <br/>
 
 
-    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+    <h2 class="section-header "><a name="Definition_Type"></a>Definition Type</h2>
 
     <dl class="function">
     <dt>
-    <a name = "createForm"></a>
-    <strong>createForm ( <i>visible</i> )</strong>
+    <a name = "ButtonResult"></a>
+    <strong>ButtonResult</strong>
     </dt>
     <dd>
-    Creates a new Form object.
 
-    </ul>
-    </ul>
 
-    <h3>Parameters:</h3>
+
+
+    <h3>Type:</h3>
     <ul>
-        <li><span class="parameter">visible</span>
-            <span class="types"><span class="type">bool</span></span>
-         Form will be visible if <code>true</code>, hidden if <code>false</code> (default: <code>true</code>)
-        </li>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+    <h3>Possible values:</h3>
+    <ul>
+         <li>mrNone (<em>0</em>): Returned when the dialog is closed or the Close button is pressed.</li>
+         <li>mrOK (<em>1</em>): Returned when the 'ok' button is pressed.</li>
+         <li>mrCancel (<em>2</em>): Returned when the 'cancel' button is pressed.</li>
+         <li>mrAbort (<em>3</em>): Returned when the 'abort' button is pressed.</li>
+         <li>mrRetry (<em>4</em>): Returned when the 'retry' button is pressed.</li>
+         <li>mrIgnore (<em>5</em>): Returned when the 'ignore' button is pressed.</li>
+         <li>mrYes (<em>6</em>): Returned when the 'yes' button is pressed.</li>
+         <li>mrNo (<em>7</em>): Returned when the 'no' button is pressed.</li>
+         <li>mrAll (<em>8</em>): Returned when the 'all' button is pressed.</li>
+         <li>mrNoToAll (<em>9</em>): Returned when the 'no to all' button is pressed.</li>
+         <li>mrYesToAll (<em>10</em>): Returned when the 'yes to all' button is pressed.</li>
+         <li>mrLast (<em>10</em>): Returned when the 'last' button is pressed.</li>
+    </ul>
     </ul>
 
-    <h3>Returns:</h3>
-    <ol>
 
-        <a href="../classes/Form.html">Form</a>
-    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ButtonType"></a>
+    <strong>ButtonType</strong>
+    </dt>
+    <dd>
+
+
+
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+    <h3>Possible values:</h3>
+    <ul>
+         <li>mbYes (<em>0</em>): A button with the locale text for 'Yes'. Returns <strong><em>mrYes</em></strong>.</li>
+         <li>mbNo (<em>1</em>): A button with the locale text for 'No'.</li>
+         <li>mbOK (<em>2</em>): A button with the locale text for 'Ok'.</li>
+         <li>mbCancel (<em>3</em>): A button with the locale text for 'Cancel'.</li>
+         <li>mbAbort (<em>4</em>): A button with the locale text for 'Abort'.</li>
+         <li>mbRetry (<em>5</em>): A button with the locale text for 'Retry'.</li>
+         <li>mbIgnore (<em>6</em>): A button with the locale text for 'Ignore'.</li>
+         <li>mbAll (<em>7</em>): A button with the locale text for 'All'.</li>
+         <li>mbNoToAll (<em>8</em>): A button with the locale text for 'No to all'.</li>
+         <li>mbYesToAll (<em>9</em>): A button with the locale text for 'Yes to all'.</li>
+         <li>mbHelp (<em>10</em>): A button with the locale text for 'Help'.</li>
+         <li>mbClose (<em>11</em>): A button with the locale text for 'Close'.</li>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "CheckBox"></a>
+    <strong>CheckBox</strong>
+    </dt>
+    <dd>
+    CheckBox state.
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+    <h3>Possible values:</h3>
+    <ul>
+         <li>cbUnchecked (0) Not checked</li>
+         <li>cbChecked (1) Checked</li>
+         <li>cbGrayed (2) Grayed</li>
+    </ul>
+    </ul>
+
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../classes/CheckBox.html#">CheckBox</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "DialogType"></a>
+    <strong>DialogType</strong>
+    </dt>
+    <dd>
+
+
+
+
+    <h3>Type:</h3>
+    <ul>
+         <div style="font-style:italic;">integer</div>
+    </ul>
+    </ul>
+    <h3>Possible values:</h3>
+    <ul>
+         <li>mtWarning (<em>0</em>): Display a dialog with a Warning icon(red !) and play the Warning sound.</li>
+         <li>mtError (<em>1</em>): Display a dialog with an Error icon(red X) and play the Error sound.</li>
+         <li>mtInformation (<em>2</em>): Displays a dialog with the Information(Blue !) icon.</li>
+         <li>mtConfirmation (<em>3</em>): Displays a dialog with the Confirmation (?) icon.</li>
+    </ul>
+    </ul>
+
+
 
 
 
@@ -229,7 +354,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/AntumDeluge/LDoc/tree/antum">LDoc 1.4.6-antum-dev-1</a></i>
-<i style="float:right;">Last updated 2019-02-19 15:02:34 </i>
+<i style="float:right;">Last updated 2019-02-27 23:30:35 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>
